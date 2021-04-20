@@ -16,7 +16,6 @@ html {
 
 body {
   box-sizing: border-box; /* change box model so borders and paddings are not added to total width and height to borders */
-  /* padding: 3rem; */
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -66,10 +65,10 @@ article {
 }
 
 h1 {
-  /* font-family: inherit; */
   font-weight: 700;
   font-size: 4rem;
   white-space: nowrap;
+  color: #987A77;
 }
 
 
@@ -82,7 +81,6 @@ hr {
 }
 
 h2 {
-  /* font-family: inherit; */
   font-weight: 600;
   font-size: 2.5rem;
   margin-top: 2rem;
@@ -110,7 +108,7 @@ p {
   9. As a user, i want the **img element** to be **centered** within its parent element. */
   width: 100%;
   height: 110vh;
-  filter: saturate(40%);
+  filter: saturate(90%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%); /* specify of the corners (coordinates) of the polygon of the part that you want to be seen */
 
@@ -162,6 +160,7 @@ p {
 }
 
 #title{
+  color: white;
   font-size: 10rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -173,7 +172,7 @@ p {
 
 #title > span {
   font-weight: 800;
-  color: #2e0000;
+  color: #59504d;
 
 }
 #img-caption {
@@ -201,7 +200,10 @@ p {
 #gallery-info {
   z-index: -2;
   margin-top: -100rem; /* to compensate for the gap */
-  background-color: rgb(236, 236, 236);
+  background-color: #ffffff;
+  /* background-image: url('/tribute/assets/gallery-bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
   padding-top: 110rem;
   padding-bottom: 30rem;
   color: #000000;
@@ -210,7 +212,7 @@ p {
 }
 
 #gallery-info > article > .article-heading > hr {
-  background-image: linear-gradient(to right, #3f3f3f , #e6e6e6);
+  background-image: linear-gradient(to right, #3f3f3f , #ffffff);
 }
 
 #story-info {
@@ -308,6 +310,11 @@ footer > nav > h6 > a {
   font-size: 1.3rem;
   font-weight: 300;
 }
+
+footer > nav > h6 > a:hover {
+  text-decoration: underline;
+}
+
 /* END FOOTER SECTION */
 
 /* ANIMATIONS */
