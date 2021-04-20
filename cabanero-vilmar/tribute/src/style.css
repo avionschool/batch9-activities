@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+#title {
+  width: 50%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 2rem;
+  font-size: 3rem;
+  border-radius: 5px;
+}
+
+#image {
+  width: 50%;
+  border-radius: 30%;
+}
+
+#tribute-link {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+}
+
+#tribute-link:hover {
+  opacity: 0.8;
+}
+
+#img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: gray;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+}
+
+#img-caption {
+  text-align: justify;
+  width: 50%;
+  background-color: gray;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#tribute-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: gray;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#tribute-info > article {
+  width: 50%;
+  text-align: justify;
+}
+
+#tribute-info > h2 {
+  color: white;
+}
+
+#tribute-info > a {
+  align-self: flex-end;
+  margin-right: 25%;
+}
+
+#post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: gray;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#post h2 {
+  width: 50%;
+  text-align: justify;
+  color: white;
+}
+
+#post p {
+  width: 50%;
+  text-align: justify;
+  margin-bottom: 0px;
+}
+
+#post a {
+  align-self: flex-end;
+  margin-right: 25%;
+}
+
