@@ -13,6 +13,7 @@ html {
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 .clearfix {zoom: 1}
