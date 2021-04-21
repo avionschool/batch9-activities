@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url(../img/bj_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  scroll-behavior: smooth;
+}
+
+li,
+a {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #0d1117;
+}
+
+.logo {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+}
+
+.hero-main {
+  height: 100vh;
+  display: flex;
+  background-color: #9f9f9f;
+}
+
+.hero-main img {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px;
+  background-color: #9f9f9f;
+}
+
+.hero-details h1 {
+  font-family: "Bebas Neue", cursive;
+  padding: 0px 50px;
+  color: #000;
+}
+
+.hero-details p {
+  font-size: 20px;
+  line-height: 6vh;
+  padding: 0px 50px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-section h1 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  background-color: #5e1d1d;
+  color: #fff;
+  margin: 0px;
+  font-size: 50px;
+}
+
+.about-content {
+  background: url(../img/billie.jpg) no-repeat left;
+  height: 70%;
+  background-size: 51%;
+  overflow: hidden;
+  padding: 17px 0;
+  min-height: 20vh;
+  background-color: #9f9f9f;
+  box-sizing: border-box;
+}
+
+.inner-content {
+  width: 55%;
+  float: right;
+  background-color: #9f9f9f;
+  padding: 10px;
+}
+
+.inner-content p {
+  line-height: 35px;
+  color: #000;
+}
+
+.content-1 {
+  padding: 10px 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+
+.content-2 {
+  padding: 10px 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+
+.content-3 {
+  padding: 10px 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+
+.content-4 {
+  padding: 10px 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+
+.content-5 {
+  padding: 10px 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+
+.timeline-section h1 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  background-color: #5e1d1d;
+  color: #fff;
+  margin: 0px;
+  font-size: 50px;
+}
+
+.inner-timeline {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner-timeline img {
+  margin-top: 50px;
+  align-self: center;
+  width: 250px;
+  height: 50%;
+  border-radius: 5%;
+}
+
+.content-timeline {
+  margin: 50px;
+  padding: 50px;
+  background-color: #5e1d1d;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
