@@ -11,6 +11,7 @@
 
 html {
   font-size: 62.5%; /* 1rem = 10px; 10px/16px = 62.5% -- 16px is default font size in browser*/
+  scroll-behavior: smooth;
 }
 
 
@@ -26,7 +27,6 @@ body {
 
 /* ELEMENTS */
 main {
-
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,31 @@ header{
   width: 100%;
   height: 110vh;
   z-index: 5;
+}
+
+nav {
+  position: fixed;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  top: 25vh;
+  left: 3rem;
+  z-index: 10;
+}
+
+nav > h6 > a {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #987A77;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+nav > h6 > a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -63,6 +88,13 @@ section {
 article {
   width: 900px;
   margin-top: 5rem;
+}
+
+/* responsive query for tablets */
+@media only screen and (max-width: 1000px) {
+  article {
+    width: 600px;
+  }
 }
 
 h1 {
@@ -163,7 +195,7 @@ p {
 #title{
   color: white;
   font-size: 10rem;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1rem;
   animation-name: moveInLeft;
@@ -302,16 +334,7 @@ footer > nav {
   margin-bottom: 5rem;
 }
 
-footer > nav > h6 > a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 300;
-}
 
-footer > nav > h6 > a:hover {
-  text-decoration: underline;
-}
 
 /* END FOOTER SECTION */
 
