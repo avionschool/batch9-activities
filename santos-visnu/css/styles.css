@@ -1,0 +1,118 @@
+body, html {
+    height: 100%;
+    scroll-behavior:smooth;
+}
+
+body {
+    background-image: url("../images/Prabhupada1.jpg");
+    background-position:initial;
+    background-repeat: no-repeat;
+    background-color: #A0D2E7;
+    background-size: 50%;
+    background-blend-mode:luminosity;
+    background-attachment:fixed;
+}
+
+#main {
+    max-width: 1280px;
+    max-height: 100%;
+    margin: 30px auto;
+    padding: 15px;
+    color: black;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.title {
+    font-family: monospace;
+    font-size: 30px;
+    color: white;
+}
+.li {
+    font-family: monospace;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.transition-1 {
+    height: 150px; 
+}
+
+#tribute-info {
+    font-family:monospace;
+    font-size: 20px;
+    position: relative;
+    border: ghostwhite 15px double;
+}
+
+#img-div {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border: rgb(227, 239, 241) 10px solid;
+   text-align: center;
+   margin-top: 100px;
+}
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.navigator {
+    display: flex;
+    position:fixed;
+    justify-content: flex-end;
+    top: 30px;
+    right: 30px;
+    font-weight: bolder;
+}
+
+.navigator a {
+    float:none;
+    text-align: center;
+    padding: 20px 16px;
+    font-family: monospace;
+    font-size: 20px;
+    color: #fffefe;
+    text-decoration: none;
+}
+a:hover {
+    color: #26408B;
+    background-color: #A0D2E7;
+}
+
+.tribute-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ul-container {
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 500px;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.books-item {
+    width: 130px;
+    height: 170px;
+    padding: 30px;
+}
