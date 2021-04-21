@@ -1,0 +1,98 @@
+body{
+  background-image: linear-gradient( 90.5deg, #2B547E 1.6%, #659EC7 98.2% );
+  text-align: center;
+}
+
+#image{
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius:50%;
+  border:2px solid #79BAEC;
+} /*User Story 8 and 9*/
+
+#image1{
+  width: 100%;
+  height: auto;
+  max-width: 280px;
+}
+
+#title{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+header {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+}
+
+#img-div{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin:50px;
+  padding:30px;
+  border-radius:5%;
+  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
+}
+
+
+.factsdiv{
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin:50px;
+  padding:30px;
+  border-radius:5%;
+  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
+}
+
+.careerdiv{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  font-family: 'Courier New', 'Courier New', Courier, monospace;
+  font-size: 18px;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin:50px;
+  padding:30px;
+  border-radius:5%;
+  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
+}
+
+.mvs{
+  background-image: url(images/4.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin:50px;
+  padding:30px;
+  border-radius:5%;
+  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
+}
+
+table {
+  table-layout: auto;
+  width: fit-content;
+  
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
