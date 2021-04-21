@@ -50,6 +50,10 @@ nav {
   top: 25vh;
   left: 3rem;
   z-index: 10;
+
+  animation-name: generalFade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
 }
 
 nav > h6 > a {
@@ -69,7 +73,7 @@ footer {
   width: 100%;
   background-color: #141414;
   color: white;
-
+  letter-spacing: .3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,41 +159,13 @@ p {
 
 .main-heading {
   position: absolute;
-  top: 45%; /* remember the the origin will be the relative position of the parent */
+  top: 50%; /* remember the the origin will be the relative position of the parent */
   left: 50%; /* remember the the origin will be the relative position of the parent */
   transform: translate(-50%, -50%); /* shifted in related to the current position of the element itself */
   text-align: center;
 
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 8rem;
-}
-
-.icon-heading {
-  position: absolute;
-  top: 90%; /* remember the the origin will be the relative position of the parent */
-  left: 50%; /* remember the the origin will be the relative position of the parent */
-  transform: translate(-50%, -50%); /* shifted in related to the current position of the element itself */
-  text-align: center;
-
-  animation-name: generalFade;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-
-.icon-heading > a > i  {
-  opacity: 50%;
-}
-
-.icon-heading > a > .fa-chevron-circle-down {
-  color: white;
-  outline: none;
-  text-decoration: none;
-  transition: ease-out;
-  transition-duration: .2s;
-}
-
-.icon-heading > a > .fa-chevron-circle-down:hover {
-  opacity: 100%;
 }
 
 #title{

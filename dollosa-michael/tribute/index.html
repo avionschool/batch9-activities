@@ -1,25 +1,19 @@
 <html>
   <head>
     <title>Tribute Page</title>
-
+    <link rel="shortcut icon" type="image/jpg" href="/tribute/assets/favicon.jpg"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css" />
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   </head>
   <body>
     <!-- 1. As a user, I want my tribute page to have an element with a corresponding id="main", which contains all other elements. -->
     <main id="main">
       <nav>
-        <!-- <h6><a href="#story-info">Story/Lore</a></h6>
-        <h6><a href="#gallery-photos">Gallery</a></h6>
-        <h6><a href="#background-article">Background</a></h6>
-        <h6><a href="#img-div">Home</a></h6> -->
         <h6><a href="#img-div">Home</a></h6>
         <h6><a href="#background-article">Background</a></h6>
         <h6><a href="#gallery-photos">Gallery</a></h6>
-        <h6><a href="#story-info">Story/Lore</a></h6>
+        <h6><a href="#story-lore">Story/Lore</a></h6>
       </nav>
       <header>
         
@@ -34,11 +28,6 @@
           <h1 id="title">Arya <span>/</span> Stark</h1>
           <!-- 5. As a user, I want to see an **element** with a corresponding **id="img-caption"** that contains text content describing the image show in **img-div.** -->
           <p id="img-caption">"A girl is Arya Stark of Winterfell, and I'm going home."</p>
-          
-        </div>
-
-        <div class="icon-heading">
-          <a href="#background-article"><i class="fas fa-chevron-circle-down fa-5x"></i></a>
         </div>
         
       </header>
@@ -99,7 +88,7 @@
       <!-- 10. As a user, I want to read a post, article, or story about the person with at least 2 headings in **h1 ... h6**, and paragraphs in **p** -->
       <section id="story-info">
         <article>
-          <div class="article-heading">
+          <div class="article-heading" id="story-lore">
             <h1>STORY/LORE</h1>
             <hr/>
           </div>
@@ -132,13 +121,7 @@
         <button id="tribute-link" ><a href="https://awoiaf.westeros.org/index.php/Arya_Stark" target=”_blank”>Read More</a></button>
       </section>
       <footer>
-        <!-- <nav>
-          <h6><a href="#img-div">Home</a></h6>
-          <h6><a href="#background-article">Background</a></h6>
-          <h6><a href="#gallery-photos">Gallery</a></h6>
-          <h6><a href="#story-info">Story/Lore</a></h6>
-        </nav> -->
-        Created by Michael Dollosa. © 2021
+        Created by Christian Michael Dollosa. © 2021
       </footer>
     </main>
 
