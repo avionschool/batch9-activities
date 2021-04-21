@@ -12,10 +12,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Syntax highlighted code block
 
 # Header 1
-<<<<<<< HEAD
-=======
 ## Header 2
->>>>>>> d427ed5310cd2a4591c3dde0bb9ab6b5f4f97a3b
+
 
 
 - Bulleted
