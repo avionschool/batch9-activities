@@ -37,6 +37,7 @@ main {
 header{
   width: 100%;
   height: 110vh;
+  z-index: 5;
 }
 
 footer {
@@ -189,7 +190,7 @@ p {
 
 /* SECTIONS */
 #tribute-info {
-  z-index: -1;
+  z-index: 4;
   margin-top: -30rem; /* to compensate for the gap */
   padding-top: 40rem;
   padding-bottom: 40rem;
@@ -198,12 +199,9 @@ p {
 }
 
 #gallery-info {
-  z-index: -2;
+  z-index: 3;
   margin-top: -100rem; /* to compensate for the gap */
   background-color: #ffffff;
-  /* background-image: url('/tribute/assets/gallery-bg.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
   padding-top: 110rem;
   padding-bottom: 30rem;
   color: #000000;
@@ -216,7 +214,7 @@ p {
 }
 
 #story-info {
-  z-index: -3;
+  z-index: 2;
   margin-top: -20rem;
   padding-top: 30rem;
 }
