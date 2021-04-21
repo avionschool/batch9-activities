@@ -1,0 +1,455 @@
+/* font import */
+
+@font-face {
+    font-family: 'Annifont Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Annifont Italic'), url('assets/fonts/annifont.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'F.C. BARCELONA';
+    font-style: normal;
+    font-weight: normal;
+    src: local('F.C. BARCELONA'), url('assets/fonts/barselona.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic';
+    src: local('ITC Avant Garde Gothic Md'), 
+        local('ITC-Avant-Garde-Gothic-Md'),
+        url('assets/fonts/ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('assets/fonts/ITCAvantGardeStd-Md.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi'), url('assets/font/ITCAvantGardeStdDemi.woff') format('woff');
+    }
+
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* General CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html {
+    scroll-behavior: smooth;
+  }
+  
+img {
+    max-width: 100%;
+  }
+  
+p {
+    font-family: "Roboto", sans-serif;
+  }
+
+body{
+    background-color: #A50044;
+}
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+/* header */
+
+#header-img {
+    max-height: 9.1vh;
+  }
+  
+  #header {
+    height: 9vh;
+    position: relative;
+    background: rgb(253, 254, 255);
+  }
+  
+  #nav-bar {
+    position: fixed;
+    height: 9vh;
+    min-width: 100vw;
+    background-color: rgb(205, 207, 207);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    z-index: 1;
+    font-family: "Annifont Italic", "Lato", sans-serif;
+    font-size: 1rem;
+  }
+  
+  .nav-click {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 78%;
+    align-items: center;
+  }
+  
+  #header-img {
+    margin-right: 25px;
+    margin-left: 10px;
+  }
+  
+  .navdiv {
+    height: 9vh;
+    width: 150px;
+    padding-top: 23px;
+    text-align: center;
+  }
+  
+  .navdiv:hover {
+    background: rgb(130, 132, 133);
+    color: white;
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+  
+
+/* img-div */
+    
+figure {
+    margin: auto;
+    padding: 5px;
+    width: 90%;
+  }
+
+#image {
+    display: block;
+    margin: 40px auto 20px auto;
+    max-width: 100%;
+  }
+
+#img-div {
+background-color: rgb(0, 76, 153);
+border-radius: 5px;
+margin: 40px auto 60px auto;
+width: 60%;
+}
+
+figcaption {
+color: white;
+font-family: 'Roboto','Montserrat';
+text-align: center;
+}
+
+h1 {
+    font-family: 'F.C. BARCELONA';
+    font-weight: 600;
+    font-size: 8vw;
+    line-height: 40px;
+    animation: nota 1s;
+    padding-left: 2vw;
+    color: #EDBB00;
+  }
+
+/* Main */
+h2{
+    padding-left: 2vw;
+    font-size: 5vh;
+    font-weight: bolder;
+    color:#FFED02;
+    font-family: 'ITC Avant Garde Gothic Std Demi','ITC Avant Garde Gothic', 'Raleway','Lato';
+}
+
+p{
+    padding-left: 4vw;
+    padding-right: 1.5vw;
+    font-size: 2.5vh;
+    color: white;
+    font-family: 'Montserrat', 'Orbitron', sans-serif;
+}
+
+/* Career */
+.tables{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    ;
+}
+
+th, td {
+    text-align: left;
+    padding: 1vh;
+}
+
+.tCap{
+    font-weight:bolder ;
+    color:black;
+    font-size: 3vh;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.legend{
+    color: #FFED02;
+    font-size: 2.5vh;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+.info{
+    color: white;
+    font-size: 2vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*awards*/
+#divAwards{
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+.imgAward img{
+    height: 10em;
+  }
+
+
+.awardsInfo{
+    font-size: 0.9rem;
+    color: rgb(88, 87, 87);
+    line-height: 23px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-top: 1vh;
+    padding-bottom: 2vh;
+  }
+  
+.awardsInfo span {
+    font-size: 1.3rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    color: black;
+  }
+
+/*tesimonies  */
+#userReview {
+    display: flex;
+    flex-direction: row ;
+}
+
+.reviews-container {
+    height: 500px;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 67vw;
+    margin: 0 auto;
+  }
+.reviews-user {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    width: 300px;
+    line-height: 30px;
+    position: relative;
+    background: rgb(0, 76, 153);
+    margin: 20px 20px;
+    border-radius: 3px;
+}
+
+.reviews-user p {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.write-up {
+    margin-top: -40px;
+}
+  
+.write-up p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.user-img-container {
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 40px auto;
+    align-items: center;
+    line-height: 40px;
+}
+  
+.user-img-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: black solid 2px;
+}
+  
+.user-img-container p {
+    font-weight: bolder;
+}
+
+/*footer */
+footer {
+    text-align: center;
+    background-color: rgb(205, 207, 207);
+}
+.logo {
+    height:7vh;
+    width: 7vh;
+    margin: 2vh;
+}
+
+
+@media all and (max-width: 750px) {
+    body,
+    html {
+      overflow-x: hidden;
+    }
+  
+    .nav-click {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      background-color: rgb(205, 207, 207);
+      top: 8vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 50%;
+      transform: translateX(100%);
+    }
+  
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #header {
+      position: relative;
+    }
+  
+
+    h1 {
+      font-size: 2rem;
+      line-height: 70px;
+    }
+  
+    
+    main {
+      padding-top: 10px;
+    }
+  
+    #container {
+      flex-direction: column;
+      height: 100%;
+      margin: 20px auto;
+      padding-top: 10px;
+      align-items: center;
+    }
+  
+    .imgAward {
+      margin-top: 40px;
+    }
+  
+    .awardsInfo {
+      font-size: 0.9rem;
+      color: rgb(88, 87, 87);
+      line-height: 23px;
+    }
+  
+    .awardsInfo span {
+      font-size: 1.3rem;
+      color: black;
+    }
+  
+    #product-details {
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 20px auto;
+      line-height: 26px;
+      padding: 0px;
+    }
+  
+
+    .reviews-container {
+      height: 100%;
+      padding: 40px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .reviews-user {
+      height: 370px;
+      width: 300px;
+    }
+  
+  }
+  .nav-active {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+  }
+
+  /* Image Gallery */
+
+#about {
+    height: 100vh;
+    width: auto;
+    background: url('https://pbs.twimg.com/media/D5M0ueZW4AIHacK.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#career {
+    height: 100vh;
+    width: auto;
+    background: url('https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/07/19/15951818345340.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#awards {
+    height: 100vh;
+    width: auto;
+    background: url('https://pbs.twimg.com/media/EKz4gZzXsAAwq9o.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#testimonies {
+    height: 100vh;
+    width: auto;
+    background: url('https://www.fcbarcelona.com/photo-resources/2019/03/29/7d24910b-f44c-49ce-9462-eda9d34b614d/BOWJiGnp.jpg?width=1200&height=750');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
