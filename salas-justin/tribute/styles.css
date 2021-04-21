@@ -80,25 +80,45 @@ a {
 }
 
 #img-div {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
+	background: linear-gradient(
+			20deg,
+			rgba(255, 255, 255, 0.8),
+			rgba(255, 255, 255, 0.6)
+		),
+		url("images/estrada.jpg") center/cover no-repeat;
+
+	transition: all;
 }
 
 #img-div img {
 	margin: 2rem;
 }
 
-.bio {
-	margin-bottom: 2rem;
+#img-div span {
+	position: absolute;
+	font-size: 7rem;
+	bottom: 2rem;
+	z-index: 2;
+	color: black;
+	text-shadow: 0 0 1rem white;
+	font-weight: normal;
 }
 
-#tribute-info {
+.bio {
+	margin-bottom: 4rem;
 	width: 90%;
 	max-width: 90rem;
 	margin: 0 auto;
+}
+
+#tribute-info {
+	width: 100%;
 }
 
 .bio-prag {
@@ -112,6 +132,26 @@ a {
 	text-transform: uppercase;
 }
 
+.filler {
+	height: 50rem;
+	background: url("images/gun.png") center/cover no-repeat;
+	margin: 4rem 0;
+}
+
+.end {
+	border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+	font-weight: 300;
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50rem;
+	width: 100%;
+	color: rgba(255, 255, 255, 0.6);
+	background: linear-gradient(20deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)),
+		url("images/dead.jpg") top/cover no-repeat;
+}
+
 #tribute-link {
 	text-align: center;
 	display: block;
@@ -122,7 +162,15 @@ a {
 }
 
 @media screen and (max-width: 26.66em) {
-	.bio-prag {
+	.bio-prag,
+	.end {
 		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 36.33em) {
+	.end {
+		height: auto;
+		padding-top: 2.5rem;
 	}
 }
