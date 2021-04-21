@@ -45,8 +45,13 @@ body {
     background-color: darkgray;
     color: black;
     width: 60%;
-    text-align: center;
+    text-align: justify;
   }
+  #tribute-info p  {
+    margin-left: 2rem;
+    margin-right: 2rem;  
+}
+
 #tribute-link {
     margin-left: 50%;
 }
@@ -63,6 +68,11 @@ body {
     border-style: groove;
 }
 
+#article1 p {
+    margin-left: 2rem;
+    margin-right: 2rem;  
+}
+
 #article2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -74,6 +84,11 @@ body {
     background-color: darkgray;
     color: black;
     border-style: groove;
+}
+
+#article2 p {
+    margin-left: 2rem;
+    margin-right: 2rem;  
 }
 
 a {
