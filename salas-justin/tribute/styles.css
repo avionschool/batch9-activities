@@ -56,7 +56,7 @@ a {
 
 .body {
 	display: grid;
-	grid-template-rows: 20rem 1fr;
+	grid-template-rows: 20vh 1fr;
 }
 
 #title {
@@ -74,12 +74,17 @@ a {
 	display: block;
 }
 
+#title span,
+#title h1 {
+	animation: from-left 0.5s linear 1s backwards;
+}
+
 #main {
-	/* display: grid;
-	grid-template-columns: auto 1fr; */
+	width: 100%;
 }
 
 #img-div {
+	height: 80vh;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -87,9 +92,9 @@ a {
 	align-items: center;
 	margin-bottom: 4rem;
 	background: linear-gradient(
-			20deg,
-			rgba(255, 255, 255, 0.8),
-			rgba(255, 255, 255, 0.6)
+			45deg,
+			rgba(255, 255, 255, 0.6),
+			rgba(255, 255, 255, 0.9)
 		),
 		url("images/estrada.jpg") center/cover no-repeat;
 
@@ -97,17 +102,21 @@ a {
 }
 
 #img-div img {
+	opacity: 0;
 	margin: 2rem;
+	animation: appear 2s linear 0.2s forwards;
+	box-shadow: 0.2rem 0.2rem 0.8rem rgba(0, 0, 0, 0.5);
 }
 
-#img-div span {
+#id-caption {
 	position: absolute;
 	font-size: 7rem;
 	bottom: 2rem;
 	z-index: 2;
-	color: black;
+	color: rgba(0, 0, 0, 0.7);
 	text-shadow: 0 0 1rem white;
 	font-weight: normal;
+	animation: from-below 3s cubic-bezier(0, 1, 0, 1) 1s backwards;
 }
 
 .bio {
@@ -122,9 +131,14 @@ a {
 }
 
 .bio-prag {
+	opacity: 0;
 	text-indent: 5rem;
 	margin-bottom: 1.5rem;
 }
+.animate {
+	animation: from-bottom 5s cubic-bezier(0, 0.95, 0, 0.95) both;
+}
+
 .bio-heading {
 	margin-bottom: 1rem;
 	font-size: 2.5rem;
@@ -141,7 +155,7 @@ a {
 .end {
 	border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
 	font-weight: 300;
-	font-size: 3rem;
+	/* font-size: 3rem; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -172,5 +186,48 @@ a {
 	.end {
 		height: auto;
 		padding-top: 2.5rem;
+	}
+}
+
+@keyframes from-below {
+	0% {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes from-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-2rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes from-bottom {
+	0% {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
