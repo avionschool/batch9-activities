@@ -7,9 +7,7 @@ elements.forEach(element => {
 function animate(element) {
 	const el = element
 	return function () {
-		if (inView(el)) {
-			element.classList.add("animate")
-		}
+		element.classList.toggle("animate", inView(el))
 	}
 }
 
