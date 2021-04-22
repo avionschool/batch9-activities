@@ -34,6 +34,9 @@
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Poppins);
+@import url(https://fonts.googleapis.com/css2?family=Questrial);
+
 
 /* General CSS */
 
@@ -51,9 +54,6 @@ img {
     max-width: 100%;
   }
   
-p {
-    font-family: "Roboto", sans-serif;
-  }
 
 body{
     background-color: #A50044;
@@ -61,7 +61,11 @@ body{
 a {
     text-decoration: none;
     color: black;
+    transition: transform .2s;
   }
+a:hover{
+  transform: scale(1.5);
+}
 
 /* header */
 
@@ -99,7 +103,7 @@ a {
   }
   
   #header-img {
-    margin-right: 25px;
+    margin-right: 15px;
     margin-left: 10px;
   }
   
@@ -170,7 +174,8 @@ h2{
     font-size: 5vh;
     font-weight: bolder;
     color:#FFED02;
-    font-family: 'ITC Avant Garde Gothic Std Demi','ITC Avant Garde Gothic', 'Raleway','Lato';
+    font-family: 'ITC Avant Garde Gothic Std Demi', 'Poppins', 'Questrial';
+    margin-top: 2vh;
 }
 
 p{
@@ -186,6 +191,8 @@ p{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    padding-bottom: 4vh;
+    padding-top: 2vh
     ;
 }
 
@@ -203,8 +210,8 @@ th, td {
 
 
 .legend{
-    color: #FFED02;
-    font-size: 2.5vh;
+    color: #EDBB00;
+    font-size: 2vh;
     font-family: 'Orbitron', sans-serif;
     
 }
@@ -225,12 +232,16 @@ th, td {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    align-content: center;
     width: 100%;
+
   }
 
 .imgAward img{
     height: 10em;
-  }
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
 
 
 .awardsInfo{
@@ -241,14 +252,18 @@ th, td {
     font-weight: 300;
     margin-top: 1vh;
     padding-bottom: 2vh;
-  }
+}
   
 .awardsInfo span {
     font-size: 1.3rem;
     font-family: "Lato", sans-serif;
     font-weight: 600;
-    color: black;
-  }
+    color: #EDBB00;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+  
 
 /*tesimonies  */
 #userReview {
@@ -263,7 +278,7 @@ th, td {
     flex-direction: row;
     justify-content: space-evenly;
     width: 67vw;
-    margin: 0 auto;
+    margin-top: -8vh;
   }
 .reviews-user {
     display: flex;
@@ -275,6 +290,7 @@ th, td {
     background: rgb(0, 76, 153);
     margin: 20px 20px;
     border-radius: 3px;
+    
 }
 
 .reviews-user p {
@@ -289,7 +305,9 @@ th, td {
 .write-up p {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    color: #EDBB00;
 }
+
 
 .user-img-container {
     height: 150px;
