@@ -116,7 +116,7 @@ li, a {
     margin-top: 5px;  
 }
 
-a:hover {
+button:hover a:hover {
     opacity: 0.7;
 }
 
