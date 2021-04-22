@@ -4,34 +4,39 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth
 }
 
-  body {
+
+
+
+
+/*MAIN*/
+  body{
   background-color: #526286;
   text-align: center;
   align-content: center;
 }
 
+
 #main{
-  background-image: url(images/testing2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
-.header{
-  width: 100%;
-  height: 400px;
-  display: block;
-  opacity: 80%;
-}
-#cover{
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  opacity: 80%;
+#main::before{
+  content:"";
+  background-image: url(.//images/testing2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .h3div{
+  position: relative;
   margin:0 auto;
   height:  100px;
   display: flex;
@@ -43,54 +48,204 @@
 #gifimage{
   width: 100%;
   height: auto;
-  max-width: 100px;
+  max-width: 130px;
   margin-left: auto;
   margin-right: auto;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+img {
+  width: 40%;
+  height: 100%;
+}
+ 
+ #image1{
+  width: 100%;
+  height: auto;
+  max-width: 280px;
 }
 
 h3{
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: 4px;
   font-size: 38px;
+  color: #cc313d;
+}
+ 
+/*END OF MAIN*/
+
+
+
+
+
+/*HEADER-NAV*/
+.header{ 
+  width: 100%;
+  height: 400px;
+  display: block;
+  opacity: 90%;
+}
+#cover{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;  
 }
 
+.navsana{
+  position: absolute;
+  top: 20px;
+  left: 20px; 
+  width: 29%;
+  height: 180px;
+  padding: 5px;
+}
+
+nav
+{
+    position: absolute;
+    top: 15%;
+    right: 100;
+    left: 0;
+    width: 300px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+nav a
+{
+    position: relative;
+    width: 25%;
+    display: table-cell;
+    text-align: center;
+    color: #cc313d;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 21px;
+    letter-spacing: 4px;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+nav a:before, nav a:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+nav a:before
+{
+    top: -10px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+nav a:after
+{
+    top: 0px;
+    left: 20px;
+    width: 8px;
+    height: 8px
+}
+
+nav a:nth-child(1):before
+{
+    background-color: #cc313d;
+}
+nav a:nth-child(1):after
+{
+    background-color: #cc313d;
+}
+nav a:nth-child(2):before
+{
+    background-color: #cc313d;
+}
+nav a:nth-child(2):after
+{
+    background-color: #cc313d;
+}
+nav a:nth-child(3):before
+{
+    background-color: #cc313d;
+}
+nav a:nth-child(3):after
+{
+    background-color: #cc313d;
+}
+nav a:nth-child(4):before
+{
+    background-color: #cc313d;
+}
+nav a:nth-child(4):after
+{
+    background-color: #cc313d;
+}
+
+#indicator
+{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 80px;
+    height: 5px;
+    background-color: #FFDFDD;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+nav a:hover
+{
+    color: #FFDFDD;
+}
+nav a:hover:before, nav a:hover:after
+{
+    transform: scale(1);
+}
+nav a:nth-child(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, #FFDFDD, #cc313d);
+}
+nav a:nth-child(2):hover ~ #indicator
+{
+    left: 31%;
+    background: linear-gradient(130deg, #cc313d, #FFDFDd);
+}
+nav a:nth-child(3):hover ~ #indicator
+{
+    left: 56.33%;
+    background: linear-gradient(130deg, #FFDFDd, #cc313d);
+}
+nav a:nth-child(4):hover ~ #indicator
+{
+    left: 80.3%;
+    background: linear-gradient(130deg, #cc313d, #FFDFDd);
+}
+/*END OF HEADER-NAV*/
+
+
+
+
+
+/*PROFILE DIV*/
 #title{
   font-family: 'Luckiest Guy', cursive;
-  font-weight: bolder;
-  font-size: 62px;
+  font-size: 78px;
   letter-spacing: 6px;
+  color: #cc313d;
 }
 
 #img-caption{
-  font-family: 'Thasadith', sans-serif;
-  font-weight: bold;
-}
-
-p {
-  font-family: 'Thasadith', sans-serif;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-}
-
-.footer{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.inner_footer{
-  display: flex;
-  width: 99%;
-  height: 95%;
-  justify-content: space-around;
-  align-content: space-between;
-  align-items: center;
-}
-
-img {
- width: 40%;
- height: 100%;
 }
 
 #image{
@@ -104,18 +259,11 @@ img {
   border:2px solid #FFDFDD;
 } /*User Story 8 and 9*/
 
-#image1{
-  width: 100%;
-  height: auto;
-  max-width: 280px;
-}
-
 #img-div{
-
   position: relative;
   margin: 40px 50px;
   margin-top: -180px;
-  padding: 30px;
+  padding-top: 30px;
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 70px;
@@ -125,8 +273,15 @@ img {
 #tribute-info{
   text-align: justify;
 }
+/*END OF PROFILE DIV*/
 
+
+
+
+
+/*TRIVIA DIV*/
 .factsdiv{
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -141,8 +296,15 @@ img {
   box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
   text-align: justify;
 }
+/*END OF TRIVIA DIV*/
 
+
+
+
+
+/*CAREER DIV*/
 .careerdiv{
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -150,37 +312,16 @@ img {
   margin:40px 50px;
   margin-bottom: 40px;
   padding: 70px;
-  padding-left: 120px;
   box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
 }
-
-.mvdiv{
-
-  margin: 40px 50px;
-  margin-bottom: 40px;
-  padding:30px;
-  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
-}
-
-.iframe{
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
-}
-
-
-
 
 .timeline {
   position: relative;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   height: 420px;
   overflow: auto;
 }
-
-
 
 .container {
   padding: 10px 40px;
@@ -192,23 +333,21 @@ img {
 .container::after {
   content: '';
   position: absolute;
-  width: 80px;
-  height: 80px;
-  right: -17px;
-  background-image: url(images/try2.gif);
+  width: 55px;
+  height: 55px;
+  right: -28px;
+  background-image: url(.//images/try2.gif);
   background-size: cover;
-
-  top: 15px;
-  border-radius: 50%;
+  top: 32px;
   z-index: 1;
 }
 
 .left {
-  left: 0;
+  left: 10%;
 }
 
 .right {
-  left: 50%;
+  left: 40%;
 }
 
 .right::after {
@@ -226,16 +365,14 @@ img {
 @media screen and (max-width: 600px) {
 
   .timeline::after {
-    left: 31px;
+    left: -31px;
   }
-
 
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-
 
   .container::before {
     left: 60px;
@@ -248,8 +385,115 @@ img {
     left: 15px;
   }
 
-/* Make all right containers behave like the left ones */
   .right {
     left: 0%;
   }
 }
+/*END CAREER DIV*/
+
+
+
+
+
+/*VIDEOS DIV*/
+.mvdiv{
+  position: relative;
+  margin: 40px 50px;
+  margin-bottom: 40px;
+  padding:30px;
+  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
+}
+
+.iframe{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+/*END VIDEOS DIV*/
+
+
+
+
+
+/*FOOTER DIV*/
+.footer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+.wrapper .button:hover{
+  width: 300px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon i{
+  font-size: 50px;
+  line-height: 70px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  color: #f46f30;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  color: #ff0000;
+}
+
+.wrapper .button span{
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  font-family: 'Luckiest Guy', cursive;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span a{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span a{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span a{
+  color: #f46f30;
+}
+.wrapper .button:nth-child(4) span a{
+  color: #ff0000;
+}
+/*END O FOOTER DIV*/
+
+
+
+
+
+
+
+
+
