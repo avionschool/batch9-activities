@@ -1,22 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: 3%;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
 * {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #ddd;
+  font-family: 'Orelega One', cursive;
 }
 
-p {
-  margin-bottom: 15px;
-  font-size: 20px;
-  line-height: 20px;
-  color: #a9a9a9;
-}
 
-h1#title {
-  margin-bottom: 20px;
+h1.title {
+  padding-top: 3%;
+  margin-bottom: 90px;
   font-size: 38px;
   word-spacing: 15px;
   letter-spacing: 5px;
+  color: #ddd;
+}
+
+p,a {
+  color: rgb(148, 143, 143);
+
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  margin: 20px 0px;
 }
 
 a#tribute-link {
@@ -28,6 +71,12 @@ a#tribute-link {
   margin: auto;
   text-decoration: none;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+a#tribute-link:hover {
+  background-color: #ddd;
+  color:black;
 }
 
 #main {
@@ -38,173 +87,208 @@ a#tribute-link {
 
 /* Nav css */
 
-.nav {
+nav {
   position: fixed;
-  width: 100%;
-  padding: 15px;
+  padding: 0 5%;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+  left: 0;
+  right: 0;
+  height: 60px;
 }
 
-.nav-logo img {
-  width: 130px;
+nav .logo {
+  float: left;
+  width: 8%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color:white;
 }
 
-.nav-links {
-  flex: 2;
-}
-
-.nav-links {
-  margin-left: 50px;
-  display: inline ;
-}
-
-
-.nav a {
-  margin-right: 20px;
+nav ul {
   float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding:0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+ }
+
+nav a {
+  margin: 20px;
   text-decoration: none;
-  font-size: 25px;
-}
-
-.nav a:hover {
-  background-color: #ddd;
-  color: black;
+  color: #fff;
 }
 
 
-/* Image Div / Content */
+.btn-2:hover,
+.btn-2:active {
+letter-spacing: 5px;
+background-color: #ddd;
+border-radius: 5%;
+color: black;
+}
+
+nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 7px 7px;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+#check {
+  position: absolute;
+  display: none;
+}
+
+nav .icon {
+  display: none;
+  position: absolute;
+  right: 1%;
+  top: 20%;
+  transform: translate(-50%);
+}
+
+nav .icon .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 25%;
+}
+
+@media (max-width: 768px) {
+  nav .logo{
+    float: none ;
+    width: auto;
+    justify-content: center;
+  }
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 60px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.8);
+    overflow: hidden;
+  }
+  nav .icon {
+    display: block;
+  }
+
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+}
+
+/* image div */
 
 #image-div {
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-#content {
-  background-repeat: no-repeat;
   text-align: center;
-  color:#fff;
+  color:#fff
 }
 
-#content h1 {
-  margin-top: 250px;
-  line-height: 38px;
-  margin-bottom: 90px;
+#image-div img {
+  border: 3px solid #ddd;
+  width: 20%;
+  
 }
 
-#content p {
-  margin: 5% 30%;
-  font-size: 20px;
-  line-height: 38px;
-  margin-bottom: 90px;
+#image-div p {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 65px !important;
+  font-size: 100%;
+  width: 40%;
+  margin: auto;
+  
 }
 
 /* Wikipedia */
 
 #wikipedia {
+  justify-content: center;
   text-align: center;
-  color:#fff;
-}
-
-#wikipedia h1 {
-  margin-top: 100px;
-  line-height: 38px;
-  margin-bottom: 90px;
+  color:#fff
 }
 
 #wikipedia p {
-  margin: 0% 30%;
-  font-size: 20px;
-  line-height: 38px;
-  margin-bottom: 90px;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 10px !important;
+  margin-bottom: 100px !important;
+  font-size: 100%;
+  width: 40%;
+  margin: auto;
 }
 
-
-/* History */
+/* History */ 
 
 #history {
+  justify-content: center;
   text-align: center;
-  color:#fff;
+  color:#fff
 }
 
-#history h1 {
-  margin-top: 100px;
-  line-height: 38px;
-  margin-bottom: 90px;
-}
-
-.paragraph {
-  margin: 0% 30%;
-  font-size: 20px;
-  line-height: 38px;
-  margin-bottom: 90px;
-}
-
-.about_members {
-  width: 200px;
-  margin: 2% 30%;
-  font-size: 20px;
-  line-height: 38px;
-  margin-bottom: 90px;
+#history p {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 10px !important;
+  margin-bottom: 100px !important;
+  font-size: 100%;
+  width: 40%;
+  margin: auto;
 }
 
 #history img {
-  width: 250px;
-  margin-bottom: 25px;
+  width: 300px;
+  border-radius: 10%;
+  border: 3px solid #ddd;
+  
 }
 
-#members {
-  display: flex;
-  margin-top: 35px;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-#member {
-  width: 20%;
-}
-
-/* albums */
-
-#albums h1 {
+#albums {
+  justify-content: center;
   text-align: center;
+  color:#fff
 }
 
-/* albums */
-
-#customers {
+table {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 30%;
   margin: auto;
-  border-collapse: collapse;
+  margin-bottom: 50px !important;
 }
 
 td {
-  border: 1px solid #ddd;
   padding: 8px;
-}
+  color: #ddd;
+} 
 
-/* footer */
 
-#footer {
+footer {
   width: 100%;
   text-align: center;
   background: #444444;
-  padding: 20px 0;
+  padding: 8px 0;
 }
 
-#footer a {
+footer a {
   color: #fff;
   text-decoration: none;
-  font-weight: bolder;
 }
 
-@media screen and (max-width: 1000px){
-  #members{
-    flex-direction: column;
+
+
+@media (max-width: 952px) {
+  #image-div h1 {
+    padding-top: 100px;
   }
 }
+
+
