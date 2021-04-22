@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     flex-direction: column;
 }
 
@@ -16,6 +16,8 @@
 
 #img-caption {
     align-items: center;
+    color: midnightblue;
+    font-family:sans-serif;
 }
 
 p , h2, a {
