@@ -11,10 +11,11 @@ body {
     background-size: 50%;
     background-blend-mode:luminosity;
     background-attachment:fixed;
+    background-he
 }
 
 #main {
-    max-width: 1280px;
+    width: 1280px;
     max-height: 100%;
     margin: 30px auto;
     padding: 15px;
@@ -53,9 +54,9 @@ body {
    width: 1200px;
    margin-left: auto;
    margin-right: auto;
-   border: rgb(227, 239, 241) 10px double;
+   border: rgb(227, 239, 241) 10px double;  
    text-align: center;
-   margin-top: 100px;
+   margin-top: 130px;
 }
 
 #image {
@@ -95,7 +96,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: 550px;
+    max-width: 80rem;
     margin-left: auto;
     margin-right: auto ;
 }
@@ -116,6 +118,10 @@ a:hover {
     font-weight: bold;
 }
 
+#tribute-info:hover{
+    transform: scale(1.2);
+}
+
 .books-container {
     display: flex;
     flex-wrap: wrap;
@@ -127,8 +133,10 @@ a:hover {
     width: 130px;
     height: 170px;
     padding: 30px;
+    text-decoration: none;
 }
 
 .books-item:hover {
     opacity: 0.8;
+    transform: scale(1.5);
 }
