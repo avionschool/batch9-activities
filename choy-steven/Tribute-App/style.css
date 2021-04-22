@@ -1,0 +1,90 @@
+/* image of LA */
+#image {   
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+/* navlinks */
+.nav-links {list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+text-align:center;
+}
+
+.nav-links a {
+position: relative;
+display: inline-block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.nav-links li {display:inline-block;
+    float:none;
+
+}
+/* background image until the caption */
+#img-div {background-image: url("assets/trumpet.jpg");  
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 75%;
+    background-blend-mode: luminosity;
+}
+/*caption about LA */
+.caption {text-align: center;
+color:white;
+font-size: 25px;
+}
+
+#img-caption {font-size: 20px;
+background-color: grey;}
+
+/*title on the first information about LA */
+#funfacts {background-color:#758CB4;
+font-size:50px}
+
+/*first information about LA */
+#tribute-info {text-align: center;
+    background-color: #ABCCCD;
+    font-size: 25px;
+}
+/*design for the first information about LA */
+#sweat {float: right;
+max-width: 100%;
+width:400px;
+height:300px;
+}
+
+
+
+/*design for the second information about LA */
+#legendary-duo {background-color: #AC203D;
+}
+
+/*second information about LA */
+#funfactsduo {font-size: 50px;
+text-align: center;}
+
+.funfacts2 {text-align: center;
+    font-size: 25px;
+}
+
+/*picture for thesecond information about LA */
+#ellalouis {  float:left;
+    margin: 10px;
+    height: 400px;
+}
+
+#tribute-link{text-align: center;
+background-color: #231F1D;
+color: white;
+}
+
+.refs a{color: white;}
