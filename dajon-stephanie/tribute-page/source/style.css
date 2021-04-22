@@ -6,7 +6,10 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
-    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth; 
 }
 
 
