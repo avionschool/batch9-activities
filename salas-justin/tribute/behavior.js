@@ -1,4 +1,5 @@
 var elements = document.querySelectorAll("p.bio-prag")
+
 elements.forEach(element => {
 	document.addEventListener("scroll", animate(element))
 })
