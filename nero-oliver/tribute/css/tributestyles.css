@@ -13,7 +13,7 @@
 }
 
 #main{
-  background-image: url(./images/testing2.jpg);
+  background-image: url('./images/testing2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -195,7 +195,7 @@ img {
   width: 80px;
   height: 80px;
   right: -17px;
-  background-image: url(./images/try2.gif);
+  background-image: url('./images/try2.gif');
   background-size: cover;
 
   top: 15px;
