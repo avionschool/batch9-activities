@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+   background-image: url("../assets/images/FreudSignature.png"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+
+    
+  }
+  .nav a {
+      text-decoration: none;
+     
+    }
+ 
+  
+
+#main {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: x-large;
+    border-style: groove;
+    background-color: darkgray;
+    color: black;
+}
+
+#image {
+    width: 100%;
+    max-width: 39.56rem;
+    border-radius: 20%;
+    display: flex;
+    margin: auto;
+}
+
+#img-caption {
+    background-color: darkgray;
+    color: black;
+    width: 100%;
+    max-width: 40rem;
+    text-align: center;
+    border-style: groove ;
+    text-emphasis: bold;
+}
+
+#tribute-info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-style: groove ;
+    background-color: darkgray;
+    color: black;
+    width: 70%;
+    text-align: justify;
+    font-size: large;
+  }
+  #tribute-info p  {
+    margin-left: 2rem;
+    margin-right: 2rem;  
+}
+
+#tribute-link {
+    margin-left: 50%;
+}
+#article1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    color: black;
+    border-style: groove;
+}
+
+#article1 p {
+    margin-left: 2rem;
+    margin-right: 2rem;  
+}
+
+#article2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    color: black;
+    border-style: groove;
+}
+
+#article2 p {
+    margin-left: 2rem;
+    margin-right: 2rem;  
+}
+
+a {
+    margin-left: 70%;
+    
+}
+#books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    background-color: darkgray;
+    color: black;
+    font-family: serif;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
