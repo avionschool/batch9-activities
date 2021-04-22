@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#main {
+    text-align: center;
+}
+
+#container{
+    background-image: url("assets/background-image.jpg");
+
+}
+
+
+#title {
+    font-size: 50px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(to right, orange, skyblue, gray);
+    position: sticky;
+    top: 0px;
+}
+
+
+#image {
+    width: 60%; /* 8. As a user, I want the **img element** to be **responsive** to resizing, relative to the width of its parent element.*/
+    padding: 30px;
+    background-image: linear-gradient(orange, skyblue, gray);
+    border-radius: 3px;
+}
+
+#img-div{
+    text-align: center;
+    
+}
+
+#img-caption{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    background-image: linear-gradient(to right, orange, skyblue, gray, skyblue, orange);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 3px;
+}
+
+#tribute-info{
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: linear-gradient(to right, skyblue, gray, skyblue);
+    padding: 30px;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+button {
+    background-image:linear-gradient(orange, gray);
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+a :hover{
+    background-image: linear-gradient(to right, blue, gray);
+    color: white;
+}
+
+
+#section{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("assets/background-image-2.jpg");
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+}
+
+
+#article{
+    position: relative;
+    padding-bottom: 10px;
+    border-top: 3px ridge gray;
+    font-size: 22px;
+    width: 90%;
+    
+}
+
+h1{
+    background-image: linear-gradient(to right, orange,skyblue, gray);
+    width: 90%;
+    margin:auto;
+    margin-top: 30px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+h2{
+    background-image: linear-gradient(to right, skyblue,gray);
+}
+
+#introduction {
+    box-sizing: border-box;
+    margin: 50px;
+    background-image: linear-gradient(to right, gray, skyblue, gray);
+    padding: 30px;
+
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    width: 80%;
+    font-size: 20px;
+
+}
+
+li {
+    min-height: 250px;
+    margin-top: 50px;
+    padding: 50px;
+    float: left;
+    border-radius: 3px;
+    border-top: 3px gray ridge;
+    background-image: linear-gradient(orange, gray);
+    color: white;
+    
+}
