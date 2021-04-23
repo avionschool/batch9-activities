@@ -14,9 +14,8 @@
 /*MAIN*/
   body{
   background-color: #526286;
-  text-align: center;
-  align-content: center;
-}
+  }
+  
 
 
 #main{
@@ -246,6 +245,11 @@ nav a:nth-child(4):hover ~ #indicator
 #img-caption{
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  text-align: center;
+}
+
+#tribute-info{
+  text-align: center;
 }
 
 #image{
@@ -267,12 +271,35 @@ nav a:nth-child(4):hover ~ #indicator
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 70px;
-  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 48px -1px #cc313d;
 }
 
-#tribute-info{
-  text-align: justify;
+.profilediv{
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
+.fling-minislide {
+  width:1280px; 
+  height:700px; 
+  overflow:hidden; 
+  position:relative;
+}
+
+.fling-minislide img{ 
+  position:absolute; 
+  animation:fling-minislide 20s infinite; 
+  opacity:0; 
+  width: 100%; 
+  height: 100%;
+}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
 /*END OF PROFILE DIV*/
 
 
@@ -280,22 +307,94 @@ nav a:nth-child(4):hover ~ #indicator
 
 
 /*TRIVIA DIV*/
-.factsdiv{
-  position: relative;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  text-align: left;
-  line-height: 200%;
-  margin: 40px 50px;
-  margin-bottom: 40px;
-  padding:70px;
-  padding-right: 30px;
-  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
-  text-align: justify;
-}
+  .factsdiv {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    margin:40px 50px;
+    margin-bottom: 40px;
+    padding: 70px;
+    box-shadow: 2px 1px 48px -1px #cc313d;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .funfacts {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 420px;
+    overflow: auto;
+    direction: rtl;
+  }
+  .container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container1::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    right: -28px;
+    background-image: url(.//images/try7.gif);
+    background-size: cover;
+    top: 32px;
+    z-index: 1;
+  }
+  
+  .left1 {
+    left: -40%;
+  }
+  
+  .right1 {
+    left: -10%;
+  }
+  
+  .right1::after {
+    left: -16px;
+  }
+  
+  .content1 {
+    padding: 20px 30px;
+    background-color: rgba(254,254,254, 0.6);
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .funfacts::after {
+      left: -31px;
+    }
+  
+    .container1 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .container1::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    .left1::after, .right::after {
+      left: 15px;
+    }
+  
+    .right1 {
+      left: 0%;
+    }
+  }
+  
 /*END OF TRIVIA DIV*/
 
 
@@ -312,7 +411,8 @@ nav a:nth-child(4):hover ~ #indicator
   margin:40px 50px;
   margin-bottom: 40px;
   padding: 70px;
-  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 48px -1px #cc313d;;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .timeline {
@@ -336,7 +436,7 @@ nav a:nth-child(4):hover ~ #indicator
   width: 55px;
   height: 55px;
   right: -28px;
-  background-image: url(.//images/try2.gif);
+  background-image: url(.//images/try6.gif);
   background-size: cover;
   top: 32px;
   z-index: 1;
@@ -401,7 +501,7 @@ nav a:nth-child(4):hover ~ #indicator
   margin: 40px 50px;
   margin-bottom: 40px;
   padding:30px;
-  box-shadow: 2px 1px 48px -1px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 48px -1px #cc313d;
 }
 
 .iframe{
