@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Page</title>
+</head>
+<body>
+   <div id="container">
+
+  
+    <div id="left">
+      <h1 id="title">We want to make your night better</h1>
+      <p id="description">By filling up this survey form. We can further provide you with a better experience. </p>
+    </div>
+
+
+    <div id="right">
+      <h1 id="registerForm">Survey Form</h1>
+      
+      <form action="" id="survey-form">
+        
+        
+        <div id="first">
+
+          <div>
+            <label for="" id="name-label">First Name</label>
+            <input required type="text" id="name" placeholder="First Name" minlength="2" maxlength="20" >
+            <!-- <small>first name can not be empty</small> -->
+          </div>  
+
+          <div>
+            <label for="" id="lastName-label">Last Name</label>
+            <input required type="text" id="lastName" placeholder="Last Name" minlength="2" maxlength="20">
+          </div>
+
+        </div>
+
+          
+                 
+        <div id="second">
+
+
+              <div>
+
+                <label for="" id="email-label">Email</label>
+                <input required type="email" id="email" placeholder="Email Address">
+              </div>
+
+              <div>
+                <label for="" id="number-label">Phone Number</label>
+                <input required type="tel" id="number" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="13" maxlength="13">
+              </div>
+
+              
+        </div>
+
+
+      <div id=third>
+
+
+            <div>
+                <label for="" id="gender-label">Gender</label>
+              
+                
+                <select id="dropdown">          
+                  <option value="">Gender</option>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">Prefer not to tell</option>
+                </select>
+              </div>
+      </div>
+
+
+       <div id="radioCheck">   
+        <div id="radio-button">
+          <p>Choose seat location</p><br>
+          <input type="radio" id="front" name="gender" value="front">
+          <label for="front">Front</label><br>
+          <input type="radio" id="middle" name="gender" value="middle">
+          <label for="middle">Middle</label><br>
+          <input type="radio" id="back" name="gender" value="back">
+          <label for="back">Back</label>
+        </div>
+        
+        <div id="check-box">
+          <p>Choose your freebies</p><br>
+          <input type="checkbox" id="freebie1" name="freebie1" value="tshirt">
+          <label for="freebie1"> T-shirt</label><br>
+          <input type="checkbox" id="freebie2" name="freebie2" value="gearbag">
+          <label for="freebie2"> Gear Bag</label><br>
+          <input type="checkbox" id="freebie3" name="freebie3" value="hoodie">
+          <label for="freebie3"> Band Hoodie</label><br>
+        </div>
+      </div>
+
+
+
+     <div id="text-area1">
+      <div id="text-area">
+        <label for="additionalRequest">Additional Request:</label>
+
+          <textarea id="notes" name="notes" rows="5" cols="20" placeholder="Write your additional request here"></textarea>
+      </div>
+    </div> 
+
+
+
+        <div id="button">
+        <button type="submit" id="submit">Submit</button>
+        </div>
+
+        
+
+      </form>
+   
+    </div>
+
+  
+   </div>
+  
+</body>
+</html> 

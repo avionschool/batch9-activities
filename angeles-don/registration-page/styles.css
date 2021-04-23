@@ -17,18 +17,14 @@
    display: flex;
    flex-wrap: wrap;
    padding: 20px;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
    min-height: 100vh;
    max-width: 100%;
    margin: 0 auto;
  }
 
- #container > div {
-   flex: 1;
-   padding: 0 20px;
-   
- }
+ 
 
  #title {
    font-size: 50px;
@@ -37,17 +33,42 @@
    text-shadow: 2px 2px gray;
  }
 
+ #description {
+   font-size: 20px;
+ }
+
+ #registerForm{
+  text-shadow: 2px 2px gray;
+ }
+ #first {
+   display: flex;
+   justify-content: space-evenly;
+   
+ }
+
+ #second {
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+ #third{
+   display: flex;
+   justify-content: center;
+ }
+ 
  #left{
   
   height: 400px;
   color: white;
+  
  }
 
   
  #right {
    background-color: white;
-   padding: 20px;
+   
    border-radius: 10px;
+  
    box-shadow: 0 5px rgb(0,0,0,0.2);
    
  }
@@ -62,42 +83,36 @@
 }
 
 
- #name-label, #lastName, #email-label, #phone-label{
+#name, #lastName, #email, #number, select{
   padding: 10px 15px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border: 1px solid;
-  width: 100%;
+  width: 99%;
+  display: block;
+  
  }
-
-
 
  select{
    display: block;
-   width: 49.5%;
+   width: 100%;
    padding: 10px 15px;
    border-radius: 5px;
    margin-bottom: 10px;
    
  }
 
- #form-control1{
-   display: flex;
-      
- }
 
- #form-control2{
-  display: flex;
-     
+
+#first small{
+  color: grey;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  top: 37px;
 }
 
- #name-label {
-   margin-right: 10px;
- }
 
- #email-label {
-  margin-right: 10px;
- }
 
  #radioCheck{
    display: flex;
@@ -109,9 +124,14 @@
  #text-area{
    padding-top: 30px;
    display: flex;
-   flex-direction: column;
-
+   flex-direction: column;  
  }
+
+ #text-area1{
+   display: flex;
+   justify-content: center;
+ }
+
  #notes{
    resize: none;
  }
@@ -148,6 +168,10 @@
 
   #text {
     margin-bottom: 40px;
+  }
+
+  #left {
+    margin-bottom: 20px;
   }
 
  }
