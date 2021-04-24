@@ -93,14 +93,7 @@
   
  }
 
- select{
-   display: block;
-   width: 100%;
-   padding: 10px 15px;
-   border-radius: 5px;
-   margin-bottom: 10px;
-   
- }
+
 
 
 
@@ -125,15 +118,24 @@
    padding-top: 30px;
    display: flex;
    flex-direction: column;  
+   
+   
+ }
+
+ #text-area1 > textarea{
+  flex: 1;
  }
 
  #text-area1{
    display: flex;
-   justify-content: center;
+   justify-content: start;
+   
+ 
  }
 
  #notes{
    resize: none;
+    
  }
 
  #button {
@@ -145,8 +147,8 @@
    padding: 15px;
    text-transform: uppercase;
    color: white;
-   background-color: rgb(106, 158, 53);
-   border-radius: 5px;
+   background-color: rgb(115, 204, 26);
+   border-radius: 30px;
    margin-top: 30px;
    cursor: pointer;
  }
