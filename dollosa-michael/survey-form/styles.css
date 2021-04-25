@@ -12,7 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   box-sizing: border-box; /* change box model so borders and paddings are not added to total width and height to borders */
   font-family: "Roboto", sans-serif;
@@ -42,7 +41,6 @@ input[type=number] {
 }
 
 /* containers */
-
 body::before {
   content: "";
   position: absolute;
@@ -62,11 +60,18 @@ body::before {
   height: auto;
   background-color: white;
   border-radius: 4rem;
-  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.47);
+  /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.47); */
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
   position: absolute;
-  top: 50%; /* remember the the origin will be the relative position of the parent */
-  left: 50%; /* remember the the origin will be the relative position of the parent */
-  transform: translate(-50%, -50%); /* shifted in related to the current position of the element itself */
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
   display: flex;
 }
 
@@ -103,6 +108,14 @@ body::before {
   margin-bottom: 1rem;
 }
 
+#filler{
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  padding: 1.5rem 0 1.2rem 3%;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
 #success-msg {
   display: none;
   width: 100%;
@@ -119,7 +132,6 @@ body::before {
   min-width: 600px;
   max-width: 600px;
   margin-top: 2rem;
-  /* background-color: white; */
   display: flex;
   flex-direction: column;
 }
@@ -130,7 +142,6 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
   padding: 17.5% 5% 17.5% 5%;
 }
 
@@ -146,26 +157,25 @@ body::before {
 .primary-info {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .secondary-info {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 
 /* input styles */
-
 input::placeholder {
   color: #a7a7a7;
 }
+
 #title {
   font-family: "Arizonia", cursive;
   font-size: 4rem;
   color: #9c5503;
 }
+
 .heading {
   font-weight: 500;
   color:#353535;
@@ -177,7 +187,6 @@ input::placeholder {
 }
 
 .thankyou-container > h1 {
-  
   font-family: "Arizonia", cursive;
   font-size: 12rem;
   color:#d4a064;
@@ -185,7 +194,6 @@ input::placeholder {
 
 .thankyou-container > p {
   font-size: 1.3rem;
-  /* padding: .5rem 0 .5rem 0; */
 }
 
 .thankyou-container > p > span {
@@ -236,7 +244,6 @@ input::placeholder {
   font-weight: 900;
   font-size: .9rem;
   text-transform: uppercase;
-  /* color: #A1A1A1; */
   color: #daa364;
 }
 
@@ -245,7 +252,6 @@ input::placeholder {
   font-weight: 900;
   font-size: .9rem;
   text-transform: uppercase;
-  /* color: #A1A1A1; */
   color: #daa364;
 }
 
@@ -295,7 +301,6 @@ input::placeholder {
 
 
 /* main survey styles */
-
 .main-survey {
   max-width: 700;
   display: flex;
@@ -340,7 +345,6 @@ input::placeholder {
 
 .feedback-form {
   display: flex;
-  /* align-items: center; */
   justify-content: flex-start;
 }
 
@@ -431,7 +435,6 @@ input[type=submit] {
 }
 
 /* media query */
-
 @media only screen and (min-width: 1900px) {
   .container-survey {
     padding-top: 6rem;

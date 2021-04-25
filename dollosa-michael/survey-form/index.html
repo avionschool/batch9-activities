@@ -2,6 +2,7 @@
   <head>
     <title>Survey Form - Customer Satisfaction Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -25,6 +26,9 @@
           </div>
           <div id="success-msg">
             Form has been successfully submitted. Thank you for taking time to give feedback!
+          </div>
+          <div id="filler">
+
           </div>
           <!-- survey first part -->
           <p class="heading">The following information will only be kept for our records and will not be distributed to any 3rd  party</p>
@@ -199,34 +203,6 @@
       </div>
     </main>
 
-    <script>
-      console.log("test script");
-      const name = document.getElementById("name");
-      const submit = document.getElementById("submit")
-      const form = document.getElementById("survey-form")
-      const errMsg = document.getElementById("invalid-msg")
-      const successMsg = document.getElementById("success-msg")
-      submit.addEventListener('click', e => {
-        
-        console.log(form.checkValidity());
-
-        if(!form.checkValidity()) {
-          // errMsg.style.display = "none"
-          // successMsg.style.display = "block"
-          successMsg.style.display = "none"
-          errMsg.style.display = "block"
-        }
-        
-        
-        // e.preventDefault();
-      });
-      submit.addEventListener('submit', e => {
-        // e.preventDefault();
-        errMsg.style.display = "none"
-        successMsg.style.display = "block"
-        e.preventDefault();
-      })
-
-    </script>
+    <script src= "./index.js"></script>
   </body>
 </html>
