@@ -14,9 +14,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url(/css/test.jpg);
-
-  
+  background-image: url(./test1.jpg);
 }
 .main {
   width: 90%;
@@ -226,17 +224,18 @@ i{
 #firstB{
   font-size: 18px;
   float: none;
-  border: solid 4px #3291B1;;
+  border: solid 4px #3291B1;
   outline: none;
   padding: 5px;
   width: 34%;
-  border-radius: 20px;  
+  border-radius: 20px;
 }
 
 #firstB:hover{
   background-color: #3291B1;
   animation: pulse 1s infinite;
   animation-timing-function: linear;
+  border: #CCFFCC 4px solid
 }
 
 
