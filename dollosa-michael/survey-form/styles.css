@@ -546,6 +546,11 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 364px) {
+
+  #title {
+    font-size: 3rem;
+  }
+
   .primary-info > input {
     min-width: 25rem;
     transition: .7s;
