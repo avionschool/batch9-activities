@@ -1,59 +1,121 @@
+html  {
+    font-family: monospace!important;
+}
+
+body {
+    /*background-image: url("https://c0.wallpaperflare.com/preview/512/796/919/hipster-cafe-restaurant-bottle.jpg");*/
+    background-color: /*#EEE3E1*/ #ecf0f3;
+    background-repeat: round;
+    background-size: cover;
+    position:sticky;
+    color: #555;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    position:fixed;
+    float: right;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.nav-container a {
+    float: none;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 35px; 
+    border-radius: 4px;
+    width: 180px;
+    border: none;
+    outline: none;
+    margin-top: 200px;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+.nav-container a:hover {
+    transform: scale(1.3);
+    color: #ccc9;
+}
+
 .main {
     margin: auto;
+   /* padding-top: 50px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 700px;
-    border: 1px solid silver;
+    width: 750px;
+    background-color: /*#B1071C*/ #ecf0f3;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    box-shadow: 13px 13px 20px #cbced1,
+               -13px -13px 20px #ffffff;
 }
 
 #title {
     text-align: center;
-    font-family: sans-serif;
     font-stretch: extra-expanded;
+    font-size: 35px;
+    font-weight: bolder;
 }
 
 /* Product Selection */
 .all-products-container {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 25px;
-    border-bottom: 3px solid rgba(236, 228, 228, 0.445);
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid rgba(58, 34, 34, 0.445);
     /*border: 3px solid orange;*/
     width: 100%;
     height: auto;
+    outline: none;
+    border: none;
+    box-shadow: 8px 8px 8px  #cbced1,
+                -8px -8px 8px #ffffff;
+    border-radius: 5px;
 }
 
-.product-container1,
-.product-container2,
-.product-container3 {
+.product-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid blueviolet;
+    outline: none;
+    border: none;
     padding: 10px;
+    box-shadow: inset 8px 8px 8px #ccc,
+                inset -8px -8px 8px #ffffff;
     border-radius: 10px;
-    background-color: thistle;
-}
-
-.product-container1,
-.product-container2,
-.product-container3 {
-    height: inherit;
+    background-color: none;
+    width: 200px;
+    height: auto;
 }
 
 .product-container:hover {
     transform: scale(1.1);
 }
 
+.product-detail {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
 .collapsible {
     background-color: #eee;
     color: #444;
+    font-weight: bolder;
     cursor: pointer;
     padding: 10px;
     width: 100%;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 15px;
   }
@@ -67,22 +129,30 @@
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    text-align: left;
   }
 
 .product-list,
 .product2-list,
 .product3-list {
     display: flex;
-    border: 1px solid black;
-    background-image: url("https://cdn.jotfor.ms/assets/img/payments/sample_image-1.png");
+    border: none;
     background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat: round;
     width: auto;
-    height: 100px;
+    height: 200px;
+}
+
+.product-list {
+    background-image: url("https://milkteasupplier.ph/wp-content/uploads/2020/12/Milk-Tea-Business-Trial-Package-v2.png");
 }
 
 .product2-list {
-    background-image: url("https://cdn.jotfor.ms/assets/img/payments/sample_image-3.png");
+    background-image: url("https://milkteasupplier.ph/wp-content/uploads/2020/12/Milk-Tea-Business-Package-Premium.png");
+}
+
+.product3-list {
+    background-image: url("https://ph-test-11.slatic.net/p/4b68ac490bec6f7e02aae6990940cb7a.jpg_720x720q80.jpg_.webp");
 }
 
 .cb-product1 {
@@ -91,9 +161,9 @@
 }
 
 /* total */
-.total-footer {
+.franchisee-info {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 10px 0;
     padding-bottom: 20px;
     position: relative;
@@ -102,14 +172,22 @@
 #total-area {
     display: flex;
     justify-content: space-around;
-    width: 200px;
+    width: auto;
 }
 
 /* Buyer information */
 
+#buyer-information {
+    border: none;
+    outline: none;
+    box-shadow:  8px 8px 8px #cbced1,
+                 -8px -8px 8px #ffffff;
+}
+
 .secondary-div {
     display: flex;
     justify-content: center;
+    /*background-color: #7ED3E7;*/
     /*border: 10px double green;*/
     width: inherit;
 }
@@ -133,13 +211,28 @@
     justify-content: space-evenly;
     width:inherit;
     height: 100px;
+    margin-top: 30px;
 }
 
 .main-arrange-name{
     display: flex;
     justify-content: space-around;
-    /*border: 1px solid black;*/
 }
+/*#name,
+#surname,
+#email,
+#number {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px  10px 20px 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}*/
 
 .arrange-name {
     display: flex;
@@ -154,23 +247,16 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    /*border: 1px solid red;*/
     width: 200px;
 }
 
-/*.arrange-email,
-.arrange-cpnumber{
-    width: 200px;
-    padding: 10px;
-    border: 1px solid black;
-    width:auto;
-}*/
 
 .email-num-merger {
     display: flex;
     justify-content: space-around;
     /*border: 1px solid black;*/
 }
+
 /* address form */
 
 .address-container {
@@ -200,7 +286,7 @@
 
 .subd-container,
 .brgy-container {
-    width: 288px;
+    width: 315px;
     padding-left: 15px;
 }
 
@@ -212,9 +298,8 @@
 
 .country-state-city {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 150px;
+    justify-content: space-around;
+    width: auto;
     padding: 15px;
 }
 
@@ -237,5 +322,23 @@
     width: 200px;
 }
 #textArea-div {
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.submit-div {
+    padding-top:  50px;
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow:  8px 8px 8px #cbced1,
+                 -8px -8px 8px #ffffff;
 }
