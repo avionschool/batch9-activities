@@ -1,0 +1,23 @@
+.radio-group {
+	margin: 2rem;
+}
+
+.radio-input {
+	padding-left: 1rem;
+	margin-top: 0.2rem;
+	display: flex;
+	align-items: center;
+}
+
+.radio__field {
+	outline: none;
+
+	&:checked + .radio__label {
+		color: rgba(blue, 0.7);
+	}
+}
+
+.radio__label {
+	padding-left: 0.2rem;
+	transition: color 0.15s ease-in;
+}
