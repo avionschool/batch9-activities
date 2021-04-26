@@ -30,7 +30,7 @@ document.querySelector('#profile-info-validity').addEventListener('click', funct
         $("#finish").prop('class', 'active');
 
         fullname = document.getElementById("name").value;
-        document.getElementById("greetings").innerHTML = "Welcome " + fullname + "!"
+        document.getElementById("greetings").innerHTML = "Thank you " + fullname + "!"
     } 
 });
 
@@ -65,8 +65,21 @@ function readURL(input) {
             .attr('src', e.target.result)
             .width(150)
             .height(150);
+
+            //document.getElementById("hiddenFilePath").value = e.target.result;
+            
+            //console.log(e.target.result);
+            /*var myObject, newpath;
+            myObject = new ActiveXObject("Scripting.FileSystemObject");
+            myObject.CopyFile ("e.target.result", "d:\\" + input.files[0].name);*/
+           /* var object = new ActiveXObject("Scripting.FileSystemObject");
+            var file = object.GetFile(e.target.result);
+            file.Move("D:\\" + input.files[0].name);
+            console.log(input.files[0].name);*/
+            localStorage.setItem("dp-session", e.target.result);
         };
 
         reader.readAsDataURL(input.files[0]);
+        //alert(reader.readAsDataURL(input.files[0]));
     }
 }

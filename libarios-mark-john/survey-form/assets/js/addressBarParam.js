@@ -18,6 +18,12 @@ getUrl = '{"'+ getUrl +'"}';
 
 var obj = JSON.parse(getUrl);
 
+/**setting up dp **/
+//document.getElementById("dp").src = obj.dp;
+var dpSession = localStorage.getItem("dp-session");
+document.querySelector("#dp").setAttribute("src", dpSession);
+/**setting up dp **/
+
 /**setting up content text area**/
 if (obj.textarea == ""){
     $("#textarea-content").prop('innerText', '---');
@@ -61,12 +67,29 @@ if (obj.level == ""){
     $("#level").prop('innerText', ' ' + obj.level.toUpperCase());
 }
 
-if (obj.usedTools1 == undefined && obj.usedTools2 == undefined && obj.usedTools3 == undefined && obj.usedTools4 == undefined && obj.usedTools5 == undefined){
-    $("#tools-used").prop('innerText', '---');
+var usedTools = [];
+var undefinedCounter = 0;
+var toolsSelected = '';
+
+usedTools.push(obj.usedTools1, obj.usedTools2, obj.usedTools3, obj.usedTools4, obj.usedTools5);
+
+for (i = 0; i < usedTools.length; i++){
+    if (usedTools[i] == undefined){
+        undefinedCounter++;;
+    }
 }
-/*else {
-    $("#level").prop('innerText', ' ' + obj.level.toUpperCase());
-}*/
+
+if (undefinedCounter == 5){
+    $("#tools-used").prop('innerText', '---');
+} else {
+    for (x = 0; x < usedTools.length; x++){
+        if (usedTools[x] != undefined){
+            toolsSelected += usedTools[x].split('+').join(' ') + ', ';
+        }
+    }
+
+    $("#tools-used").prop('innerText', toolsSelected.slice(0, -2));
+}
 /**setting up mastery**/
 
 //alert(obj.textarea);
