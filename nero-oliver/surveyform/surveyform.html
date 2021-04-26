@@ -11,7 +11,7 @@
 <body>
   <section>
     <div class="main">
-      <form id="survey-form" action="test.html" method="GET">
+      <form id="survey-form" action="test.html" method="GET" autocomplete="off"> 
         <div class="step step-1 active">
           <div class="form-group">
             <div class="firstPage">
@@ -27,12 +27,14 @@
             <legend>Personal Details</legend>
             <div class="form-group">
               <label id="name-label" for="name">Name:</label>
-              <input type="text" required id="name" name="name" placeholder="enter name here">
+              <input type="text" required id="name" name="name" placeholder="enter name here"><br>
+              <br>
             </div>
 
             <div class="form-group">
               <label id="age" for="age">Age:</label><br>
-              <input class="number" type="number" name="age" placeholder="age"  min="1" max="99">
+              <input class="number" type="number" name="age" placeholder="age"  min="1" max="99"><br>
+              <br>
             </div>
 
             <div class="form-group">
@@ -49,7 +51,8 @@
             <legend>Contact Details</legend>
             <div class="form-group">
               <label id="email-label" for="Email">Email:</label>
-              <input type="email" required id="email" name="email" placeholder="enter email here"> 
+              <input type="email" required id="email" name="email" placeholder="enter email here"><br>
+              <br>
             </div>
             
             <div class="form-group">
