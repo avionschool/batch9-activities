@@ -20,7 +20,7 @@
         <!-- User Story #2: As a user, I want to see a short explanation with id="description" in P sized text. -->
         <p id="description">Thank you for taking the survey to help improve our service. This should take less than five minutes of your time.</p>
         <!-- User Story #3: As a user, I want to see a form with id="survey-form". -->
-        <form action="./success.html" class="form-survey" id="survey-form" >
+        <form action="./success.html" class="form-survey" id="survey-form" method="GET">
           <div id="invalid-msg">
             Please fill up all the fields.
           </div>
@@ -44,14 +44,17 @@
               <label for="email" id="email-label">Email</label>
               <input type="email" name="email" id="email" placeholder="e.g. amihan@encantadia.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
               <div class="flex-row-item">
-                <!-- User Story #7: As a user, I should be able to enter a number in a field with id="number". -->
+                
                 <div class="flex-col-item">
                   <label for="contact" id="contact-label">Contact Number</label>
-                  <input type="tel" name="contact" id="tel" placeholder="e.g. 09170087000" required>
+                  <!-- User Story #7: As a user, I should be able to enter a number in a field with id="number". -->
+                  <!-- User Story #8: As a user, if I enter non-numbers in the number input, I want to see an HTML5 validation error. -->
+                  <input type="text" name="contact" id="number" placeholder="e.g. 09170087000" pattern="[0]+\d{10}$" required>
                 </div>
                 <div class="flex-col-item">
                   <label for="age" id="number-label">Age</label>
-                  <input type="number" name="age" id="number" placeholder="e.g. 60" pattern="[0-9]{3}" min="1" max="110" required>
+                  <!-- User Story #9: As a user, if I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+                  <input type="number" name="age" id="age" placeholder="e.g. 60" pattern="[0-9]{3}" min="1" max="110" required>
                 </div>
               </div>
               
@@ -71,7 +74,8 @@
               <section>
                 <!-- User Story #12: Inside the form element, I want a select an option from a dropdown that has a corresponding id="dropdown". -->
                 <h6>Country</h6>
-                <select name="country" id="dropdown" required>
+                <select name="country" id="dropdown" placeholder="Select Country" required>
+                  <option value="" disabled="disabled" selected>Select Country</option>
                   <option value="PH">Philippines</option>
                   <option value="USA">United States</option>
                   <option value="JP">Japan</option>
@@ -85,29 +89,29 @@
                 <div class="flex-row-item">
                   <div class="flex-col-item">
                     <div class="checkbox-item">
-                      <input type="checkbox" name="source" value="" id="facebook">
+                      <input type="checkbox" name="source" value="facebook" id="facebook">
                       <label for="facebook" >Facebook</label>
                     </div>
                     <div class="checkbox-item">
-                      <input type="checkbox" name="source" value="" id="twitter">
+                      <input type="checkbox" name="source" value="twitter" id="twitter">
                       <label for="twitter" >Twitter</label>
                     </div>
                     <div class="checkbox-item">
-                      <input type="checkbox" name="source" value="" id="instagram">
+                      <input type="checkbox" name="source" value="instagram" id="instagram">
                       <label for="instagram" >Instagram</label>
                     </div>
                   </div>
                   <div class="flex-col-item">
                     <div class="checkbox-item">
-                      <input type="checkbox" name="source" value="" id="friends">
+                      <input type="checkbox" name="source" value="friends" id="friends">
                       <label for="friends" >Friends</label>
                     </div>
                     <div class="checkbox-item">
-                      <input type="checkbox" name="source" value="" id="newspaper">
+                      <input type="checkbox" name="source" value="newspaper" id="newspaper">
                       <label for="newspaper" >Newspaper</label>
                     </div>
                     <div class="checkbox-item">
-                      <input type="checkbox" name="source" value="" id="others">
+                      <input type="checkbox" name="source" value="others" id="others">
                       <label for="others" >Others</label>
                     </div>
                   </div>
@@ -140,11 +144,11 @@
                 <h6>The food was served hot and fresh.</h6>
               </div>
               <div class="survey-value">
-                <input type="radio" name="1" value="5" required>
-                <input type="radio" name="1" value="4">
-                <input type="radio" name="1" value="3">
-                <input type="radio" name="1" value="2">
-                <input type="radio" name="1" value="1">
+                <input type="radio" name="question_1" value="5" required>
+                <input type="radio" name="question_1" value="4">
+                <input type="radio" name="question_1" value="3">
+                <input type="radio" name="question_1" value="2">
+                <input type="radio" name="question_1" value="1">
               </div>
             </div>
 
@@ -153,11 +157,11 @@
                 <h6>The menu have excellent selection.</h6>
               </div>
               <div class="survey-value">
-                <input type="radio" name="2" value="5" required>
-                <input type="radio" name="2" value="4">
-                <input type="radio" name="2" value="3">
-                <input type="radio" name="2" value="2">
-                <input type="radio" name="2" value="1">
+                <input type="radio" name="question_2" value="5" required>
+                <input type="radio" name="question_2" value="4">
+                <input type="radio" name="question_2" value="3">
+                <input type="radio" name="question_2" value="2">
+                <input type="radio" name="question_2" value="1">
               </div>
             </div>
 
@@ -166,11 +170,11 @@
                 <h6>The quality of food is excellent.</h6>
               </div>
               <div class="survey-value">
-                <input type="radio" name="3" value="5" required>
-                <input type="radio" name="3" value="4">
-                <input type="radio" name="3" value="3">
-                <input type="radio" name="3" value="2">
-                <input type="radio" name="3" value="1">
+                <input type="radio" name="question_3" value="5" required>
+                <input type="radio" name="question_3" value="4">
+                <input type="radio" name="question_3" value="3">
+                <input type="radio" name="question_3" value="2">
+                <input type="radio" name="question_3" value="1">
               </div>
             </div>
 
@@ -179,16 +183,17 @@
                 <h6>The crew was accomodating and responsive.</h6>
               </div>
               <div class="survey-value">
-                <input type="radio" name="4" value="5" required>
-                <input type="radio" name="4" value="4">
-                <input type="radio" name="4" value="3">
-                <input type="radio" name="4" value="2">
-                <input type="radio" name="4" value="1">
+                <input type="radio" name="question_4" value="5" required>
+                <input type="radio" name="question_4" value="4">
+                <input type="radio" name="question_4" value="3">
+                <input type="radio" name="question_4" value="2">
+                <input type="radio" name="question_4" value="1">
               </div>
             </div>
 
             <div class="feedback-form">
               <h6>Additional Comments (Optional)</h6>
+              <!-- User Story #15: Inside the form element, I want to see a text-area at the end for additional comments. -->
               <textarea name="feedback" id="feedback" cols="80" rows="2"></textarea>
             </div>
 
