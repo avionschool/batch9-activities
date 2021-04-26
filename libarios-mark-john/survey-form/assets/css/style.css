@@ -61,7 +61,6 @@ input[type=text]:focus, input[type=email]:focus, input[type=number]:focus , sele
 div#container form#survey-form div#personal-info{
 	margin-top: 20px;
 	text-align: left;
-	display: none;
 	/**---slider animator**/
 	-webkit-animation: slideIn 2s forwards;
   	-moz-animation: slideIn 2s forwards;
@@ -83,7 +82,7 @@ div#container form#survey-form div#career-info{
 div#container form#survey-form div#profile-info{
 	margin-top: 20px;
 	text-align: left;
-	/*display: none;*/
+	display: none;
 	/**---slider animator**/
 	-webkit-animation: slideIn 2s forwards;
   	-moz-animation: slideIn 2s forwards;
