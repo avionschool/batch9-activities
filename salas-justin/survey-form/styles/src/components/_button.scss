@@ -1,0 +1,23 @@
+@import "../variables/variables";
+
+.button {
+  margin: 2rem 0;
+  width: 100%;
+  padding: 1.2rem 1rem 1rem 1rem;
+  font-size: 1.8rem;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  text-transform: uppercase;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  background-color: #222;
+  color: white;
+
+  box-shadow: 0.4rem 0.4rem 0.8rem $shadow-normal;
+
+  &:active {
+    transform: translateY(0.1rem);
+    box-shadow: 0.2rem 0.2rem 0.4rem $shadow-active;
+  }
+}

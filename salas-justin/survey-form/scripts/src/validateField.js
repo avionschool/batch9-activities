@@ -1,28 +1,44 @@
-import validationLevels from "./validationLevels.js"
-import getElemeParams from "./getElemParams.js"
+import validationLevels from "./validationLevels.js";
+import getElemParams from "./getElemParams.js";
 
 export default function (field, fieldId, type) {
-	let status = false
-	let message = ""
+  let status = false;
+  let message = "";
 
-	const { label, container, toolkit, fieldValue } = getElemeParams(field, type)
+  const labelName = {
+    radio: `${type}__question_error`,
+    check: `${type}__question_error`,
+    text: `${type}__label_error`,
+    area: `${type}__label_error`,
+    drop: `${type}__label_error`
+  };
 
-	for (let i = 0; i <= 1; i++) {
-		const { error, errorMessage } = validationLevels[i](fieldId, fieldValue)
+  const containerName = {
+    radio: `${type}-group_error`,
+    check: `${type}-group_error`,
+    text: `${type}-input_error`,
+    drop: `${type}-input_error`,
+    area: `${type}-input_error`
+  };
 
-		if (error) {
-			status = true
-			message = errorMessage
-			break
-		} else {
-			continue
-		}
-	}
+  const { label, container, toolkit, fieldValue } = getElemParams(field, type);
 
-	toolkit.innerText = message
+  for (let i = 0; i <= 1; i++) {
+    const { error, errorMessage } = validationLevels[i](fieldId, fieldValue);
 
-	field.classList.toggle(`${type}__field_error`, status)
-	toolkit.classList.toggle(`${type}__toolkit_error`, status)
-	label.classList.toggle(`${type}__label_error`, status)
-	container.classList.toggle(`${type}-input_error`, status)
+    if (error) {
+      status = true;
+      message = errorMessage;
+      break;
+    } else {
+      continue;
+    }
+  }
+
+  toolkit.innerText = message;
+
+  field.classList.toggle(`${type}__field_error`, status);
+  toolkit.classList.toggle(`${type}__toolkit_error`, status);
+  label.classList.toggle(labelName[type], status);
+  container.classList.toggle(containerName[type], status);
 }

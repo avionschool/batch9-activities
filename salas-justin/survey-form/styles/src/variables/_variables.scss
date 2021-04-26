@@ -1,0 +1,35 @@
+//global
+$group-margin-left: 1.5rem;
+$group-radius: 1rem;
+
+//textgroup variables
+$padding-bottom: 0.1rem;
+$label-size: 2.2rem;
+$field-indent: 0.5rem;
+$field-index: 2;
+$field-padding-b: 0.18rem;
+$toolkit-size: 0.7em;
+$toolkit-space: 0.3rem;
+$label-margin-top: 2rem;
+$label-shoot: -2.4rem;
+$label-shoot-size: 1.9rem;
+
+//colors
+$border-black-focus: rgba(black, 0.3);
+$text-error-shadow: rgba(crimson, 0.3);
+$shadow-error: rgba(crimson, 0.3);
+$shadow-normal: rgba(0, 0, 0, 0.3);
+$shadow-active: rgba(0, 0, 0, 0.5);
+$shadow-error-spread: 0.2rem;
+$shadow-spread: 0.2rem;
+$border-error: rgba(crimson, 0.3);
+$border-error-focus: rgba(crimson, 0.5);
+$border-inactive: rgba(0, 0, 0, 0.05);
+$border-normal: rgba(0, 0, 0, 0.3);
+
+$label-focus-color: rgba(44, 130, 201, 0.6);
+
+$option-selected: rgba(blue, 0.7);
+
+$error-primary: crimson;
+$field-color: #666;
