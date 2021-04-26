@@ -1,0 +1,349 @@
+*{
+  	font-family: Helvetica, sans-serif, Arial;
+  	color: black;
+}
+
+body{
+  	margin: 0;
+  	padding: 0;
+  	position: relative;
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/tech.jpg);
+  	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	display: grid;
+}
+
+#container{
+	margin: 50px auto;
+	padding: 20px;
+	width: 250px;
+	min-width: 70%;
+	height: max-content;
+	min-height: 35%;
+	background-color: white;
+	border-radius: 13px;
+	opacity: 0.8;
+}
+
+/*#title{
+  text-shadow: 3px 2px navajowhite;
+}*/
+
+#description{
+	font-size: 13px;
+	font-style: italic;
+}
+
+label{
+	  font-size: 17px;
+	  opacity: 0.7;
+}
+
+input[type=text], input[type=email], input[type=number], select{
+  	padding: 10px;
+    font-size: 17px;
+	border: 1px solid #aaaaaa;
+	border-radius: 13px;
+	outline: none;
+	width: 100%;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus , select:focus{
+	box-shadow: 0 0 5px rgb(86, 238, 81);
+	padding: 5px 0px 5px 5px;
+	margin: 7px 1px 5px 0px;
+	border: 1px solid rgba(86, 238, 81, 1);
+}
+
+div#container form#survey-form div#personal-info{
+	margin-top: 20px;
+	text-align: left;
+	/**---slider animator**/
+	-webkit-animation: slideIn 2s forwards;
+  	-moz-animation: slideIn 2s forwards;
+	animation: slideIn 2s forwards;
+	/**---slider animator**/
+}
+
+div#container form#survey-form div#career-info{
+	margin-top: 20px;
+	text-align: left;
+	display: none;
+	/**---slider animator**/
+	-webkit-animation: slideIn 2s forwards;
+  	-moz-animation: slideIn 2s forwards;
+	animation: slideIn 2s forwards;
+	/**---slider animator**/
+}
+
+div#container form#survey-form div#profile-info{
+	margin-top: 20px;
+	text-align: left;
+	display: none;
+	/**---slider animator**/
+	-webkit-animation: slideIn 2s forwards;
+  	-moz-animation: slideIn 2s forwards;
+	animation: slideIn 2s forwards;
+	/**---slider animator**/
+}
+
+div#container form#survey-form div#finish-info{
+	margin-top: 50px;
+	text-align: center;
+	display: none;
+	/**---slider animator**/
+	-webkit-animation: slideIn 2s forwards;
+  	-moz-animation: slideIn 2s forwards;
+	animation: slideIn 2s forwards;
+	/**---slider animator**/
+}
+
+.button {
+    background: rgb(237, 40, 70);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 50%);
+}
+
+table{
+	width: 200px;
+	min-width: 45%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+td{
+	padding: 3px;
+}
+
+.navigation-link{
+	padding: 21px;
+}
+
+.navigation-link-alignment{
+	text-align: right;
+}
+
+input[type=file] {
+    background: rgb(67, 191, 36);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+	box-shadow: 0px 2px 5px rgb(0 0 0 / 50%);
+	width: 85%;
+}
+
+#dp{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 1px solid rgb(86, 238, 81);
+}
+
+#textarea{
+	height: 100px;
+	width: 80%;
+  	padding: 12px;
+  	border: 1px solid rgb(67, 191, 36);
+  	border-radius: 4px;
+  	resize: vertical;
+}
+
+#greetings{
+	text-transform: capitalize;
+}
+
+/**progress bar**/
+#progressbar{
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#progressbar .active{
+	/*color: rgb(86, 238, 81);*/
+	color: #2183dd;
+}
+
+#progressbar li{
+    list-style-type: none;
+	font-size: 13px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar #personal:before{
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+#progressbar #mastery:before{
+    font-family: FontAwesome;
+    content: "\f5fc";
+}
+
+#progressbar #profile:before{
+    font-family: FontAwesome;
+    content: "\f030";
+}
+
+#progressbar #finish:before{
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+#progressbar li:before{
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+	margin: 0 auto 10px auto;
+	transition: all 2000ms ease;
+}
+
+#progressbar li:after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: -50%;
+    top: 25px;
+	z-index: -1;
+	transition: all 2000ms ease;
+	animation: nextStep 1s !important;
+  	animation-fill-mode: forwards !important;
+}
+
+#progressbar li:first-child:after{
+	content: none;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after{
+	/*background: rgb(86, 238, 81);*/
+	background: #2183dd !important;
+
+}
+
+@keyframes nextStep{
+	0% {
+	  width: 0%;
+	}
+	100% {
+	  width: 100%;
+	}
+}
+/**progress bar**/
+
+/**------slider aminator**/
+@-webkit-keyframes slideIn{
+	0%{
+	  transform: translateX(-900px);
+	}
+	100%{
+	  transform: translateX(0);
+	}
+}
+@-moz-keyframes slideIn{
+	0%{
+	  transform: translateX(-900px);
+	}
+	100%{
+	  transform: translateX(0);
+	}
+}
+@keyframes slideIn{
+	0%{
+	  transform: translateX(-900px);
+	}
+	100%{
+	  transform: translateX(0);
+	}
+}
+/**------slider aminator**/
+
+
+/**--------------------------------------------------------------home**/
+#container-home{
+	margin: 50px auto;
+	padding: 20px;
+	width: 250px;
+	min-width: 80%;
+	height: max-content;
+	min-height: 35%;
+	background-color: rgb(228, 228, 228);
+	border-radius: 13px;
+	/*opacity: 0.8;*/
+}
+
+#subject{
+	text-align: justify;
+}
+
+#home-content{
+	display: flex;
+}
+
+#content{
+	width: 50%;
+	text-align: left;
+}
+
+#content > p{
+	text-align: left;
+}
+
+#table-content{
+	margin-left: 0px;
+	width: 100%;
+}
+
+#fullname{
+	text-transform: capitalize;
+}
+
+#legend-layout{
+	font-style:	italic;
+	text-align: left;
+	border-radius: 15px;
+	padding: 2px 4px;
+	background: rgb(255, 255, 255);
+	/* For better legibility against the box-shadow */
+}
+
+fieldset{
+	margin: 20px;
+	padding: 0 10px 10px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	box-shadow: 0 0 10px #666;
+	padding-top: 10px;
+}
+
+fieldset > #legend-layout{
+	float: left;
+	margin-top: -20px;
+}
+
+fieldset > #legend-layout + *{
+	clear: both;
+}
