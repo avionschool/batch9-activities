@@ -20,20 +20,20 @@
     <div id="right">
       <h1 id="registerForm">Survey Form</h1>
       
-      <form action="http://127.0.0.1:5500/survery-form-page/index.html" id="survey-form">
+      <form method="get" action="submit.html" id="survey-form">
         
         
         <div id="first">
 
           <div>
-            <label for="" id="name-label">First Name</label>
-            <input required type="text" id="name" placeholder="First Name" minlength="2" maxlength="20" >
+            <label for="name" id="name-label">First Name</label>
+            <input required type="text" id="name" name="name" placeholder="First Name" minlength="2" maxlength="20" >
             <!-- <small>first name can not be empty</small> -->
           </div>  
 
           <div>
-            <label for="" id="lastName-label">Last Name</label>
-            <input required type="text" id="lastName" placeholder="Last Name" minlength="2" maxlength="20">
+            <label for="lastName" id="lastName-label">Last Name</label>
+            <input required type="text" id="lastName" name="lastName" placeholder="Last Name" minlength="2" maxlength="20">
           </div>
 
         </div>
@@ -45,13 +45,13 @@
 
               <div>
 
-                <label for="" id="email-label">Email</label>
-                <input required type="email" id="email" placeholder="Email Address">
+                <label for="email" id="email-label">Email</label>
+                <input required type="email" name="email" id="email" placeholder="Email Address">
               </div>
 
               <div>
-                <label for="" id="number-label">Phone Number</label>
-                <input required type="tel" id="number" placeholder="Phone Number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" minlength="13" maxlength="13">
+                <label for="number" id="number-label">Phone Number</label>
+                <input required type="tel" id="number" name="number" placeholder="XXXX-XXX-XXXX" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" minlength="13" maxlength="13">
               </div>
 
               
@@ -61,28 +61,28 @@
       <div id=third>
 
 
-            <div>
-                <label for="" id="gender-label">Gender</label>
-              
-                
-                <select id="dropdown">          
-                  <option value="">Gender</option>
-                  <option value="">Male</option>
-                  <option value="">Female</option>
-                  <option value="">Prefer not to tell</option>
+           <div>
+                <label for="gender">Gender</label>                             
+                <select name="gender" id="gender">          
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Prefer not to tell">Prefer not to tell</option>
                 </select>
-            </div>
+            </div> 
+
+            
+
       </div>
 
 
        <div id="radioCheck">   
         <div id="radio-button">
           <p>Choose seat location</p><br>
-          <input type="radio" id="front" name="gender" value="front">
+          <input type="radio" id="front" name="seatlocation" value="front">
           <label for="front">Front</label><br>
-          <input type="radio" id="middle" name="gender" value="middle">
+          <input type="radio" id="middle" name="seatlocation" value="middle">
           <label for="middle">Middle</label><br>
-          <input type="radio" id="back" name="gender" value="back">
+          <input type="radio" id="back" name="seatlocation" value="back">
           <label for="back">Back</label>
         </div>
         

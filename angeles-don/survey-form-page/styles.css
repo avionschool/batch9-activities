@@ -11,8 +11,6 @@
     background-color: skyblue;
   }
     
-
-
  #container {
    display: flex;
    flex-wrap: wrap;
@@ -23,8 +21,6 @@
    max-width: 100%;
    margin: 0 auto;
  }
-
- 
 
  #title {
    font-size: 50px;
@@ -42,8 +38,7 @@
  }
  #first {
    display: flex;
-   justify-content: space-evenly;
-   
+   justify-content: space-evenly;   
  }
 
  #second {
@@ -56,22 +51,27 @@
    justify-content: center;
  }
  
- #left{
-  
-  height: 400px;
+ #left{  
+  height: auto;
   color: white;
-  
+  animation: slidetop .7s ease-in;   
  }
+
 
   
  #right {
    background-color: white;
-   
-   border-radius: 10px;
-  
-   box-shadow: 0 5px rgb(0,0,0,0.2);
-   
+   border-radius: 15px;  
+   box-shadow: 0 5px rgb(0,0,0,0.2);     
+   animation: slidetop .7s ease-in; 
  }
+
+ @keyframes slidetop {
+    0%  {
+      transform: translateY(-800px);
+    }
+ }
+ 
 
  #registerForm {
    text-align: center;
@@ -85,7 +85,7 @@
 
 #name, #lastName, #email, #number, select{
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-bottom: 15px;
   border: 1px solid;
   width: 99%;
@@ -93,9 +93,19 @@
   
  }
 
+ input[type="text"], input[type="email"],
+ [type="tel"] {
+  border-radius: 20px;
+  outline: none;
+ }
+ 
+select {
+  outline: none;
+}
 
-
-
+option {
+  border-radius: 5px;
+}
 
 #first small{
   color: grey;
@@ -122,9 +132,7 @@
    
  }
 
- #text-area1 > textarea{
-  flex: 1;
- }
+
 
  #text-area1{
    display: flex;
@@ -165,7 +173,7 @@
   #title {
     font-size: 50px;
     line-height: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   #text {
@@ -173,7 +181,8 @@
   }
 
   #left {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    height: auto;
   }
 
  }
