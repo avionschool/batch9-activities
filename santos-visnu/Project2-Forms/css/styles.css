@@ -1,0 +1,241 @@
+.main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border: 1px solid silver;
+}
+
+#title {
+    text-align: center;
+    font-family: sans-serif;
+    font-stretch: extra-expanded;
+}
+
+/* Product Selection */
+.all-products-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    border-bottom: 3px solid rgba(236, 228, 228, 0.445);
+    /*border: 3px solid orange;*/
+    width: 100%;
+    height: auto;
+}
+
+.product-container1,
+.product-container2,
+.product-container3 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: thistle;
+}
+
+.product-container1,
+.product-container2,
+.product-container3 {
+    height: inherit;
+}
+
+.product-container:hover {
+    transform: scale(1.1);
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  .content {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+.product-list,
+.product2-list,
+.product3-list {
+    display: flex;
+    border: 1px solid black;
+    background-image: url("https://cdn.jotfor.ms/assets/img/payments/sample_image-1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100px;
+}
+
+.product2-list {
+    background-image: url("https://cdn.jotfor.ms/assets/img/payments/sample_image-3.png");
+}
+
+.cb-product1 {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+/* total */
+.total-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    position: relative;
+    width: inherit;
+}
+#total-area {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+/* Buyer information */
+
+.secondary-div {
+    display: flex;
+    justify-content: center;
+    /*border: 10px double green;*/
+    width: inherit;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: inherit;
+    /*border: 2px solid orange;*/
+}
+
+#buyer-information {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/* name form */
+.name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:inherit;
+    height: 100px;
+}
+
+.main-arrange-name{
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid black;*/
+}
+
+.arrange-name {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+/* email & cp number form  COMBINED*/
+
+.email-container,
+.cpnumber-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    /*border: 1px solid red;*/
+    width: 200px;
+}
+
+/*.arrange-email,
+.arrange-cpnumber{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    width:auto;
+}*/
+
+.email-num-merger {
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid black;*/
+}
+/* address form */
+
+.address-container {
+    margin-top: 15px;
+}
+
+.arrange-st-ct {
+    padding: 10px;
+/*    border: 1px solid black;*/
+    width: auto;
+}
+
+.st-ct-container,
+.subd-container,
+.brgy-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.st-ct-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.subd-container,
+.brgy-container {
+    width: 288px;
+    padding-left: 15px;
+}
+
+.subd-brgy-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.country-state-city {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 150px;
+    padding: 15px;
+}
+
+
+#radio-checkbox-div {
+    display: flex;
+    justify-content: space-around;
+}
+#radio-div,
+#checkbox-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#textArea {
+    display: block;
+    height: 40px;
+    width: 200px;
+}
+#textArea-div {
+    border: 1px solid black;
+}
