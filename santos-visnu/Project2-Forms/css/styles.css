@@ -2,13 +2,22 @@ html  {
     font-family: monospace!important;
 }
 
+*{
+    text-transform: uppercase!important;
+
+}
 body {
-    /*background-image: url("https://c0.wallpaperflare.com/preview/512/796/919/hipster-cafe-restaurant-bottle.jpg");*/
-    background-color: /*#EEE3E1*/ #ecf0f3;
+    background-image: url("https://image.freepik.com/free-photo/background-old-black-brick-wall-wallpaper_73152-4296.jpg");
+     /*#EEE3E1*/ 
     background-repeat: round;
-    background-size: cover;
+    background-size: auto;
     position:sticky;
     color: #555;
+}
+
+@font-face {
+    font-family: neon;
+    src: url(../NeonFuture.ttf);
 }
 
 .nav-container {
@@ -43,6 +52,56 @@ body {
     color: #ccc9;
 }
 
+.main-main-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.neon-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 155px;
+}
+
+.neon-text {
+    font-family: neon;
+    font-size: 60px;
+    position: fixed;
+    margin-top: 200px;
+    text-shadow: 
+    .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+    .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+    .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+    .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+    .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
+    .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+    .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+    /*box-shadow:
+    0 0 0.1vw  0.4vw #fff7f7,   
+    0 0 0.4vw  0.6vw #e97272, 
+    0 0   4vw  0.4vw #e50b0b,
+    inset 0 0 1.5vw  0.4vw #e50b0b,
+    inset 0 0 0.4vw  0.2vw #e97272,
+    inset 0 0 0.5vw  0.2vw #fff7f7;
+    border-radius: 1.5rem;*/
+    padding: 10px;
+}
+
+
+.main-main {
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+    background-color: #ecf0f3;
+    padding-top: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #444,
+                -10px -10px 10px #444;
+}
 .main {
     margin: auto;
    /* padding-top: 50px;*/
@@ -50,18 +109,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 750px;
+    width: 550px;
     background-color: /*#B1071C*/ #ecf0f3;
     padding: 60px 35px 35px 35px;
     border-radius: 40px;
     box-shadow: 13px 13px 20px #cbced1,
                -13px -13px 20px #ffffff;
+    margin-bottom: 50px;
 }
 
 #title {
     text-align: center;
     font-stretch: extra-expanded;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -164,10 +224,11 @@ body {
 .franchisee-info {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 55px 0;
     padding-bottom: 20px;
     position: relative;
     width: inherit;
+    font-size: 20px;
 }
 #total-area {
     display: flex;
@@ -296,11 +357,21 @@ body {
     align-items: stretch;
 }
 
+.country-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
+}
+
 .country-state-city {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
     width: auto;
     padding: 15px;
+    margin-left: 30px;
 }
 
 
@@ -318,12 +389,14 @@ body {
 
 #textArea {
     display: block;
-    height: 40px;
+    height: 30px;
     width: 200px;
+    margin: auto;
 }
 #textArea-div {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 50px;
 }
 
