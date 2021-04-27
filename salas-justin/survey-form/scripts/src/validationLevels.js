@@ -42,6 +42,14 @@ export default {
       return { error, errorMessage };
     }
 
+    if (fieldId === "name") {
+      const error = !/^\s*([A-Za-z]{1,}([\.,] |[-']| ))+[A-Za-z]+\.?\s*$/.test(
+        fieldValue
+      );
+      const errorMessage = error ? "this name is invalid" : "";
+      return { error, errorMessage };
+    }
+
     return { error: false, errorMessage: "" };
   }
 };
