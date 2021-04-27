@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/black-yel.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  border-bottom: 2px solid #fdcf09;
+  font-family: "Bebas Neue", cursive;
+}
+
+header h1 {
+  color: #fdcf09;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+header p {
+  /* font-style: italic; */
+  color: #ced4da;
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 0;
+  /* margin-bottom: 0.5rem; */
+  text-shadow: 5px 5px 5px rgb(181, 161, 0);
+}
+
+.container {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 20px auto;
+
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(16, 18, 19, 0.9);
+}
+
+.card {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* position: relative; */
+}
+
+body {
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+.optional {
+  margin-left: 0.25rem;
+  font-size: 15px;
+  color: #e4e4e4;
+}
+.form-group p {
+  color: #fdcf09;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  color: white;
+  margin-bottom: 10px;
+}
+.form-group p {
+  font-family: "Bebas Neue", cursive;
+}
+
+.btn {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  padding: 0.5rem 0.75rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #fdcf09;
+  color: inherit;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #000;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #f1da03;
+}
+
+.btn {
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  color: #000;
+  text-align: center;
+}
+
+.formControl.others {
+  opacity: 0;
+  overflow: hidden;
+  /* display: none; */
+}
+
+.form-group label {
+  color: #fff;
+}
