@@ -1,6 +1,7 @@
 import validateField from "./src/validateField.js";
 import { formData, errorData } from "./src/globalData.js";
 import displayData from "./src/displayData.js";
+import displayError from "./src/displayError.js";
 
 const form = document.querySelector(".form");
 
@@ -33,8 +34,10 @@ form.addEventListener("submit", e => {
   });
 
   if (isError) {
+    displayError(true);
     return;
   } else {
+    displayError(false);
     displayData(formData);
   }
 });

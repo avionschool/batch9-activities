@@ -101,6 +101,14 @@ a {
   box-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.3);
 }
 
+.form-error {
+  text-align: center;
+  margin-top: -1rem;
+  font-size: 0.7em;
+  color: crimson;
+  height: 2.2rem;
+}
+
 .text-group {
   margin-top: 2rem;
   margin-left: 1.5rem;
@@ -416,7 +424,7 @@ a {
 }
 
 .button {
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   width: 100%;
   padding: 1.2rem 1rem 1rem 1rem;
   font-size: 1.8rem;
@@ -437,6 +445,7 @@ a {
 
 .modal__button {
   border-radius: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .modal {

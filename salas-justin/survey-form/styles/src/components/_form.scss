@@ -12,3 +12,11 @@
   background-color: white;
   box-shadow: 0.1rem 0.1rem 0.8rem $shadow-normal;
 }
+
+.form-error {
+  text-align: center;
+  margin-top: -1rem;
+  font-size: $toolkit-size;
+  color: $error-primary;
+  height: 2.2rem;
+}
