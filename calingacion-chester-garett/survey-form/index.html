@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' contents='width=device-width, initial-scale=1.0'>
+    <title>MPL S7 Predictions</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/mpl-ph-s7-256px.png">
+    <link rel='stylesheet' type='text/css' href='vendors/css/normalize.css'>
+    <link rel='stylesheet' type='text/css' href='vendors/css/grid.css'>
+    <link rel='stylesheet' href='assets/css/main.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <header>
+        <div class='main-header'>
+            <img src='images/mpl-ph-s7-256px.png' alt='mpl-logo' class='logo'>
+            <nav>
+                <div class='row'>
+                    <ul class='main-nav'>
+                            <li><a href='#' class='nav-list'>Home</a></li>
+                            <li><a href='#' class='nav-list'>Explore</a></li>
+                            <li><a href='#' class='nav-list'>Search</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class='personal-details-form'>
+            <h1 id='title'>MPL S7 Predictions</h1> <!---User story 1: hiding in view; cluttering in design-->
+            <div class="wrapper">
+                <div class="title-text">
+                  <img src='images/mpl-ph-s7-256px.png' alt='mpl-logo' class='id-logo'>
+                </div>
+                <div class="form-container">
+                  <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked> <!---User story 13-->
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                  </div>
+                  <div class="form-inner">
+                    <form method="post" action="#" class="login" id="survey-form"> <!---User story 3-->
+                      <div class="field">
+                        <input type="text" placeholder="Email Address" name='loginemail' required>
+                      </div>
+                      <div class="field">
+                        <input type="password" name='loginpassword' placeholder="Password" required>
+                      </div>
+                      <div class="pass-link"><a href="#">Forgot password?</a></div>
+                      <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                      </div>
+                      <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                      <div class="signup-description" id="description">Bet on who will be crowned as S7 champion and win awesome rewards! </div> <!---User story 2-->
+                    </form>
+                    <form method="post" action="#" class="signup" id="contact-form">
+                      <div class="field">
+                        <label id='name-label'>Name</label> <!---user story 10; hiding in display clutters design-->
+                        <input type='text' name='name' id='name' placeholder='Name' required> <!--user story 4-->  <!--user story 11-->
+                      </div>
+                      <div class="field">
+                        <label id='email-label'>Email</label> <!---user story 10; hiding in display clutters design-->
+                        <input type='email' name='email' id='email' placeholder='Email' required> <!--user story 5--> <!--user story 6--> <!--user story 11-->
+                      </div>
+                      <div class="field">
+                        <label id='number-label'>Age</label> <!---user story 10; hiding in display clutters design-->
+                        <input type='number' name='age' id='number' placeholder='Age' min='1' max='100' required> <!--user story 7--> <!---user story 8--> <!--user story 9--> <!--user story 11-->
+                      </div>
+                      <div class='field'>
+                        <select id="dropdown" name="country" placeholder='Country' required> <!--user story 12 -->
+                            <option value="" disabled selected hidden>Country</option>
+                            <option value="Afganistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bonaire">Bonaire</option>
+                            <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Canary Islands">Canary Islands</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Channel Islands">Channel Islands</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos Island">Cocos Island</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote DIvoire">Cote DIvoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Curaco">Curacao</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="East Timor">East Timor</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands">Falkland Islands</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Guiana">French Guiana</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="French Southern Ter">French Southern Ter</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Great Britain">Great Britain</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="India">India</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea North">Korea North</option>
+                            <option value="Korea Sout">Korea South</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macau">Macau</option>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Midway Islands">Midway Islands</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Nambia">Nambia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherland Antilles">Netherland Antilles</option>
+                            <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                            <option value="Nevis">Nevis</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau Island">Palau Island</option>
+                            <option value="Palestine">Palestine</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Phillipines">Philippines</option>
+                            <option value="Pitcairn Island">Pitcairn Island</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Republic of Montenegro">Republic of Montenegro</option>
+                            <option value="Republic of Serbia">Republic of Serbia</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="St Barthelemy">St Barthelemy</option>
+                            <option value="St Eustatius">St Eustatius</option>
+                            <option value="St Helena">St Helena</option>
+                            <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                            <option value="St Lucia">St Lucia</option>
+                            <option value="St Maarten">St Maarten</option>
+                            <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                            <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                            <option value="Saipan">Saipan</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="Samoa American">Samoa American</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Tahiti">Tahiti</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Erimates">United Arab Emirates</option>
+                            <option value="United States of America">United States of America</option>
+                            <option value="Uraguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Vatican City State">Vatican City State</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                            <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                            <option value="Wake Island">Wake Island</option>
+                            <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zaire">Zaire</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                      </div>
+                      <div class="field">
+                        <input type="password" placeholder="Password" name="password" required>
+                      </div>
+                      <div class="field">
+                        <input type="password" placeholder="Confirm password" name="password_confirm" required>
+                      </div>
+                      <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Register">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>            
+    </header>
+
+    <section class='main-content js--section-main-content'>        
+            <!-----------mythical five checkboxes-------------------->
+            <div class='mythical-five-container'>    
+                <div class='row'>
+                    <h2>Choose your Mythical Five</h2>
+                    <form method='post' action='#' class='mythical-five-form'> 
+                        <ul>
+                            <li><input type="checkbox" id="cb1" name='mythical-five' /> <!---user story 14-->
+                            <label for="cb1"><img src="images/ohmyveenus.png"/><span>Ohmy33nus</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb2" name='mythical-five'/>
+                            <label for="cb2"><img src="images/h2wo.png"/><span>H2wo</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb3" name='mythical-five'/>
+                            <label for="cb3"><img src="images/Karltzy.png"/><span>Karltzy</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb4" name='mythical-five'/>
+                            <label for="cb4"><img src="images/Bennyqt.png"/><span>Bennyqt</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb5" name='mythical-five'/>
+                                <label for="cb5"><img src="images/chuuu.png"/><span>Chuu</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb6" name='mythical-five'/>
+                                <label for="cb6"><img src="images/dlar.png"/><span>Dlar</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb7" name='mythical-five'/>
+                                <label for="cb7"><img src="images/renejay.png"/><span>Renejay</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb8" name='mythical-five'/>
+                                <label for="cb8"><img src="images/chaknu.png"/><span>Ch4knu</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb9" name='mythical-five'/>
+                                <label for="cb9"><img src="images/hadjizy.png"/><span>Hadjizy</span></label>
+                            </li>
+                            <li><input type="checkbox" id="cb10" name='mythical-five'/>
+                                <label for="cb10"><img src="images/imbadeejay.png"/><span>ImbaDeejay</span></label>
+                            </li>
+                        </ul>
+                        <div class='bet-buttons'>
+                            <a href="#" id='bet-button1' class="button">Bet Now!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+           
+            <!-----------champion checkboxes--------------------->
+            
+            <div class='row'>
+                <h2>Choose your Champion</h2>
+                <form method='post' action='#' class='champion-form'>
+                    <ul>
+                        <li><input type="checkbox" id="rb1" name='champion'/>
+                        <label for="rb1"><img src="images/bren.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb2" name='champion'/>
+                        <label for="rb2"><img src="images/aura.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb3" name='champion'/>
+                        <label for="rb3"><img src="images/cignal.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb4" name='champion'/>
+                        <label for="rb4"><img src="images/exe.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb5" name='champion'/>
+                            <label for="rb5"><img src="images/nexplay.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb6" name='champion'/>
+                            <label for="rb6"><img src="images/omega.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb7" name='champion'/>
+                            <label for="rb7"><img src="images/onic.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb8" name='champion'/>
+                            <label for="rb8"><img src="images/work.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb9" name='champion'/>
+                            <label for="rb9"><img src="images/blacklist.png" /></label>
+                        </li>
+                        <li><input type="checkbox" id="rb10" name='champion'/>
+                            <label for="rb10"><img src="images/laus.png" /></label>
+                        </li>
+                    </ul>
+                    <div class='bet-buttons'>
+                        <a href="#" id='bet-button2' class="button">Bet Now!</a>
+                    </div>
+                </form>
+            </div>
+            </div>
+             <!-----------champion rewards-------------------->
+            <!--Creates the popup body-->
+            <div class='bg-modal'>
+                <div class='modal-content'>
+                    <div class='close'>+</div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/natalia.jpg" style='width:50%; height:120px'>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/tigreal.jpg" style='width:50%; height:120px'>
+                    </div>
+
+                      <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <form action='' method='get' class='bet-form'>
+                    <input type='number' placeholder='diamonds' name='diamonds' class='diamonds' min=100 max=50000>
+                    <input type='submit' value='Bet' class='button', id='buy-in-button'>
+                    </form>
+                </div>
+            </div>
+
+        <div class='livestream-area'>
+            <div class="wrapper">
+            <iframe width="100%" height="500"
+            src="https://www.youtube.com/embed/_lHbEKJ73gA?autoplay=1&mute=1">
+            </iframe> 
+            <div class="form-container">
+                <div class="form-inner">
+                    <form method="get" class="chatbox"> <!--user story 17-->
+                        <textarea id="text-chatbox" name="message" rows="5" cols="84"></textarea> <!---user story 15-->
+                        <div class='bet-buttons'>
+                            <input type='submit' value='chat' class='button' id='chat-button'> <!--user story 16--> 
+                        </div>
+                    </form>          
+                </div>          
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class='row'>
+            <div class='col span-1-of-2'>
+                <ul class='footer-nav'>
+                    <li><a href='#'>About me</a></li>
+                    <li><a href='#'>Contact us </a></li>
+                </ul>
+            </div>
+            <div class='col span-1-of-2'>
+                <ul class='social-links'>
+                    <li><a href='https://web.facebook.com/garettoy/' target='_blank'><ion-icon name="logo-facebook" class="ion-social-facebook"></ion-icon></a></li>
+                    <li><a href='https://www.linkedin.com/in/chester-garett-calingacion-cpa-033284170/' target='_blank'><ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon></a></li>
+                    <li><a href='https://www.instagram.com/chestergarett/' target='_blank'><ion-icon name="logo-instagram" class="ion-social-instagram"></ion-icon>
+                    </i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='row'>
+           <p>
+               Copyright &copy; 2021 by Chester Garett. All rights reserved.
+           </p> 
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+    <script src="assets/js/form-validation.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
