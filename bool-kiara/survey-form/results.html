@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VACCINE SIDE EFFECTS: Survey Form Responses</title>
+    <link rel="stylesheet" type="text/css" href="rstyle.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:400" rel="stylesheet">
+</head>
+<body id="main">
+    <div class="container">
+        <div class="content">
+            <div id="content-1">
+                <h2>Thank you for answering!</h2>
+                <hr>
+                <p id="description">
+                    Thank you for doing your part in helping the world move on from this global pandemic. We highly suggest you encourage other people to get vaccinated too.<br>
+                    Let's achieve herd immunity together.<br>
+                    To know more about herd immunity, <a href="https://www.herdimmunity.ph" target="_blank">click here</a>.<br>
+                    <p id="description2">
+                        Additional links to keep yourself informed: <br>
+                        <ul>
+                            <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/expect/after.html" target="_blank">Vaccine side effects and how to relieve them</a></li>
+                            <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/keythingstoknow.html" target="_blank">Key things to know</a></li>
+                            <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines" target="_blank">COVID-19 vaccines</a></li>
+                            <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/faq.html" target="_blank">COVID-19 vaccination FAQS</a></li>
+                        </ul>
+                    </p>
+                </p>
+                <div class="btn-box">
+                <button type="button" id="next">Show me my responses</button>
+                <a href="index.html"><button type="button" id="back">Submit another form</button></a>
+                </div>
+            </div>
+
+            <div id="content-2">
+                <div id="c21">
+                    <h2>Your Responses</h2>
+                    <hr>
+                    <div id="results"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var resultsList = document.getElementById('results')
+        var c1 = document.getElementById("content-1");
+        var c2 = document.getElementById("content-2");
+        var bd = document.getElementById("main");
+        var n = document.getElementById("next");
+        n.onclick = function() {
+            c1.style.top = "-1500px";
+            c2.style.top = "80px";
+            bd.style.backgroundImage = "url('images/c2\ bg.png')";
+        }
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            resultsList.append(`${name}: ${value}`)
+            resultsList.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>
