@@ -1,0 +1,83 @@
+html, body, #submit {
+    font-family: 'VALORANT', sans-serif;                                            
+}
+
+body {
+    background-image: url(assets/vl_bg5.jpg);
+    width: 100%;
+}
+
+fieldset {
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#form-div {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+#survey-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    top: 5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    width: 500px;
+    height: 750px;
+}
+
+.class-form {
+    color: white;
+    text-align: left;
+}
+
+.class-form input {
+    height: 20px;
+    width: 60%;
+}
+
+#radiobtn-label {
+    text-align: left;
+}
+
+#name {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#number {
+    width: 25%;
+}
+
+#submit {
+    width: 100px;
+}
+
+#txt {
+    width: 80%;
+    align-items: left;
+}
+
+#radio-role {
+    text-align: left;
+}
+
+#survey-form p {
+    text-align: left;
+    font-size: 100%;
+}
+
+#checkbox-map {
+    text-align: left;
+}
+
