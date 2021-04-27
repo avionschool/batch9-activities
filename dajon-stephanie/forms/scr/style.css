@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(33, 100, 117);
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    
+}
+
+.product-name-description {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: white;
+}
+
+.background {
+    display: flex;
+    position: block;
+    width: 600px;
+    height: 520px;
+    opacity: 20%;
+    max-width: 100%;
+}
+
+.overlay {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+#product-name {
+    width: inherit;
+    font-size: xx-large;
+    font-style: italic;
+
+}
+
+#prod-description {
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+}
+
+
+.title_description {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+p#description {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+
+.Logo {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.order_form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#survey-form {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid;
+    border-style: double;
+    border-radius: 15px;
+    animation: animated-border 1.5s infinite;
+    
+}
+
+h1#title {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 4px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+
+
+@keyframes animated-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }        
+}
+
+
+.nen_labels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#name {
+    margin-bottom: 1rem;
+}
+
+
+#email {
+    margin-bottom: 1rem;
+}
+
+#number {
+    margin-bottom: 1rem;
+}
+
+.product-quantity {
+    margin-bottom: 1rem;
+}
+
+.flavours {
+    margin-bottom: 1rem;
+}
+
+
+.delivery {
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+#Special-Instruction {
+    margin-left: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+#submit {
+    margin-bottom: 1rem;
+}
