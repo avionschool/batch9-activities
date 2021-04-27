@@ -19,3 +19,20 @@ submit.addEventListener('click', e => {
 });
 
 
+
+// console.log(window.location.href)
+
+// function getUrlParameter(name) {
+//   name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+//   var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+//   var results = regex.exec(location.search);
+//   return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+// };
+
+// console.log(getUrlParameter("name"));
+// console.log(getUrlParameter("email"));
+// console.log(getUrlParameter("contact"));
+// console.log(getUrlParameter("sex"));
+// console.log(getUrlParameter("source"));
+// console.log(getUrlParameter("feedback"));
+
