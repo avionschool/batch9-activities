@@ -1,4 +1,6 @@
 import validateField from "./src/validateField.js";
+import { formData, errorData } from "./src/globalData.js";
+import displayData from "./src/displayData.js";
 
 const form = document.querySelector(".form");
 
@@ -25,6 +27,16 @@ form.addEventListener("submit", e => {
     const field = document.querySelector(`#${id}`);
     validateField(field, id, type);
   });
+
+  const isError = Object.values(errorData).reduce((status, current) => {
+    return status || current;
+  });
+
+  if (isError) {
+    return;
+  } else {
+    displayData(formData);
+  }
 });
 
 fieldConfigs.forEach(({ id, type }) => {

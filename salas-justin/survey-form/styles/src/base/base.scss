@@ -33,8 +33,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  font-weight: 300;
 
+  //customs
+  position: relative;
+  font-weight: 300;
   display: grid;
   grid-template-rows: 20vh auto;
   justify-items: center;

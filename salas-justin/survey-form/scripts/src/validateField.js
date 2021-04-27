@@ -1,5 +1,16 @@
 import validationLevels from "./validationLevels.js";
 import getElemParams from "./getElemParams.js";
+import { formData, errorData } from "./globalData.js";
+
+function checkKey(type, fieldId) {
+  if (type === "check") {
+    return "check";
+  } else if (type === "radio") {
+    return "radio";
+  } else {
+    return fieldId;
+  }
+}
 
 export default function (field, fieldId, type) {
   let status = false;
@@ -28,8 +39,12 @@ export default function (field, fieldId, type) {
     if (error) {
       status = true;
       message = errorMessage;
+      formData[checkKey(type, fieldId)] = "";
+      errorData[checkKey(type, fieldId)] = true;
       break;
     } else {
+      formData[checkKey(type, fieldId)] = fieldValue;
+      errorData[checkKey(type, fieldId)] = false;
       continue;
     }
   }
