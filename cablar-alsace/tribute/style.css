@@ -1,0 +1,176 @@
+html{
+   scroll-behavior: smooth;
+}
+#main {
+   background-image: url('https://pbs.twimg.com/media/EzcLw_TX0AUAPh5?format=jpg&name=large');
+
+   /* parallax */
+   height: 100px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+/*NAVIGATION MENU-START*/
+.navigation {
+   list-style: none;
+}
+  
+.navigation li {
+   display: inline-block;
+   padding: 10px;
+   font-family: Arial;
+   background-color: gold;
+}
+
+.navigation li a:hover {
+   font-family: Arial;
+   color: black;
+}
+/*NAVIGATION MENU-END*/
+
+/*HOME-TITLE-START*/
+#title { /*Niana Guerrero*/
+   height: 40px;
+   padding-top: 35px;
+   text-align: center;
+
+   font-family: Arial;
+   color: rgb(243, 243, 189);
+   text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+}
+
+#titlesub1 { /*Youtube, Content Creator*/
+   height: 2px;
+   text-align: center;
+
+   font-family: Arial;
+   font-style: italic;
+   color: rgb(243, 243, 189);
+}
+
+#titlesub2 { /*12M Subscribers*/
+   padding-bottom: 600px;
+   text-align: center;
+   
+   font-family: Arial;
+   font-style: italic;
+   color: rgb(243, 243, 189);
+}
+/*HOME-TITLE-END*/
+
+/*IMG DIV-START*/
+#img-div{
+   background-color: black;
+   display: block; 
+}
+
+#timeline { /*Timeline*/
+   height: 50px;
+   padding-top: 50px;
+   text-align: center;
+
+   font-family: Arial;
+   color:white;
+   text-shadow: 0 0 6px #ff0000, 0 0 6px #ffee00;
+    
+}
+
+#image { /*Niana swag photo*/
+   padding-top: 20px;
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#img-caption{ /*Niana Jose Evidente Guerrero*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   font-family: Arial;
+   color:white;
+   font-style: italic;
+}
+
+.timeline-list {
+   color: white;
+   text-align: center;
+   font-family: Arial;
+   background-color: black;
+}
+.timeline-list h2{
+   font-family: Arial;
+   color: gold;
+   text-align: center;
+}
+
+.timeline-list h4 {
+   font-family: Arial;
+   font-style: italic;
+   color: gold;
+   text-align: center;
+}
+
+.timeline-list p {
+   font-family: Arial;
+   padding-left:100px;
+   padding-right: 100px;
+}
+
+/*FUN FACTS*/
+.fun-facts {
+   background-color: gold;
+   padding: 50px;
+   color:black;
+   font-family: Arial;
+   text-align: center;
+}
+
+#title-fun{
+   height: 40px;
+   padding-bottom: 30px;
+   text-align: center;
+   
+   font-family: Arial;
+   color: rgb(243, 243, 189);
+   text-shadow: 0 0 10px gold, 0 0 6px fuchsia;
+}
+
+.fun-facts h3 {
+   color: black;
+}
+
+.fun-facts p {
+   font-style: italic;
+}
+
+/*TRIBUTE INFO*/
+#tribute-info {
+   background-color: black;
+   padding:50px;
+   font-family: Arial;
+   color: white;
+   text-align: center;
+}
+#tribute-info a:hover {
+   color: gold;
+}
+
+/*Back2Top*/
+#backtotop {
+   background-color: black;
+   padding:20px;
+   font-family: Arial;
+   color: white;
+   text-align: center;
+}
+#backtotop a:hover {
+   text-decoration: none;
+   color: gold;
+}

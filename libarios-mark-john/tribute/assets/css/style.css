@@ -1,0 +1,118 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#main{
+	background-color: black;
+}
+
+p{
+    font-size: 16px;
+    line-height: 25px;
+	text-align: justify;
+}
+
+.banner-area{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/mafia.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align: center;
+}
+
+#image{
+	height: 25%;
+	width: 15%;
+	margin-top: 200px;
+	border-radius: 50%;
+}
+
+#title, #img-caption{
+  	color: white;
+}
+
+#title{
+  	font-size: 5vh;
+}
+
+#img-caption{
+  	font-size: 2vh;
+  	font-style: italic;
+  	text-transform: uppercase;
+}
+
+.early-life-area, .criminal-career, .personal-life{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+.text-part{
+    width: 65%;
+    height: 80%;
+}
+
+.early-life-area{
+	color: white;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/cartel.jpg);
+}
+
+.criminal-career{
+    background-color: #262626;
+    color: #fff;
+}
+
+.personal-life{
+	background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.end-image{
+	position:absolute;
+	right:10px;
+	bottom: 10px ;	
+	opacity:0.5;
+}
+
+.sub-heading{
+	margin-top: -15px;
+	font-style: italic;
+}
+
+.a-tag{
+	position:relative;
+	top:-65px;
+	background-color: black;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-text{
+	color: white;
+}
+
+.footer-text:hover{
+	color: #aa2f10;
+}

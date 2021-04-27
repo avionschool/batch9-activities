@@ -1,0 +1,132 @@
+.navbar ul .small-screen {
+    display: none;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #000000;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+    font-weight: bold;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 20%;
+    background: #aa2f10;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.logo {
+    margin-left: 10%;
+    width: 125px;
+    cursor: pointer;
+}
+
+img{
+    width: 20%;
+}
+
+a{
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: #000;
+}
+
+@media screen and (max-width: 1170px) {
+    ul li a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1162px) {
+    ul li a {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    ul li a {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 923px) {
+    .nav{
+        margin-right: 8%;
+    }
+    ul li a {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .nav{
+        margin-right: 5%;
+    }
+    ul li a {
+        font-size: 9px;
+    }
+}
+
+
+@media screen and (max-width: 816px) {
+    .logo {
+        margin-left: 10%;
+        width: 95px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 781px) {
+    .navbar ul .wide-screen {
+        display: none;
+    }
+    .navbar ul .small-screen {
+        display: flex;
+    }
+
+    .navbar ul li a {
+        font-size: 11px;
+    }
+}
+
