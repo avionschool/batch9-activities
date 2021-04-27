@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="animate.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/surveyForm/assets/Doh.ico">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container animated fadeIn slow">
+        <header class="header" id="head">
+            <div id="main">
+                <div id="image-div">
+                    <img src="/surveyForm/assets/Doh.png">
+                </div>
+                <div id="image-div2">
+                    <img src="/surveyForm/assets/Bulacan.png">
+                </div>
+            <h1 id="title">
+               Bulacan Contact Tracing
+            </h1>
+            <p id="description">
+               If you are either diagnosed with Coronavirus or experiencing Coronavirus symptoms, and if you are living in Bulacan Area, please provide us with 
+               your contact information. Thank you!
+            </p>
+            <button id="start_"class="button2">Start</button>
+        </header>
+        <form action="results.html" id="survey-form" method="GET">
+            <div class="form-group animated fadeIn slow" id="nameshow">
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your first name" required>
+                <button id="nameenter" class="button1">Submit</button>
+                <span class="error_form" id="fname_error_message"></span>
+            </div>
+            <div class="form-group animated fadeIn slow" id="lnameshow">
+                <label for="name">Last Name</label>
+                <input type="text" name="name" id="lname" class="formControl" placeholder="Enter your last name" required>
+                <button id="lnameenter" class="button1">Submit</button>
+                <span class="error_form" id="lname_error_message"></span>
+            </div>
+
+            <div class="form-group animated fadeIn slow" id="emailshow">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+                <button id="emailenter" class="button1">Submit</button>
+                <span class="error_form" id="email_error_message"></span>
+                
+            </div>
+            <div class="form-group animated fadeIn slow" id="ageshow">
+                <label for="age">Enter Age:</label>
+                <input type="number" name="age" id="age" class="formControl" placeholder="Enter age" required>
+                <button id="ageenter"class="button1">Submit</button>
+            </div>
+
+            <div class="form-group animated fadeIn slow" id="phoneshow">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+                <button id="phoneenter"class="button1">Submit</button>
+            </div>
+                        
+            <div class="form-group animated fadeIn slow" id="addressshow">
+                <label for="address">Address <span class="clue"></span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+                <button id="addressenter"class="button1">Submit</button>
+            </div>
+        
+            <div class="form-group animated fadeIn slow" id="dropdownshow">
+                <p id="">Marital Status</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value="single" selected>Single</option>
+                    <option value="married">Married</option>
+                    <option value="widow">Widowed</option>
+                    <option value="other">Divorced</option>
+                </select>
+                <button id="dropdownenter" class="button1">Submit</button>
+            </div>
+            
+            <div class="form-group animated fadeIn slow" id="sourceshow">
+                <p id="quest">Are you a male or female?</p>
+                <label for="">
+                    <input type="radio" name="source" value="male"
+                    class="inputRadio"
+                    checked> Male
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="female"
+                    class="inputRadio"
+                    >Female
+                </label>
+                <button id="sourceenter" class="button1">Submit</button>
+            </div>
+           
+            <div class="form-group animated fadeIn slow" id="frontshow">
+                <p id="quest">Symptoms you are currently experiencing: </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="fever"> Fever (>100F) or subjective fever
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="cough"> New Cough
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="shortness">  Shortness of Breath
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="respiratory distress"> Respiratory Distress
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="chills"> Chills
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="myalagia"> Myalagia (Muscle Aches)
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="myalagia"> Headache
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="nausea"> Nausea/Vomitting
+                </label>
+                <label for="">
+                <input type="checkbox" name="prefer" class="checkbox" value="diarrhea"> Diarrhea
+                </label>
+                <label for="">
+                <input type="checkbox" name="prefer" class="checkbox" value="sore"> Sore Throat
+                </label>
+                <label for="">
+                <input type="checkbox" name="prefer" class="checkbox" value="fatigue"> Fatigue
+                </label>
+                <button id="frontenter" class="button1">Submit</button>
+            </div>
+            <div class="form-group animated fadeIn slow" id="contactnameshow">
+                <p id="quest">Contact Tracing List:<br> </p>
+                <p>You must record the names of every person you have contact with during the last 3 days.
+                </p>
+                <label for="firs-name">Name 1</label>
+                <input type="text" name="name" id="name2" class="formControl" placeholder="Enter name" required>
+                <label for="firs-name">Name 2</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter name" required>
+                <label for="firs-name">Name 3</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter name" required>
+                <label for="firs-name">Name 4</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter name" required>
+                <label for="firs-name">Name 5</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter name" required>
+                <label for="firs-name">Name 6</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter name" required>
+                <button id="contactnameenter" class="button1">Submit</button>
+                <span class="error_form" id="contname_error_message"></span>
+            </div>
+            <div class="form-group animated fadeIn slow" id="feedshow">
+                <p id="quest">Your opinion matter to us. We would like to hear something from you to improve our services.</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group animated fadeIn slow" id="submitshow">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+       
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <script>    
+        $(document).ready(function(){
+            $('#nameshow').hide();
+            $('#lnameshow').hide();
+            $('#emailshow').hide();
+            $('#phoneshow').hide();
+            $('#ageshow').hide();
+            $('#addressshow').hide();
+            $('#dropdownshow').hide();
+            $('#sourceshow').hide();
+            $('#frontshow').hide();
+            $('#contactnameshow').hide();
+            $('#feedshow').hide();
+            $('#submitshow').hide();
+            $('#thankyou').hide();
+
+          $("#fname_error_message").hide();
+          $("#lname_error_message").hide();
+          $("#email_error_message").hide();
+            var error_email = false;
+            var error_fname = false;
+            var error_sname = false;
+        $("#name").focusout(function(){
+            fname();
+            });
+         $("#lname").focusout(function() {
+            lname();
+         });
+         $("#email").focusout(function() {
+            check_email();
+         });
+
+
+
+            $('#start_').on('click',function(){
+                $('#nameshow').slideToggle();
+                $('#head').hide();
+                $('#name').focus();
+            });
+
+
+            
+            $('#nameenter').on('click',function(){
+                error_fname = false;
+                fname();
+                if (error_fname === false){
+                $('#lnameshow').slideToggle();
+                $('#nameshow').hide();
+                $('#nameshow').children().attr("disabled","disabled");
+                $('#lname').focus();
+                }
+
+                else {
+               alert("Please Fill your First Name Correctly");
+               return false;
+            }
+            });
+            $('#nameenter').keypress(function(e) {
+                 if (e.which == 13) {
+                    error_fname = false;
+                     fname();
+                     if (error_fname === false){
+                $('#lnameshow').slideToggle();
+                $('#nameshow').hide();
+                $('#nameshow').children().attr("disabled","disabled");
+                $('#lname').focus();
+                }
+                 }
+             });
+
+
+
+             $('#lnameenter').on('click',function(){
+                error_lname = false;
+                lname();
+                if (error_lname === false){
+                $('#emailshow').slideToggle();
+                $('#lnameshow').hide();
+                $('#lnameshow').children().attr("disabled","disabled");
+                $('#email').focus();
+                }
+
+                else {
+               alert("Please Fill your Last Name Correctly");
+               return false;
+            }
+            });
+            $('#lnameenter').keypress(function(e) {
+                 if (e.which == 13) {
+                error_lname = false;
+                lname();
+                if (error_lname === false){
+                $('#emailshow').slideToggle();
+                $('#lnameshow').hide();
+                $('#lnameshow').children().attr("disabled","disabled");
+                $('#email').focus();
+                }
+                }
+             });
+             
+             
+            $('#emailenter').on('click',function(){
+                error_email = false;
+                check_email();
+                if( error_email === false){
+                $('#ageshow').slideToggle();
+                $('#emailshow').hide();
+                $('#emailshow').children().attr("disabled","disabled");
+                $('#age').focus();
+                }
+                else {
+               alert("Please Fill your Email Correctly");
+               return false;
+                }
+            });
+
+            $('#emailenter').keypress(function(e) {
+                 if (e.which == 13) {
+                    error_email = false;
+                check_email();
+                if( error_email === false){
+                $('#ageshow').slideToggle();
+                $('#emailshow').hide();
+                $('#emailshow').children().attr("disabled","disabled");
+                $('#age').focus();
+                }}
+
+             });
+
+             $('#ageenter').on('click',function(){
+                $('#phoneshow').slideToggle();
+                $('#ageshow').hide();
+                $('#ageshow').children().attr("disabled","disabled");
+                $('#phone').focus();
+            });
+            $('#ageenter').keypress(function(e) {
+                 if (e.which == 13) {
+                $('#phoneshow').slideToggle();
+                $('#ageshow').hide();
+                $('#ageshow').children().attr("disabled","disabled");
+                $('#phone').focus();
+                 }
+             });
+
+             $('#phoneenter').on('click',function(){
+                $('#addressshow').slideToggle();
+                $('#phoneshow').hide();
+                $('#phoneshow').children().attr("disabled","disabled");
+                $('#address').focus();
+            });
+            $('#phoneenter').keypress(function(e) {
+                 if (e.which == 13) {
+                $('#addressshow').slideToggle();
+                $('#phoneshow').hide();
+                $('#phoneshow').children().attr("disabled","disabled");
+                $('#address').focus();
+                 }
+             });
+
+
+
+             $('#addressenter').on('click',function(){
+                $('#dropdownshow').slideToggle();
+                $('#addressshow').hide();
+                $('#addressshow').children().attr("disabled","disabled");
+               
+            });
+            $('#addressenter').keypress(function(e) {
+                 if (e.which == 13) {
+                $('#dropdownshow').slideToggle();
+                $('#addressshow').hide();
+                $('#addressshow').children().attr("disabled","disabled");
+               
+                 }
+             });
+
+
+             $('#dropdownenter').on('click',function(){
+                $('#sourceshow').slideToggle();
+                $('#dropdownshow').hide();
+                $('#dropdownshow').children().attr("disabled","disabled");
+            });
+            $('#dropdownenter').keypress(function(e) {
+                 if (e.which == 13) {
+                $('#sourceshow').slideToggle();
+                $('#dropdownshow').hide();
+                $('#dropdownshow').children().attr("disabled","disabled");
+                 }
+             });
+
+
+             $('#sourceenter').on('click',function(){
+                $('#frontshow').slideToggle();
+                $('#sourceshow').hide();
+                $('#sourceshow').children().attr("disabled","disabled");
+            });
+            $('#sourceenter').keypress(function(e) {
+                 if (e.which == 13) {
+                $('#frontshow').slideToggle();
+                $('#sourceshow').hide();
+                $('#sourceshow').children().attr("disabled","disabled");
+                 }
+             });
+
+             $('#frontenter').on('click',function(){
+                $('#contactnameshow').slideToggle();
+                $('#frontshow').hide();
+                $('#frontshow').children().attr("disabled","disabled");
+                $('#name2').focus();
+            });
+            $('#frontenter').keypress(function(e) {
+                 if (e.which == 13) {
+                $('#contactsnamehow').slideToggle();
+                $('#frontshow').hide();
+                $('#frontshow').children().attr("disabled","disabled");
+                $('#name2').focus();
+                 }
+             });
+
+
+             $('#contactnameenter').on('click',function(){
+                $('#feedshow').slideToggle();
+                $('#submitshow').slideToggle();
+                $('#contactnameshow').hide();
+                $('#contactnameshow').children().attr("disabled","disabled");
+                $('#feedback').focus();
+            });
+            $('#contactnameenter').keypress(function(e) {
+                 if (e.which == 13) {
+                $('#feedshow').slideToggle();
+                $('#submitshow').slideToggle();
+                $('#contactnameshow').hide();
+                $('#contactnameshow').children().attr("disabled","disabled");
+                $('#feedback').focus();
+                 }
+             });
+             $('#submit').on('click',function(){
+                 window.location.href="results.html";
+                $('#thankyou').slideToggle();
+                $('#feedshow').hide();
+                $('#submitshow').hide();
+                $('#feedshow').children().attr("disabled","disabled");
+                $('#submitshow').children().attr("disabled","disabled");
+            });
+            $('#submit').keypress(function(e) {
+                 if (e.which == 13) {
+                window.location.href="results.html";
+                $('#thankyou').slideToggle();
+                $('#feedshow').hide();
+                $('#submitshow').hide();
+                $('#feedshow').children().attr("disabled","disabled");
+                $('#submitshow').children().attr("disabled","disabled");
+               
+                 }
+             });
+    
+            
+        
+         function fname() {
+            var pattern = /^[a-zA-Z]*$/;
+            var fname = $("#name").val();
+            if (pattern.test(fname) && fname !== '') {
+               $("#fname_error_message").hide();
+               $("#name").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#fname_error_message").html("Should contain only Characters");
+               $("#fname_error_message").show();
+               $("#name").css("border-bottom","2px solid #F90A0A");
+               error_fname = true;
+            }
+         }
+         function lname() {
+            var pattern = /^[a-zA-Z]*$/;
+            var lname = $("#lname").val()
+            if (pattern.test(lname) && lname !== '') {
+               $("#lname_error_message").hide();
+               $("#lname").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#lname_error_message").html("Should contain only Characters");
+               $("#lname_error_message").show();
+               $("#lname").css("border-bottom","2px solid #F90A0A");
+               error_lname = true;
+            }
+         }
+
+         function check_email() {
+            var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var email = $("#email").val();
+            if (pattern.test(email) && email !== '') {
+               $("#email_error_message").hide();
+               $("#email").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#email_error_message").html("Invalid Email");
+               $("#email_error_message").show();
+               $("#email").css("border-bottom","2px solid #F90A0A");
+               error_email = true;
+            }
+         }
+
+
+
+
+
+
+
+            
+
+
+
+             
+            }  );
+    
+    
+    
+    
+</script>
+</body>
+</html>
