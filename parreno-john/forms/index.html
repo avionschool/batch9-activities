@@ -11,6 +11,7 @@
                 document.getElementById("social-sciences").style.visibility="hidden";
                 document.getElementById("humanities").style.visibility="hidden";
                 document.getElementById("picture2").style.background="url('assets/chem.jpeg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
 
         }else if(status.value=="engineering-and-technology"){
                 document.getElementById("natural-sciences").style.visibility="hidden";
@@ -20,6 +21,7 @@
                 document.getElementById("social-sciences").style.visibility="hidden";
                 document.getElementById("humanities").style.visibility="hidden";
                 document.getElementById("picture2").style.background="url('assets/comsci.jpeg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
         }else if(status.value=="medical-and-health-sciences"){
                 document.getElementById("natural-sciences").style.visibility="hidden";
                 document.getElementById("engineering-and-technology").style.visibility="hidden";
@@ -27,7 +29,8 @@
                 document.getElementById("agricultural-sciences").style.visibility="hidden";
                 document.getElementById("social-sciences").style.visibility="hidden";
                 document.getElementById("humanities").style.visibility="hidden";
-                document.getElementById("picture2").style.background="url('assets/health.jpeg') center no-repeat";
+                document.getElementById("picture2").style.background="url('assets/health.jpeg')  no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
         }else if(status.value=="agricultural-sciences"){
                 document.getElementById("natural-sciences").style.visibility="hidden";
                 document.getElementById("engineering-and-technology").style.visibility="hidden";
@@ -36,7 +39,7 @@
                 document.getElementById("social-sciences").style.visibility="hidden";
                 document.getElementById("humanities").style.visibility="hidden";
                 document.getElementById("picture2").style.background="url('assets/agri.jpg') center no-repeat";
-                document.getElementById("picture2").style.backgroundColor="black";
+                document.getElementById("picture2").style.backgroundSize="contain";
         }else if(status.value=="social-sciences"){
                 document.getElementById("natural-sciences").style.visibility="hidden";
                 document.getElementById("engineering-and-technology").style.visibility="hidden";
@@ -45,7 +48,8 @@
                 document.getElementById("social-sciences").style.visibility="visible";
                 document.getElementById("humanities").style.visibility="hidden";
                 document.getElementById("picture2").style.background="url('assets/law.jpg') center no-repeat";
-                document.getElementById("picture2").style.backgroundColor="black";
+                document.getElementById("picture2").style.backgroundSize="contain";
+
         }else if(status.value=="humanities"){
                 document.getElementById("natural-sciences").style.visibility="hidden";
                 document.getElementById("engineering-and-technology").style.visibility="hidden";
@@ -54,7 +58,7 @@
                 document.getElementById("social-sciences").style.visibility="hidden";
                 document.getElementById("humanities").style.visibility="visible";
                 document.getElementById("picture2").style.background="url('assets/philo.jpg') center no-repeat";
-                document.getElementById("picture2").style.backgroundColor="black";
+                document.getElementById("picture2").style.backgroundSize="contain";
         }else if(status.value=="select"){
                 document.getElementById("natural-sciences").style.visibility="hidden";
                 document.getElementById("engineering-and-technology").style.visibility="hidden";
@@ -63,6 +67,7 @@
                 document.getElementById("social-sciences").style.visibility="hidden";
                 document.getElementById("humanities").style.visibility="hidden";
                 document.getElementById("picture2").style.background="url('assets/select.jpg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
                 
                 
         }
@@ -80,7 +85,7 @@
 
 <div class="container">
     <div id="picture2"></div>
-    <form id="survey-form">
+    <form id="survey-form" action="results.html" method="GET">
     <div class="user-information">
         <div id="title"><h1>An Appreciation<br> of the Sciences</h1></div>
         <div><label id="name-label" for="name">Name</label><input type="text" id="name" name="name" placeholder="Enter your name"></div>
@@ -185,12 +190,13 @@
         </div>
         </div>
 
-    </div>
+    
         
 
     <textarea name="comment" rows="10" cols="30"form="survey-form" placeholder="What's the story to your choice? Enter text here.."></textarea>
     
     <div><input type="submit" id="submit"></div>
+</div>
 </form>
 </div>
     
