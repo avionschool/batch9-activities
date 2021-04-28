@@ -1,0 +1,64 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/flexboard/app/images/test.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 960px;
+}
+
+
+h1 {
+    color: seashell;
+    text-shadow: 2px 2px 8px #251300;
+    text-align: center;
+    margin: 25px;
+}
+
+
+.chessboard {
+    margin: auto;
+    width: 45vw;
+    height: 45vw;
+    border: 6px solid #251300;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 2px 1px 24px -1px #251300;
+}
+
+.white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 12.5%;
+    height: 12.5%;
+    background-color: #8a785d;
+    font-size: 4vw;
+}
+.black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 12.5%;
+    height: 12.5%;
+    background-color: #573e2e;
+    font-size: 4vw;
+}
+
+.white:nth-last-child(-n+16), .black:nth-last-child(-n+16) {
+    color: seashell;
+}
+

@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/flexboard/app/images/test.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 960px;
+}
+
+h1 {
+  color: seashell;
+  text-shadow: 2px 2px 8px #251300;
+  text-align: center;
+  margin: 25px;
+}
+
+.chessboard {
+  margin: auto;
+  width: 45vw;
+  height: 45vw;
+  border: 6px solid #251300;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 2px 1px 24px -1px #251300;
+          box-shadow: 2px 1px 24px -1px #251300;
+}
+
+.white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 12.5%;
+  height: 12.5%;
+  background-color: #8a785d;
+  font-size: 4vw;
+}
+
+.black {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 12.5%;
+  height: 12.5%;
+  background-color: #573e2e;
+  font-size: 4vw;
+}
+
+.white:nth-last-child(-n+16), .black:nth-last-child(-n+16) {
+  color: seashell;
+}
+/*# sourceMappingURL=style.css.map */
