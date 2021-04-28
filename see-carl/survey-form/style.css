@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
     background-image: URL(VACCINE.png);   
+=======
+    background-image: URL(PIC\ 3.png);   
+>>>>>>> 3aff54f23bab994b72d7d0a0262ab9a343190fbf
     background-size: 2000px;
     background-position: 400px;
     align-items: center;
