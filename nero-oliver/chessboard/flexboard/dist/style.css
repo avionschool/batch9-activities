@@ -1,15 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/flexboard/app/images/test.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 960px;
+  background-color: rgba(138, 120, 93, 0.8);
+  background-image: url(/images/test.jpg);
 }
 
 h1 {
-  color: seashell;
-  text-shadow: 2px 2px 8px #251300;
+  color: #faebd7;
+  text-shadow: 4px 4px 18px #251300;
   text-align: center;
   margin: 25px;
 }
@@ -40,8 +39,8 @@ h1 {
       align-content: center;
   text-align: center;
   margin-bottom: 40px;
-  -webkit-box-shadow: 2px 1px 24px -1px #251300;
-          box-shadow: 2px 1px 24px -1px #251300;
+  -webkit-box-shadow: 2px 1px 28px #251300;
+          box-shadow: 2px 1px 28px #251300;
 }
 
 .white {
@@ -59,10 +58,11 @@ h1 {
   text-align: center;
   width: 12.5%;
   height: 12.5%;
-  background-color: #8a785d;
+  background-color: rgba(138, 120, 93, 0.8);
   font-size: 4vw;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
+  position: relative;
 }
 
 .black {
@@ -80,7 +80,7 @@ h1 {
   text-align: center;
   width: 12.5%;
   height: 12.5%;
-  background-color: #573e2e;
+  background-color: rgba(87, 62, 46, 0.9);
   font-size: 4vw;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -88,7 +88,7 @@ h1 {
 
 .white:nth-last-child(-n+16),
 .black:nth-last-child(-n+16) {
-  color: seashell;
+  color: #faebd7;
 }
 
 .white:nth-last-child(-n+16):hover,
