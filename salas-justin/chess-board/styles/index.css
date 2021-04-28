@@ -66,14 +66,14 @@ body {
 .row {
   display: flex;
 }
-.row:nth-child(odd) .column:nth-child(even) {
+.row:nth-child(odd) .cell:nth-child(even) {
   background-color: #166d3b;
 }
-.row:nth-child(even) .column:nth-child(odd) {
+.row:nth-child(even) .cell:nth-child(odd) {
   background-color: #166d3b;
 }
 
-.column {
+.cell {
   width: 11.875vw;
   height: 11.875vw;
   display: flex;
@@ -81,7 +81,7 @@ body {
   align-items: center;
 }
 @media screen and (orientation: landscape) {
-  .column {
+  .cell {
     width: 11.875vh;
     height: 11.875vh;
   }

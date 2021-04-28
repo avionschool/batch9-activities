@@ -11,8 +11,8 @@ const letters = {
   7: "h"
 };
 
-const rank2 = document.querySelector(".row-2").children;
-const rank7 = document.querySelector(".row-7").children;
+const rank2 = document.querySelector(".rank_2").children;
+const rank7 = document.querySelector(".rank_7").children;
 
 for (let i = 0; i <= rank2.length - 1; i++) {
   rank2[i].innerHTML = generatePawn("white");

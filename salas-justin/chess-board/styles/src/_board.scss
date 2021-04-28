@@ -18,19 +18,19 @@ body {
   display: flex;
 
   &:nth-child(odd) {
-    .column:nth-child(even) {
+    .cell:nth-child(even) {
       background-color: #166d3b;
     }
   }
 
   &:nth-child(even) {
-    .column:nth-child(odd) {
+    .cell:nth-child(odd) {
       background-color: #166d3b;
     }
   }
 }
 
-.column {
+.cell {
   width: 95/8 + 0vw;
   height: 95/8 + 0vw;
 
