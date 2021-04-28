@@ -1,7 +1,7 @@
 body {
-    background-image: URL(PIC\ 3.png);   
-    background-size: 1500px;
-    background-position: 380px;
+    background-image: URL(VACCINE.png);   
+    background-size: 2000px;
+    background-position: 400px;
     align-items: center;
     color:black;
 }
@@ -36,15 +36,18 @@ body {
 #submit {
     margin: 0 auto;
 }
-#description {
-    align-items: center;
-}
+
 h1 {
    text-align: center;
+   border-radius: 25px;
+   background-color: white;
+   border: 3px solid black;
 }
 #description {
     text-align: center;
     border-radius: 25px;
+    background-color: white;
+    border: 3px solid black;
 }
 #number {
     width: 80px;
@@ -79,3 +82,12 @@ h1 {
 #notes {
     text-align: center;
 }
+.mask {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  
+ 
