@@ -61,6 +61,8 @@ h1 {
   height: 12.5%;
   background-color: #8a785d;
   font-size: 4vw;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 .black {
@@ -80,9 +82,62 @@ h1 {
   height: 12.5%;
   background-color: #573e2e;
   font-size: 4vw;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.white:nth-last-child(-n+16), .black:nth-last-child(-n+16) {
+.white:nth-last-child(-n+16),
+.black:nth-last-child(-n+16) {
   color: seashell;
+}
+
+.white:nth-last-child(-n+16):hover,
+.black:nth-last-child(-n+16):hover {
+  -webkit-animation: pulse 0.8s infinite;
+          animation: pulse 0.8s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.white:nth-child(-n+16):hover,
+.black:nth-child(-n+16):hover {
+  -webkit-animation: pulse 0.8s infinite;
+          animation: pulse 0.8s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */
