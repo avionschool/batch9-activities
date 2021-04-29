@@ -55,7 +55,7 @@ body {
 }
 
 .board {
-  background: linear-gradient(to bottom right, #fafcff 0%, #9c9c9c 100%);
+  background: linear-gradient(to bottom right, #fff, #9f9f9f);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -67,10 +67,10 @@ body {
   display: flex;
 }
 .row:nth-child(odd) .cell:nth-child(even) {
-  background-color: #166d3b;
+  background-color: rgba(22, 109, 59, 0.5);
 }
 .row:nth-child(even) .cell:nth-child(odd) {
-  background-color: #166d3b;
+  background-color: rgba(22, 109, 59, 0.5);
 }
 
 .cell {

@@ -1,4 +1,11 @@
+import blackKing from "./constants/blackKing.js";
+import blackQueen from "./constants/blackQueen.js";
+import generateBishop from "./constants/generateBishop.js";
+import generateKnight from "./constants/generateKnight.js";
 import generatePawn from "./constants/generatePawn.js";
+import generateRook from "./constants/generateRook.js";
+import whiteKing from "./constants/whiteKing.js";
+import whiteQueen from "./constants/whiteQueen.js";
 
 const letters = {
   0: "a",
@@ -10,6 +17,33 @@ const letters = {
   6: "g",
   7: "h"
 };
+
+const rSquares = ["a8", "a1", "h8", "h1"];
+const nSquares = ["b8", "b1", "g8", "g1"];
+const bSquares = ["c8", "c1", "f8", "f1"];
+
+document.querySelector(".cell_d8").innerHTML = blackKing;
+document.querySelector(".cell_d1").innerHTML = whiteKing;
+document.querySelector(".cell_e8").innerHTML = blackQueen;
+document.querySelector(".cell_e1").innerHTML = whiteQueen;
+
+rSquares.forEach(rSquare => {
+  document.querySelector(`.cell_${rSquare}`).innerHTML = generateRook(
+    `${Number(rSquare[1]) % 2 == 0 ? "black" : "white"}`
+  );
+});
+
+nSquares.forEach(nSquare => {
+  document.querySelector(`.cell_${nSquare}`).innerHTML = generateKnight(
+    `${Number(nSquare[1]) % 2 == 0 ? "black" : "white"}`
+  );
+});
+
+bSquares.forEach(bSquare => {
+  document.querySelector(`.cell_${bSquare}`).innerHTML = generateBishop(
+    `${Number(bSquare[1]) % 2 == 0 ? "black" : "white"}`
+  );
+});
 
 const rank2 = document.querySelector(".rank_2").children;
 const rank7 = document.querySelector(".rank_7").children;
