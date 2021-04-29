@@ -1,0 +1,64 @@
+<!--
+
+body {
+    width: 800px;
+  height: 90vh;
+    margin:auto;
+    background-image: url("assets/jedisith.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+.banner {
+        width: 800px;
+        margin-left: auto; margin-right: auto;
+        margin-top: 5px; margin-bottom: 5px;
+        text-align: center;
+        }
+
+.container {
+        width: 500px; height: 500px;
+        margin: auto;
+        box-sizing: content-box;
+        border: 6px solid #FFE81F;
+        border-radius: 10px;
+        }
+
+.container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0 0 5px #FFE81F, 0 0 20px #FFE81F, 0 0 40px #FFE81F;
+        }
+
+.row {
+        display: flex;
+        flex:1;
+        flex-direction: row;
+        align-items: center;
+        }
+
+.white {
+        width: 62.5px; height: 62.5px;
+        background-color: white;
+        flex-wrap: wrap;
+        }
+
+.black {
+    width: 62.5px; height: 62.5px;
+    background-color: #9f0613;
+        }   
+   
+.black img {
+        width: 62px; height: 62px;
+        border-radius: 50%;
+        }
+
+.white img {
+        width: 62px; height: 62px;
+        border-radius: 50%;
+        }
+
+-->
