@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'BatmanForeverAlternate';
+    font-style: normal;
+    font-weight: normal;
+    src:    
+        local('BatmanForeverAlternate'), 
+        url('../fonts/batman-forever-cufonfonts-webfont/batmfa__.woff')
+        format('woff');
+}
+
+
+header {
+    font-size: 3vmin;
+    line-height: 3.8vmin;
+}
+
+h1 {
+    font-family: 'BatmanForeverAlternate' ;
+    letter-spacing: .75vmin;
+}
+

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <!-- Page Responsiveness-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+
+
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" type="image/x-icon">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+        
+        <title>	손예진 x 현 빈 </title>
+
+    </head>
+
+    <body>
+
+        <section class="showcase">
+			<div class="video-container">
+				<video src="assets/video/video.mp4" autoplay loop muted></video>
+			</div>
+			<div class="content">
+				<h1 id='title'  >Son Ye Jin &nbsp<div id='and' style="font-family: 'Princess Sofia'"> & &nbsp</div>Hyun Bin</h1>
+				<p id='description'>손예진 &nbsp&nbsp<span id='x'>x</span>&nbsp&nbsp현&nbsp &nbsp빈</p>
+				<a href="#formProper" class="btn">R . S . V . P . </a>
+			</div>
+
+
+		</section>
+
+        <section id="formProper">
+
+            <form id="survey-form" autocomplete="off" action='submit.html' method='GET'>
+
+                <div class="row needFlex">
+
+                    <div class="col-25">
+                      <label for="name" id='name-label' class="formLabel">Name<br>이름</label>
+                    </div>
+
+                    <div class="col-75">
+                      <input type="text" 
+                      id="name"
+                      class='answer'
+                      name="name" 
+                      placeholder="Kim Min Jun"
+                      required>
+                    </div>
+
+                </div>
+
+                <div class="row needFlex">
+
+                    <div class="col-25">
+                      <label for="email" id='email-label' class="formLabel">Email Address<br>이름</label>
+                    </div>
+
+                    <div class="col-75">
+                      <input type="email" 
+                      id="email"
+                      class='answer'
+                      name="email" 
+                      placeholder="example@domain.com"
+                      required>
+                    </div>
+                </div>
+
+                <div class="row needFlex">
+
+                    <div class="col-25">
+                      <label for="number" id='number-label' class="formLabel">Number of Pax<br>사람들의 수</label>
+                    </div>
+
+                    <div class="col-75">
+                      <input type="number" 
+                      id="number"
+                      class='answer'
+                      name="number" 
+                      placeholder="Including yourself (자신을 포함하여)"
+                      min="1"
+                      max="10"
+                      required>
+                    </div>
+                    
+                </div>
+
+                <div class="row needFlex">
+
+                    <div class="col-25">
+                        <p class="formLabel">Will You be Able to Come?<br>참석할 수 있습니까?</p>
+                    </div>
+
+                    <div class="col-75 center" id='YNM' >
+
+                        <label class='answer'>
+                            <input
+                                name="yes-no-maybe"
+                                value="yes"
+                                type="radio"
+                                class="input-radio"
+                                id='yes'
+                                checked/>
+                            Yes
+                        </label>
+
+                        <label class='answer'>
+                            <input
+                                name="yes-no-maybe"
+                                value="no"
+                                type="radio"
+                                class="input-radio"
+                                id='no'/>
+                            No
+                        </label>
+
+                        <label class='answer'>
+                            <input
+                                name="yes-no-maybe"
+                                value="maybe"
+                                type="radio"
+                                class="input-radio"
+                                id='maybe'/>
+                            Maybe
+                        </label>
+
+                    </div>
+                    
+                </div>
+
+                <div class='row needFlex'>
+
+                    <div class='col-25'>
+                        <label for='food'class='formLabel'><p class="formLabel">Food Preference<br>음식 선호도</p></label>
+                    </div>
+
+                    <div class='col-75'>
+                        <select id="dropdown" name="food" class="form-control answer" required>
+                            <option disabled selected value class='answer'>Select one (하나를 고르세요)</option>
+                            <option value="beef" class='answer'>Braised Beef Rib (막갈비찜)</option>
+                            <option value="pork" class='answer'>Royal Barbecue Pork (맥적)</option>
+                            <option value="chicken" class='answer'>Spicy Braised Chicken (닭볶음탕)</option>
+                            <option value="fish" class='answer'>Steamed Skate Fish (홍어찜)</option>
+                            <option value="seafood" class='answer'>Spicy Stir Fried Squid (오징어볶음)</option>
+                            <option value="vegan" class='answer'>Stir-fry Lotus Root (연근볶음)</option>                            
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class='row needFlex'>
+
+                    <div class='col-25'>
+                        <p class="formLabel">
+                            Assistance needed<br>
+                            도움이 필요하다
+                            <span class="clue"><br>(Check all that apply)</span><br>
+                    </div>
+
+                    <div class='col-75 center'>
+
+                        <label class='answer'>
+                            <input
+                                name="need"
+                                value="EtoKTrans"
+                                type="checkbox"
+                                class="input-checkbox"/>
+                            English to Korean Translator
+                        </label>
+
+                        <label class='answer'>
+                            <input
+                                name="need"
+                                value="KtoETrans"
+                                type="checkbox"
+                                class="input-checkbox"/>
+                            Korean to English Translator
+                        </label>
+
+                        <label class='answer'>
+                            <input
+                                name="need"
+                                value="hotel"
+                                type="checkbox"
+                                class="input-checkbox"/>
+                            Hotel Booking
+                        </label>
+
+                        <label class='answer'>
+                            <input
+                                name="need"
+                                value="flight"
+                                type="checkbox"
+                                class="input-checkbox"/>
+                            Flight Booking
+                        </label>
+
+                        <label class='answer'>
+                            <input
+                                name="need"
+                                value="airport"
+                                type="checkbox"
+                                class="input-checkbox"/>
+                            Airport Transfer
+                        </label>
+
+                        <label class='answer'>
+                            <input
+                                name="need"
+                                value="tour"
+                                type="checkbox"
+                                class="input-checkbox"
+                                checked/>
+                            Daegu City Tour
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="row needFlex">
+
+                    <div class="col-25">
+                      <label for="message" class="formLabel">Message for the Couple<br>그들을위한 메시지</label>
+                    </div>
+
+                    <div class="col-75">
+                      <textarea id="message" name="message" placeholder="Write your message here. . ." class='answer' required></textarea>
+                    </div>
+
+                </div>
+
+                <div class="row" id="submitbtn">
+                    <input type="submit" name="button" value="Submit" id="submit-button" class="btn">
+                </div>
+
+
+            </form>
+
+        </section>
+
+        <footer>
+            <br>
+            <p id='footerText'><span class='footText'>Fan made</span> <span class='footText'>&nbsp &nbsp &nbsp &nbsp&nbsp HTML5 || CSS3&nbsp</span> <span class='footText'>&copy Frankie 2021</span></p>
+            <br>
+        </footer>
+
+    </body>
+
+</html>

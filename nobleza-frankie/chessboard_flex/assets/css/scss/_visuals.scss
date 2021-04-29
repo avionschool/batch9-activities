@@ -1,0 +1,31 @@
+body {
+    background-image: url("https://i.imgur.com/udVFjNF.jpg");
+    background-color: $dark;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+header {
+    text-align: center;
+    margin-top: 2vh;
+}
+
+#vs {
+    font-size: 3.5vmin;
+}
+
+.chessboard {
+    border: .5vmin solid $light;
+}
+
+.pieces {
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.pieces:hover {
+    transform: scale(1.25);
+}
