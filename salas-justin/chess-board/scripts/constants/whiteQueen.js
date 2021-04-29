@@ -1,3 +1,5 @@
+//queensvg
+
 export default `
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 45 45">
   <g style="fill:#ffffff;stroke:#000000;stroke-width:1.5;stroke-linejoin:round">
