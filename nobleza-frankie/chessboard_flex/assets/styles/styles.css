@@ -71,6 +71,16 @@ body {
   display: inline-block;
   margin-top: 10%;
 }
+.chessboard .light .dPawn,
+.chessboard .light .lPawn,
+.chessboard .dark .dPawn,
+.chessboard .dark .lPawn {
+  max-height: 75%;
+  max-width: 75%;
+  display: inline-block;
+  margin-top: 10%;
+  position: relative;
+}
 
 body {
   background-image: url("https://i.imgur.com/udVFjNF.jpg");
@@ -104,4 +114,38 @@ header {
 .pieces:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
+}
+
+.lp1,
+.dp1 {
+  cursor: pointer;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.lp2,
+.dp2 {
+  cursor: pointer;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.lp1:hover {
+  -webkit-transform: translate(0, 9.375vmin);
+          transform: translate(0, 9.375vmin);
+}
+
+.lp2:hover {
+  -webkit-transform: translate(0, 18.75vmin);
+          transform: translate(0, 18.75vmin);
+}
+
+.dp1:hover {
+  -webkit-transform: translate(0, -9.375vmin);
+          transform: translate(0, -9.375vmin);
+}
+
+.dp2:hover {
+  -webkit-transform: translate(0, -18.75vmin);
+          transform: translate(0, -18.75vmin);
 }/*# sourceMappingURL=styles.css.map */

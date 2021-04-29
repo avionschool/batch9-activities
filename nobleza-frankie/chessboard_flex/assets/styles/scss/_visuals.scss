@@ -29,3 +29,30 @@ header {
 .pieces:hover {
     transform: scale(1.25);
 }
+
+.lp1,
+.dp1 {
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.lp2,
+.dp2 {
+    cursor: pointer;
+    transition: 3s;
+}
+.lp1:hover {
+    transform: translate(0, 9.375vmin);
+}
+
+.lp2:hover {
+    transform: translate(0, 18.75vmin);
+}
+
+.dp1:hover {
+    transform: translate(0, -9.375vmin);
+}
+
+.dp2:hover {
+    transform: translate(0, -18.75vmin);
+}
