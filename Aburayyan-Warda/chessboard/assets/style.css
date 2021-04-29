@@ -1,0 +1,40 @@
+body {
+  background-image: linear-gradient(to right, #d89c6e, #8f460e);
+}
+
+.chessboard {
+  border: 2px solid black;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vw;
+  margin: 0 auto;
+  width: 50vw;
+  box-shadow: 10px 10px 15px #020202;
+  font-size: 55px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 10%;
+}
+
+.white-box {
+  background-color: #d89c6e;
+  flex: 1;
+}
+.white-box:hover {
+  transform: scale(1.1);
+}
+
+.black-box {
+  background-color: #672e03;
+  flex: 1;
+}
+.black-box:hover {
+  transform: scale(1.1);
+}
