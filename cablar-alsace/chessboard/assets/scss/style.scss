@@ -1,0 +1,44 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.header {
+  width:50%;    
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.chessboard {
+  width: 60vw;    
+  height: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid black;
+}
+
+.light {
+  background-color:white;
+  height: 12.5%;
+  width:  12.5%;
+
+  float: left;
+  margin: auto;
+}
+    
+.dark {
+  background-color: darkgreen;
+  height: 12.5%;
+  width:  12.5%;
+
+  float: left; 
+  margin:auto;
+}
+
+img {
+  width: 80%;    
+  height: 80%;
+  margin-left: 10%;
+  margin-top:10%;
+}
+  
