@@ -23,24 +23,23 @@ h1 {
 
 .chessboard {
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(8, 5.55vw);
+    grid-template-rows: repeat(8, 5.55vw);
+    justify-content: center;
     width: 45vw;
-    height: 45vw;
     border: 6px solid $darkdarkbrown;
     border-radius: 4px;
     box-shadow: 2px 1px 28px #251300;
 }
 
-.white, .black {
-    display: flex;
+.white, .black {    
+    display: grid;
     justify-content: center;
-    align-items: center;
     align-content: center;
-    width: 12.5%;  /* no.of.boxex = 8x8 = 64 */
-    height: 12.5%; /* (√no.of.boxes)(100) / no.of.boxes = % */
-    background-color: $lightbrown;
     font-size: 4vw;
+    background-color: $lightbrown;
     transition: all 0.8s ease-out;
 }
 
