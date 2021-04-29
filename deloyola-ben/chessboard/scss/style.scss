@@ -1,4 +1,4 @@
-// @use "color";
+@use "color";
 
 html {
   height: 100%;
@@ -26,12 +26,12 @@ html {
           }
         }
         .light {
-          background: wheat;
-          // background: color.$white-box;
+          // background: wheat;
+          background: color.$white-box;
         }
         .dark {
-          background: #660022;
-          // background: color.$black-box;
+          // background: #660022;
+          background: color.$black-box;
         }
       }
     }
