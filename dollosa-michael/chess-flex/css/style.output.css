@@ -15,8 +15,8 @@ body {
 
 .container {
   background-color: #e6b7cd;
-  width: 64rem;
-  height: 64rem;
+  width: 80vmin;
+  height: 80vmin;
   position: absolute;
   top: 50%;
   /* remember the the origin will be the relative position of the parent */
@@ -36,19 +36,35 @@ body {
 
 .row {
   background-color: transparent;
-  height: 12.5%;
-  width: 100%;
   display: flex;
   flex-wrap: wrap; }
 
 .box {
   background-color: white;
-  width: 12.5%;
-  height: auto;
+  width: 10vmin;
+  height: 10vmin;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
-  font-size: 6rem; }
+  font-size: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media only screen and (max-width: 700px) {
+    .box {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 600px) {
+    .box {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 500px) {
+    .box {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 400px) {
+    .box {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 320px) {
+    .box {
+      font-size: 1.8rem; } }
 
 .row:nth-child(even) .box:nth-child(odd),
 .row:nth-child(odd) .box:nth-child(even) {
