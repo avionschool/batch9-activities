@@ -26,16 +26,16 @@ body{
     z-index: 1000;
 }
 
-// @keyframes fade {
-//     0% {visibility: visible;
-//         opacity: 1;}
-//     95% {visibility: visible;
-//         opacity: 1;}
-//     99% {visibility: visible;
-//         opacity: .8;}
-//     100% {visibility: hidden;
-//         opacity: 0;}
-// }
+@keyframes fade {
+    0% {visibility: visible;
+        opacity: 1;}
+    95% {visibility: visible;
+        opacity: 1;}
+    99% {visibility: visible;
+        opacity: .8;}
+    100% {visibility: hidden;
+        opacity: 0;}
+}
 
 .wait::before {
     content: "loading";
