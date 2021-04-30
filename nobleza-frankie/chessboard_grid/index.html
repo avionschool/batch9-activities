@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <!-- Page Responsiveness-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="assets/styles/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+
+
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" type="image/x-icon">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <!-- <script src="app.js" type="text/javascript"></script> -->
+
+        <title>Fellowship of the Ring</title>
+
+    </head>
+
+    <body>
+
+        <div class= 'wait'>
+            <div class= 'load'></div>
+        </div>
+
+        <section id='base'>
+
+            <h1>how The Fellowship Won</h1>
+
+            <input type='checkbox' id='infobox'>
+            <label for='infobox' id='icon-info'><img class='info-icon' src="assets/images/info.png"></label>
+            
+            <div id='info-box'>
+
+                <div id='info'>
+
+                    <fieldset>
+                        <legend>
+                            Fellowship<br> White
+                        </legend>
+                        <p>Gandalf - King</p>
+                        <p>Eowyn - Queen</p>
+                        <p>Frodo & Sam - Castle</p>
+                        <p>Aragorn - Pawn</p>
+                        <p>Legolas - Pawn</p>
+                        <p>Gimli - Pawn</p>
+
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>
+                            Mordor<br>Black
+                        </legend>
+                        <p>Saruman - King</p>
+                        <p>Witch-King - Knight</p>
+                        <p>Eye of Saruman - Castle</p>
+                        <p>Orc- Pawn</p>
+                    </fieldset>
+                </div>
+
+            </div>
+
+            <div class="board">
+
+                <div id= "a8" class="square light"></div>
+                <div id= "b8" class="square dark"></div>
+                <div id= "c8" class="square light"></div>
+                <div id= "d8" class="square dark"><img class="pieces" src="assets/images/bCastle.png"></div>
+                <div id= "e8" class="square light"></div>
+                <div id= "f8" class="square dark"></div>
+                <div id= "g8" class="square light"><img class="pieces" src="assets/images/bKing.png"></div>
+                <div id= "h8" class="square dark"></div>
+
+                <div id= "a7" class="square dark"></div>
+                <div id= "b7" class="square light"></div>
+                <div id= "c7" class="square dark"></div>
+                <div id= "d7" class="square light"></div>
+                <div id= "e7" class="square dark"></div>
+                <div id= "f7" class="square light"><img class="pieces" src="assets/images/bPawn.png"></div>
+                <div id= "g7" class="square dark"><img class="pieces" src="assets/images/bPawn.png"></div>
+                <div id= "h7" class="square light"><img class="pieces" src="assets/images/bPawn.png"></div>
+
+                <div id= "a6" class="square light"></div>
+                <div id= "b6" class="square dark"></div>
+                <div id= "c6" class="square light"></div>
+                <div id= "d6" class="square dark"></div>
+                <div id= "e6" class="square light"></div>
+                <div id= "f6" class="square dark"></div>
+                <div id= "g6" class="square light"></div>
+                <div id= "h6" class="square dark"></div>
+
+                <div id= "a5" class="square dark"></div>
+                <div id= "b5" class="square light"></div>
+                <div id= "c5" class="square dark"></div>
+                <div id= "d5" class="square light">
+
+                    <input type="checkbox" id="checkKnight">
+                    <label for="checkKnight" id="ckl" class="center">
+                        <img class="pieces center" src="assets/images/bHorse.png">
+                    </label>
+
+                </div>
+                <div id= "e5" class="square dark"></div>
+                <div id= "f5" class="square light"></div>
+                <div id= "g5" class="square dark"></div>
+                <div id= "h5" class="square light"></div>
+
+                <div id= "a4" class="square light"></div>
+                <div id= "b4" class="square dark"><img class="pieces" src="assets/images/wQueen.png"></div>
+                <div id= "c4" class="square light"></div>
+                <div id= "d4" class="square dark"></div>
+                <div id= "e4" class="square light"></div>
+                <div id= "f4" class="square dark"></div>
+                <div id= "g4" class="square light"></div>
+                <div id= "h4" class="square dark"></div>
+
+                <div id= "a3" class="square dark"></div>
+                <div id= "b3" class="square light"></div>
+                <div id= "c3" class="square dark"></div>
+                <div id= "d3" class="square light"></div>
+                <div id= "e3" class="square dark"></div>
+                <div id= "f3" class="square light"></div>
+                <div id= "g3" class="square dark"></div>
+                <div id= "h3" class="square light"></div>
+
+                <div id= "a2" class="square light"></div>
+                <div id= "b2" class="square dark"></div>
+                <div id= "c2" class="square light"></div>
+                <div id= "d2" class="square dark"></div>
+                <div id= "e2" class="square light"></div>
+                <div id= "f2" class="square dark"><img class="pieces" src="assets/images/wPawnL.png"></div>
+                <div id= "g2" class="square light"><img class="pieces" src="assets/images/wPawnA.png"></div>
+                <div id= "h2" class="square dark"><img class="pieces" src="assets/images/wPawnG.png"></div>
+
+                <div id= "a1" class="square dark"></div>
+                <div id= "b1" class="square light"></div>
+                <div id= "c1" class="square dark"></div>
+                <div id= "d1" class="square light">
+
+                    <input type="checkbox" id="checkCastle">
+                    <label for="checkCastle" id="ccl" class="center">
+                        <img class="pieces center" src="assets/images/wCastle.png">
+                    </label>
+
+                </div>
+                <div id= "e1" class="square dark"></div>
+                <div id= "f1" class="square light"></div>
+                <div id= "g1" class="square dark"><img class="pieces" src="assets/images/wKing.png"></div>
+                <div id= "h1" class="square light"></div>
+            
+            </div>
+
+        </section>
+    </body>
+
+</html>

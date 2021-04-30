@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <!-- Page Responsiveness-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/styles1.css" type="text/css" />
+        
+
+
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" type="image/x-icon">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <script>
+
+            const x = (x, y) => x * y
+            const musicStart = (document) => {
+                document.getElementById('IU').play();
+                document.removeEventListener('click', musicStart);
+            }
+            
+
+        </script>
+        
+        <title>	손예진 x 현 빈 </title>
+
+    </head>
+
+    <body>      
+
+        <ul class="bg-slideshow">
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+            <li><span>Image 03</span></li>
+            <li><span>Image 04</span></li>
+            <li><span>Image 05</span></li>
+            <li><span>Image 06</span></li>
+        </ul>
+
+        <section id='text'>
+
+            <div class='container'>
+
+                <div class='langBar'>
+
+                        <span class='en inLangBar'>English</span>
+                        <input type='checkbox' class="check inLangBar">
+                        <span class='kr inLangBar'>한국어</span>
+                    
+
+                    <div class='content contentEn'>
+                    <p>"I got on the wrong train, and<br> 
+                    that very train brought me here. . ."<br><br>
+                    We look forward to sharing our<br> 
+                    joy with you on our wedding day.</p>
+                    <h3 class='date'>12. 14. 20xx</h3>
+                    </div>
+
+                    <div class='content contentKr'>
+                    <p class='kor'>"나는 잘못된 기차를 탔고 바로 그<br> 
+                    기차가 나를 여기로 데려 왔습니다. . ."<br><br>
+                    우리는 결혼식 날 우리의 기쁨을<br> 
+                    당신과 나누기를 고대합니다.</p>
+                    <h3 class='date'>12. 14. 20xx</h3>
+                    </div>
+
+                    <audio autoplay loop id='IU'>
+                        <source src="assets/audio/IU.wav" type="audio/wav">
+                        <source src="assets/audio/IU.ogg" type="audio/ogg">
+                    </audio>
+                
+
+
+                </div>
+
+            </div>
+
+        </section>
+    </body>
+
+</html>

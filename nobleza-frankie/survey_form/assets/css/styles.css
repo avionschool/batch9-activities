@@ -1,0 +1,301 @@
+/* font imports */
+
+@font-face {
+    font-family: 'Anthoni Signature Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anthoni Signature Regular'), url('../fonts/AnthoniSignature.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Klik Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Klik Light'), url('../fonts/Klik-Light.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Pluto TV Sans V10 Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pluto TV Sans V10 Medium'), url('../fonts/PLUTOTVSANSV10MEDIUM049268681E313549C9F0461D811DB7B2.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Rockford Sans Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockford Sans Light'), url('../fonts/RockfordSans-Light.woff') format('woff');
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+
+/* general css */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    outline: none;
+}
+
+h1{
+    display: flex;
+    font-family: 'Anthoni Signature Regular';
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3.5vw; 
+}
+
+#and{
+    font-family:'Princess Sofia' ;
+}
+
+#x{
+    font-family: 'Klik Light';
+}
+
+#description{
+    font-family: 'Raleway';
+    font-size:3vw;
+    margin-top: 5vw;
+    color:  rgb(205, 207, 207);
+}
+
+a{
+    text-decoration:none ;
+}
+
+.formLabel{
+    font-family: 'Pluto TV Sans V10 Medium';
+    font-size: 1.7rem;
+}
+
+.clue{
+    font-size: smaller;
+}
+
+.answer{
+    font-family: 'Rockford Sans Light' ;
+    font-size: 1.5rem;
+    color:#363636;
+    
+}
+
+/* video */
+.showcase {
+	height: 100vh;
+    width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #3a4052 no-repeat center center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+.btn {
+	display: inline-block;
+	padding: 1vw 1.2vw;
+	background:#3a4052;
+	color: #fff;
+	border-radius: 5px;
+	border: solid #448344 .3vw;
+	margin-top: 25px;
+	opacity: 0.5;
+    cursor: pointer;
+    font-family: 'Klik Light';
+    font-size: 1.5vw;
+}
+
+.btn:hover {
+	transform: scale(0.90);
+}
+
+#title, #description{
+    margin-right: 1.5vw;
+}
+
+/* form */
+
+#formProper{
+    background-color: #b2f585;
+    background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+    display: flex;
+    justify-content: center;
+    margin-top:-5vh;
+    padding-bottom: 2vh;
+}
+
+#survey-form{
+    width:80vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text],input[type=email],input[type=number],input[type=radio],input[type=checkbox], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+input[type=text],input[type=email],input[type=number], select, textarea{
+    background:transparent;
+}
+
+input[type=text]:focus{
+    background-color: #ccc;
+}
+
+input[type=email]:focus{
+    background-color: #ccc;
+}
+
+input[type=number]:focus{
+    background-color: #ccc;
+}
+
+textarea:focus{
+    background-color: #ccc;
+}
+
+select:focus{
+    background-color: #ccc;
+}
+
+input:internal-autofill-selected {
+    appearance: none;}
+
+  
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#submitbtn{
+    display: flex;
+    justify-content: center;
+} 
+
+.center{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+textarea {
+    resize: none;
+    height: 10vw;
+}
+.needFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vh;
+    flex-wrap: wrap;
+}
+
+.row{
+    margin-top: 5vh;
+    
+}
+
+
+
+
+footer {
+    text-align: center;
+    color: rgb(205, 207, 207);
+    font-family:'Klik Light';
+    margin-top: -8px;
+    margin-bottom: 2px;
+    background-color: #5ead5e;
+    background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+}
+
+#footerText{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75 {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    input[type=submit]{
+        width: 10%;
+    }
+  }
+  
