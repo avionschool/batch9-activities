@@ -1,8 +1,7 @@
 body {
-    background-image: url(assets/bg2.jpg);
-    background-color: greenyellow;
+    background-image: url(assets/bg1.jpg);
+    background-color: burlywood;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .chessboard {
@@ -49,10 +48,6 @@ body {
 
 #pawns2:hover {
     transform: translate(0, -6vh);
-}
-
-#pawns1 {
-    font-size: 2vw;
 }
 
 #horse1 {
