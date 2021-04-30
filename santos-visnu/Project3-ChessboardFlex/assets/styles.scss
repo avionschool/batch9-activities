@@ -1,0 +1,83 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	text-align: center;
+	color: #FFF;
+	background-color: #c5d7d9;
+    background-image: url("https://images5.alphacoders.com/112/1125315.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: monospace;
+    font-stretch: ultra-expanded;
+    letter-spacing: 10px;
+}
+
+.main-div{
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 550px;
+	max-height: 550px;
+	width: 100vw;
+	height: 100vw;
+    box-shadow: 20px 20px 50px rgba(0,0,0,.5);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+	font-size: 0;
+}
+
+.box{
+	width: 12.5%;
+	height: 12.5%;
+	font-size: 8vw;
+	line-height: 12vw;
+}
+
+.box .black{
+    color: green;
+}
+
+.black {
+    color:  rgba(0,0,0,.7);
+}
+
+.white {
+    color: rgba(255,255,255,.6);
+}
+
+
+.main-div .box:nth-child(n+1):nth-child(-n+8):nth-child(even),
+.main-div .box:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.main-div .box:nth-child(n+17):nth-child(-n+25):nth-child(even),
+.main-div .box:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.main-div .box:nth-child(n+33):nth-child(-n+40):nth-child(even),
+.main-div .box:nth-child(n+41):nth-child(-n+48):nth-child(odd),
+.main-div .box:nth-child(n+49):nth-child(-n+56):nth-child(even),
+.main-div .box:nth-child(n+57):nth-child(-n+64):nth-child(odd){
+	background-color: #bac0c4;
+}
+
+@media screen and (min-width: 480px){
+	.main-div{
+		border: 18px solid transparent;
+		box-shadow: 0 15px 15px -5px rgba(0,0,0,.75);
+	}
+	.box{
+		font-size: 2.5rem;
+		line-height: 56px;
+    }
+}
