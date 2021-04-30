@@ -46,6 +46,7 @@ body {
   background-attachment: inherit;
   background-size: cover;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .wait {
@@ -112,7 +113,7 @@ body {
   content: "loading";
   position: absolute;
   font-family: "Tengwar";
-  font-size: 8vmin;
+  font-size: 10vmin;
   color: #ab884b;
   -webkit-animation: fonts 5s forwards;
           animation: fonts 5s forwards;
@@ -173,18 +174,26 @@ body {
   background-size: contain;
   width: 80vmin;
   height: 80vmin;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
+  -webkit-animation: spin 25s linear infinite;
+          animation: spin 25s linear infinite;
 }
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
   }
   50% {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
   }
   100% {
     -webkit-transform: rotateZ(0deg);
@@ -194,12 +203,20 @@ body {
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
   }
   50% {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
   }
   100% {
     -webkit-transform: rotateZ(0deg);
