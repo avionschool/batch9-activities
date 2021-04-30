@@ -57,3 +57,11 @@ body {
 #horse1:hover {
     transform: translate(6vh, 12vh);
 }
+
+#horse2 {
+    transition: 1.5s;
+}
+
+#horse2:hover {
+    transform: translate(-6vh, -12vh);
+}
