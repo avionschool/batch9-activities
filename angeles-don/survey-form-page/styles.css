@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: skyblue;
+  }
+    
+ #container {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 100vh;
+   max-width: 100%;
+   margin: 0 auto;
+ }
+
+ #title {
+   font-size: 50px;
+   line-height: 70px;
+   margin-bottom: 90px;
+   text-shadow: 2px 2px gray;
+ }
+
+ #description {
+   font-size: 20px;
+ }
+
+ #registerForm{
+  text-shadow: 2px 2px gray;
+ }
+ #first {
+   display: flex;
+   justify-content: space-evenly;   
+ }
+
+ #second {
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+ #third{
+   display: flex;
+   justify-content: center;
+ }
+ 
+ #left{  
+  height: auto;
+  color: white;
+  animation: slidetop .7s ease-in;   
+ }
+
+
+  
+ #right {
+   background-color: white;
+   border-radius: 15px;  
+   box-shadow: 0 5px rgb(0,0,0,0.2);     
+   animation: slidetop .7s ease-in; 
+ }
+
+ @keyframes slidetop {
+    0%  {
+      transform: translateY(-800px);
+    }
+ }
+ 
+
+ #registerForm {
+   text-align: center;
+   margin-top: 30px;
+ }
+
+ form{
+  padding: 30px;
+}
+
+
+#name, #lastName, #email, #number, select{
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  border: 1px solid;
+  width: 99%;
+  display: block;
+  
+ }
+
+ input[type="text"], input[type="email"],
+ [type="tel"] {
+  border-radius: 20px;
+  outline: none;
+ }
+ 
+select {
+  outline: none;
+}
+
+option {
+  border-radius: 5px;
+}
+
+#first small{
+  color: grey;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  top: 37px;
+}
+
+
+ #radioCheck{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 20px;
+ }
+
+
+ #text-area{
+   padding-top: 30px;
+   display: flex;
+   flex-direction: column;  
+   
+   
+ }
+
+
+
+ #text-area1{
+   display: flex;
+   justify-content: center;
+   
+ 
+ }
+
+ #notes{
+   resize: none;
+    
+ }
+
+ #button {
+  text-align: center;
+     
+ }
+
+ #submit {
+   padding: 15px;
+   text-transform: uppercase;
+   color: white;
+   background-color: rgb(115, 204, 26);
+   border-radius: 30px;
+   margin-top: 30px;
+   cursor: pointer;
+ }
+
+
+
+
+ @media screen and (max-width: 768px) {
+
+  #container {
+    flex-direction: column;
+  }
+
+  #title {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+
+  #text {
+    margin-bottom: 40px;
+  }
+
+  #left {
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+ }
