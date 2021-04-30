@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Valorant Survey Form</title>
+<link rel="icon" href="assets/vl_icon.png">
+<link rel="stylesheet" href="styles.css">
+<link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+</head>
+<body>
+    <div id="form-div">
+            <h1 id="title">VALORANT CUSTOM GAME</h1>
+        <p id="description">If you are interested in trying out to compete for our 5v5 valorant custom game <br> please fill out this form</p>
+        <br>
+        <br>
+
+    <form id="survey-form" action="2nd-page.html">
+        <div class="class-form">
+            <label id="name-label">Name <br>
+                <input type="text" name="name" required id="name" placeholder="Enter name"> 
+            </label>
+        </div>
+    <br>
+            <div class="class-form">
+                <label id="email-label">Email <br>
+                    <input type="email" name="email" required id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter email">
+                </label>
+            </div>
+    <br>
+                <div class="class-form">
+                    <label id="number-label">Riot ID # <br>
+                        <input type="number" required id="number" name="number" min="1" max="1218" placeholder="Enter Riot Tagline #">
+                    </label>
+                </div>
+    <br>
+            <div class="class-form">
+                <label id="dropdown-label" for="dropdown">Main Agent<br>
+                    <select id="dropdown">
+                    <option name="agent" value="astra">Astra</option>
+                    <option name="agent" value="breach">Breach</option>
+                    <option name="agent" value="brimstone">Brimstone</option>
+                    <option name="agent" value="cypher">Cypher</option>
+                    <option name="agent" value="jett">Jett</option>
+                    <option name="agent" value="killjoy">Killjoy</option>
+                    <option name="agent" value="omen">Omen</option>
+                    <option name="agent" value="phoenix">Phoenix</option>
+                    <option name="agent" value="raze">Raze</option>
+                    <option name="agent" value="reyna">Reyna</option>
+                    <option name="agent" value="sage">Sage</option>
+                    <option name="agent" value="skye">Skye</option>
+                    <option name="agent" value="sova">Sova</option>
+                    <option name="agent" value="viper">Viper</option>
+                    <option name="agent" value="yoru">Yoru</option>
+                </select>
+            </label>
+            </div>
+    <br>
+        <p>Role</p>
+        <div id="radio-role"> 
+            <input
+             name="role" 
+             value="duelist" 
+             type="radio" 
+             class="input-radio"
+             checked>
+             <label>
+                Duelist
+            </label>
+            <br>
+                <input
+                 name="role" 
+                 value="initiator" 
+                 type="radio" 
+                 class="input-radio">
+                 <label>
+                    Initiator
+                </label>
+                <br>
+                    <input
+                     name="role" 
+                     value="controller" 
+                     type="radio" 
+                     class="input-radio">
+                     <label>
+                        Controller
+                    </label>
+                    <br>                        
+                    <input
+                         name="role" 
+                         value="sentinel" 
+                         type="radio" 
+                         class="input-radio">
+                        <label>Sentinel
+                        </label>
+                        <br>
+        </div>
+    <br>
+        <div id="checkbox-map">
+            <p>Preffered Map</p>
+                <input 
+                name="map"
+                value="ascent"
+                type="checkbox"
+                class="input-checkbox">
+                <label>
+                    Ascent
+            </label>
+            <br>
+                <input 
+                name="map"
+                value="bind"
+                type="checkbox"
+                class="input-checkbox">
+                <label>
+                    Bind
+            </label>
+            <br>
+                <input 
+                name="map"
+                value="breeze"
+                type="checkbox"
+                class="input-checkbox">
+                <label>
+                    Breeze
+            </label>
+            <br>
+                <input 
+                name="map"
+                value="haven"
+                type="checkbox"
+                class="input-checkbox">
+                <label>
+                    Haven
+            </label>
+            <br>
+                <input 
+                name="map"
+                value="icebox"
+                type="checkbox"
+                class="input-checkbox">
+                <label>
+                    Icebox
+            </label>
+            <br>
+            <input 
+            name="map"
+            value="split"
+            type="checkbox"
+            class="input-checkbox">
+            <label>
+                Split
+        </label>
+        </div>
+    <br>
+        <div id="txt-area">
+            <p>Tell us why you love your role</p>
+            <textarea id="txt" name="txt" placeholder="Leave your message here"></textarea>
+        </div>
+    <br>
+    <br>
+        <div id="submit-btn">
+                <input type="submit" id="submit" name="submit-inputs" value="Submit" width="50px">
+            </label>
+        </div>
+    </div>
+</form>
+</body>
+</html>
