@@ -1,0 +1,69 @@
+body {
+    margin: 40px;
+    background-color: rgba(194, 162, 162, 0.575);
+  }
+  .wrapper {
+    border: 1px solid rgba(255, 255, 255, 0.452);
+    width: 560px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: 40px repeat(8, 70px) 40px;
+    grid-auto-flow: row;
+  }
+  
+  .box {
+    padding: 0;
+    font-size: 3vw;
+    background-color: white;
+    color: #000;
+    text-align: center;
+  }
+  
+.top,
+.bottom{
+  display: grid;
+  align-items: stretch;
+  background-color: #7d694c7a;
+}
+.top {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.bottom {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 10;
+  grid-row-end: 10;
+}
+
+  
+  .box:nth-child(-2n+9), 
+  .box:nth-child(9) ~ div:nth-child(-2n+16), 
+  .box:nth-child(17) ~ div:nth-child(-2n+25), 
+  .box:nth-child(25) ~ div:nth-child(-2n+32), 
+  .box:nth-child(33) ~ div:nth-child(-2n+41), 
+  .box:nth-child(41) ~ div:nth-child(-2n+48), 
+  .box:nth-child(49) ~ div:nth-child(-2n+57), 
+  .box:nth-child(57) ~ div:nth-child(-2n+64){
+    background-color: #287728c2;
+    color: #fff;
+  }
+
+  .player1{
+    color: #fcc4a4d7;
+    filter: brightness(100%);
+}
+
+  .player2{
+      color: black;
+  }
+
+  span{
+    margin-left: 18%;
+  }
+
+  
