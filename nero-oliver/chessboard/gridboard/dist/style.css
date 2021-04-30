@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(138, 120, 93, 0.8);
-  background-image: url(/images/test.jpg);
+  background-image: url("../images/test.jpg");
 }
 
 h1 {
