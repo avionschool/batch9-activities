@@ -3,10 +3,10 @@
     text-align: center;
 }
 body{
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: black;
 }
 .chessboard{
     display: grid;
@@ -33,7 +33,7 @@ div:nth-child(32) ~ div:nth-child(-2n+40),
 div:nth-child(40) ~ div:nth-child(-2n+47),
 div:nth-child(48) ~ div:nth-child(-2n+56),
 div:nth-child(56) ~ div:nth-child(-2n+63) {
-        background-color:rgb(126, 57, 9);
+    background-color:rgb(126, 57, 9);
 }
 
 .chessboard:hover .wpawn4{

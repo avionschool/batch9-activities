@@ -37,22 +37,22 @@
 }
 #name, #email, #number, #phonenumber{
     min-width: 200px;
-text-align: left;
-display:block;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    display:block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 #dropdown{
     margin:15px;
 }
 #name-label, #email-label, #number-label, #phonenumber-label{
-  display:inline;
+    display:inline;
     text-align:left;
     margin: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #survey-form{
-padding:5px ;
+    padding:5px ;
 }
 
 
