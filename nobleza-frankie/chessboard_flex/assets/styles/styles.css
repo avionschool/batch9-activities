@@ -1,0 +1,151 @@
+h1 {
+  color: #000;
+  text-shadow: 0px 0px 3px #a7a7a7, -1px -1px #a7a7a7, 1px 1px #a7a7a7;
+}
+
+#vs {
+  color: #252525;
+}
+
+.light {
+  background-color: rgba(167, 167, 167, 0.45);
+}
+
+.dark {
+  background-color: rgba(25, 25, 25, 0.45);
+}
+
+@font-face {
+  font-family: "BatmanForeverAlternate";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BatmanForeverAlternate"), url("../fonts/batman-forever-cufonfonts-webfont/batmfa__.woff") format("woff");
+}
+header {
+  font-size: 3vmin;
+  line-height: 3.8vmin;
+}
+
+h1 {
+  font-family: "BatmanForeverAlternate";
+  letter-spacing: 0.75vmin;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.chessboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 75vmin;
+  width: 75vmin;
+  margin: 0 auto;
+}
+.chessboard .light,
+.chessboard .dark {
+  -ms-flex-preferred-size: 12.5%;
+      flex-basis: 12.5%;
+  height: 12.5%;
+  text-align: center;
+}
+.chessboard .light .pieces,
+.chessboard .dark .pieces {
+  max-height: 75%;
+  max-width: 75%;
+  display: inline-block;
+  margin-top: 10%;
+}
+.chessboard .light .dPawn,
+.chessboard .light .lPawn,
+.chessboard .dark .dPawn,
+.chessboard .dark .lPawn {
+  max-height: 75%;
+  max-width: 75%;
+  display: inline-block;
+  margin-top: 10%;
+  position: relative;
+}
+
+body {
+  background-image: url("https://i.imgur.com/udVFjNF.jpg");
+  background-color: #252525;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+#vs {
+  font-size: 3.5vmin;
+}
+
+.chessboard {
+  border: 0.5vmin solid #a7a7a7;
+}
+
+.pieces {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.pieces:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.lp1,
+.dp1 {
+  cursor: pointer;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.lp2,
+.dp2 {
+  cursor: pointer;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.lp1:hover {
+  -webkit-transform: translate(0, 9.375vmin);
+          transform: translate(0, 9.375vmin);
+}
+
+.lp2:hover {
+  -webkit-transform: translate(0, 18.75vmin);
+          transform: translate(0, 18.75vmin);
+}
+
+.dp1:hover {
+  -webkit-transform: translate(0, -9.375vmin);
+          transform: translate(0, -9.375vmin);
+}
+
+.dp2:hover {
+  -webkit-transform: translate(0, -18.75vmin);
+          transform: translate(0, -18.75vmin);
+}/*# sourceMappingURL=styles.css.map */

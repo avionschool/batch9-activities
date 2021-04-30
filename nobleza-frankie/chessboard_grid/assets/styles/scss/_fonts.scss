@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Aniron';
+    font-style: normal;
+    font-weight: normal;
+    src:    
+        local('Aniron'), 
+        url('../fonts/anirb___.woff')
+        format('woff');
+}
+
+@font-face {
+    font-family: 'Tengwar';
+    font-style: normal;
+    font-weight: normal;
+    src:    
+        local('Tengwar'), 
+        url('../fonts/Greifswalder-Tengwar.woff')
+        format('woff');
+}
+
+@font-face {
+    font-family: 'Hobbiton';
+    font-style: normal;
+    font-weight: normal;
+    src:    
+        local('Hobbiton'), 
+        url('../fonts/HobbitonBrushhandhobbitonBrush-WygA.woff')
+        format('woff');
+}
+
+@font-face {
+    font-family: 'Eldamar';
+    font-style: normal;
+    font-weight: normal;
+    src:    
+        local('Eldamar'), 
+        url('../fonts/TengwarEldamar-51r8.woff')
+        format('woff');
+}
