@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style-grid.css" rel="stylesheet">
+  <title>Chessboard Grid</title>
+</head>
+  <style>
+
+  </style>
+<body>
+  <h1>Responsive Chessboard (Grid)</div>
+
+    <div class="chessboard">
+  
+      <div class="odd" id="epawn1">♖</div>
+      <div class="even" id="epawn2">♘</div>
+      <div class="odd" id="epawn3">♗</div>
+      <div class="even" id="epawn4">♕</div>
+      <div class="odd" id="epawn5">♔</div>
+      <div class="even" id="epawn6">♗</div>
+      <div class="odd" id="epawn7">♘</div>
+      <div class="even" id="epawn8">♖</div>
+  
+      <div class="even" id="epawn9">♙</div>
+      <div class="odd" id="epawn10">♙</div>
+      <div class="even" id="epawn11">♙</div>
+      <div class="odd" id="epawn12">♙</div>
+      <div class="even" id="epawn13">♙</div>
+      <div class="odd" id="epawn14">♙</div>
+      <div class="even" id="epawn15">♙</div>
+      <div class="odd" id="epawn16">♙</div>
+  
+      <div class="odd" id="move1"></div>
+      <div class="even" id="move2"></div>
+      <div class="odd" id="move3"></div>
+      <div class="even" id="move4"></div>
+      <div class="odd" id="move5"></div>
+      <div class="even" id="move6"></div>
+      <div class="odd" id="move7"></div>
+      <div class="even" id="move8"></div>
+  
+      <div class="even" id="move9"></div>
+      <div class="odd" id="move10"></div>
+      <div class="even" id="move11"></div>
+      <div class="odd" id="move12"></div>
+      <div class="even" id="move13"></div>
+      <div class="odd" id="move14"></div>
+      <div class="even" id="move15"></div>
+      <div class="odd" id="move16"></div>
+   
+      <div class="odd" id="move17"></div>
+      <div class="even" id="move18"></div>
+      <div class="odd" id="move19"></div>
+      <div class="even" id="move20"></div>
+      <div class="odd" id="move21"></div>
+      <div class="even" id="move22"></div>
+      <div class="odd" id="move23"></div>
+      <div class="even" id="move24"></div>
+  
+      <div class="even" id="move25"></div>
+      <div class="odd" id="move26"></div>
+      <div class="even" id="move27"></div>
+      <div class="odd" id="move28"></div>
+      <div class="even" id="move29"></div>
+      <div class="odd" id="move30"></div>
+      <div class="even" id="move31"></div>
+      <div class="odd" id="move32"></div>
+  
+      <div class="odd" id="pawn16">♟</div>
+      <div class="even" id="pawn15">♟</div>
+      <div class="odd" id="pawn14">♟</div>
+      <div class="even" id="pawn13">♟</div>
+      <div class="odd" id="pawn12">♟</div>
+      <div class="even" id="pawn11">♟</div>
+      <div class="odd" id="pawn10">♟</div>
+      <div class="even" id="pawn9">♟</div>
+  
+      <div class="even" id="pawn8">♜</div>
+      <div class="odd" id="pawn7">♞</div>
+      <div class="even" id="pawn6">♝</div>
+      <div class="odd" id="pawn5">♛</div>
+      <div class="even" id="pawn4">♚</div>
+      <div class="odd" id="pawn3">♝</div>
+      <div class="even" id="pawn2">♞</div>
+      <div class="odd" id="pawn1">♜</div>
+      
+    </div>
+</body>
+<script> 
+  const chessBoard = document.querySelector('.chessboard')
+  const move = []
+  chessBoard.addEventListener('click', (e) => {
+  const target = e.target
+  console.log(e)
+  const textContent = target.textContent
+  const targetId = target.id
+  const chessSelectorId = document.querySelector('#'+targetId)
+  const moveSelectorId = document.querySelector('#'+targetId)
+    if(textContent !== '') {
+      chessSelectorId.textContent = ''
+      move.length = 0
+      move.push(textContent)
+    } else {
+      moveSelectorId.textContent = move[0]
+    }
+  })
+</script>
+</html>

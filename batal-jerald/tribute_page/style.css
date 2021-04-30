@@ -1,0 +1,296 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: 3%;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Orelega One', cursive;
+}
+
+
+h1.title {
+  padding-top: 3%;
+  margin-bottom: 90px;
+  font-size: 38px;
+  word-spacing: 15px;
+  letter-spacing: 5px;
+  color: #ddd;
+}
+
+p,a {
+  color: rgb(148, 143, 143);
+
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  margin: 20px 0px;
+}
+
+a#tribute-link {
+  display: block;
+  width: 180px;
+  height: 35px;
+  border: 2px solid;
+  line-height: 35px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+a#tribute-link:hover {
+  background-color: #ddd;
+  color:black;
+}
+
+#main {
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/batal-jerald/tribute_page/images/westlife.jpg) ;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Nav css */
+
+nav {
+  position: fixed;
+  padding: 0 5%;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+nav .logo {
+  float: left;
+  width: 8%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color:white;
+}
+
+nav ul {
+  float: right;
+  padding:0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  display: none;
+
+ }
+
+nav a {
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.btn-2:hover,
+.btn-2:active {
+letter-spacing: 5px;
+background-color: #ddd;
+border-radius: 5%;
+color: black;
+}
+
+nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 7px 7px;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+#check {
+  position: absolute;
+  display: none;
+}
+
+nav .icon {
+  display: none;
+  position: absolute;
+  right: 1%;
+  top: 20%;
+  transform: translate(-50%);
+}
+
+nav .icon .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 25%;
+}
+
+@media (max-width: 768px) {
+  nav .logo{
+    float: none ;
+    width: auto;
+    justify-content: center;
+  }
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 60px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.8);
+    overflow: hidden;
+  }
+  nav .icon {
+    display: block;
+  }
+
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+}
+
+/* image div */
+
+#image-div {
+  justify-content: center;
+  text-align: center;
+  color:#fff
+}
+
+#image-div img {
+  border: 3px solid #ddd;
+  width: 20%;
+  
+}
+
+#image-div p {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 65px !important;
+  font-size: 100%;
+  width: 40%;
+  margin: auto;
+  
+}
+
+/* Wikipedia */
+
+#wikipedia {
+  justify-content: center;
+  text-align: center;
+  color:#fff
+}
+
+#wikipedia p {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 10px !important;
+  margin-bottom: 100px !important;
+  font-size: 100%;
+  width: 40%;
+  margin: auto;
+}
+
+/* History */ 
+
+#history {
+  justify-content: center;
+  text-align: center;
+  color:#fff
+}
+
+#history p {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 10px !important;
+  margin-bottom: 100px !important;
+  font-size: 100%;
+  width: 40%;
+  margin: auto;
+}
+
+#history img {
+  width: 300px;
+  border-radius: 10%;
+  border: 3px solid #ddd;
+  
+}
+
+#albums {
+  justify-content: center;
+  text-align: center;
+  color:#fff
+}
+
+table {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px !important;
+}
+
+td {
+  padding: 8px;
+  color: #ddd;
+} 
+
+
+footer {
+  width: 100%;
+  text-align: center;
+  background: #444444;
+  padding: 8px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 952px) {
+  #image-div h1 {
+    padding-top: 100px;
+  }
+}
+
+

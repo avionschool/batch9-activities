@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Dating Form Survey</title>
+</head>
+<body> 
+  <div id="main">
+
+    <header id="title">
+      <h1>Dating Form Survey</h1>
+    </header>
+
+    <div id="form-container">
+      <p id="description">Answer this dating form, and you find strong relationship <3</p>
+
+      <form id="survey-form" action="./success.html" method="get">
+        <div id="fullname">
+          <label for="forfullname">Name <span>*</span></label>
+            <input type="text" required placeholder="Your name" name="name"> 
+        </div>
+
+        <br>
+
+        <div id="email">
+          <label>Email<span>*</span></label>
+            <input type="email" required placeholder="Your email" name="email"> 
+        </div> 
+
+        <br>
+          
+        <div id="number">
+          <label>Age<span>*</span></label>
+            <input type="number" required min="18" max="100" placeholder="Your age" name="number"> 
+        </div>
+
+        <br>
+
+        <div id="option">
+          <label for="forplace">Gender</label>
+          <select name="gender">
+            <option>Your gender</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+        <br>
+ 
+
+        <div id="radio">
+          <h3>How would you describe your personality?</h3>
+              <label for="r1"><input type="radio" name="personality"> Shy and naive</label>
+              <label for="r2"><input type="radio" name="personality">Brave and talkative</label>
+              <label for="r4"><input type="radio" name="personality">Honest and reliable</label>
+              <label for="r7"><input type="radio" name="personality"> <input type="text" placeholder="Others"></label>
+        </div>
+
+        <div id="checkbox">
+          <h3 for="checkbox">What traits do you look for in a partner?</h3>
+              <label><input type="checkbox">Kind & Energetic</label>
+              <label><input type="checkbox">Honest & Faithful</label>
+              <label><input type="checkbox">Moody & clingy</label>
+              <label><input type="checkbox"><input type="text" placeholder="Others"></label>
+        </div>
+
+        <div id="text">
+          <label for="forage">Drescribed your perfect dream date?</label>
+            <textarea name="" id="" cols="30" rows="7" placeholder="Put something you want to say..."></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+
+      </form>
+      
+    </div>
+
+  </div>
+</body>
+</html>
