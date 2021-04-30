@@ -1,0 +1,172 @@
+body{
+    background-image: url("file:///C:/Users/ALSACE/AvionSchool/batch9-activities/cablar-alsace/survey-form/assets/film-rolls.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px;
+
+}
+
+/*-------------------------------------HEADER-------------------------------------*/
+.field-header {
+    background-color: black;
+    font-family: 'Arial';
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width:50%;
+    font-weight: bold;
+    padding: 1em;
+    border: 5px solid black;
+    border-radius: 1em;
+}
+
+.field-header h1 {
+    font-family: 'Arial';
+    color: white;
+    text-align: center;
+}
+
+.field-header p {
+    font-family: 'Arial';
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+
+/*-------------------------------------CONTACT DETAILS-------------------------------------*/
+.field-form {
+    background-color:black;
+    opacity: 90%;
+    font-family: 'Arial';
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 10px;
+
+    width:50%;
+    font-weight: bold;
+    color: white;
+    padding: 1em;
+    border: 5px solid black;
+    border-radius: 1em;
+}
+
+.field-form h3 {
+    font-family: Arial;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.field-form p {
+    color: goldenrod;
+    text-align: left;
+}
+
+#name {
+    width: 60%;
+}
+#name-label {
+    color: goldenrod;
+}
+
+#email {
+    width: 40%
+}
+#email-label {
+    color: goldenrod;
+}
+
+#number {
+    width: 30%
+}
+#number-label {
+    color: goldenrod;
+}
+
+
+
+/*-------------------------------------ORDER DETAILS-------------------------------------*/
+
+#date-label {
+    color: goldenrod;
+}
+
+#film-stock-label {
+    color: goldenrod;
+}
+
+#film-process-label {
+    color: goldenrod;
+}
+
+#comments {
+    width: 90%;
+    font-family: Arial;
+    resize: none;
+}
+#comments-label {
+    color: goldenrod;
+}
+
+
+/*-------------------------------------SUBMIT BUTTON-------------------------------------*/
+#submit {
+    background-color:goldenrod;
+    color: black;
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+}
+#submit:hover {
+    background-color: white;
+    color: goldenrod;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px 0 white;
+
+}
+
+/*-------------------------------------RESULTS PAGE-------------------------------------*/
+
+.results-page {
+    background-color: black;
+    font-family: 'Arial';
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    width:50%;
+    font-weight: bold;
+    padding: 1em;
+    border: 5px solid black;
+    border-radius: 1em;
+}
+
+.results-page h1 {
+    font-family: 'Arial';
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.results-page p {
+    font-family: 'Arial';
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.results-page a {
+    color: white;
+}
+
+.results-page a:hover {
+    color: goldenrod;
+}

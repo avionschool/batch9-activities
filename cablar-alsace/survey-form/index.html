@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <!--------------------------------------------------TITLE HEADER / DESCRIPTION------------------------------------------------->
+    <fieldset class="field-header">
+
+    <h1 id="title">📸 FILM DEV+SCAN ORDER FORM 📸</h1>
+    <p id="description">Please fill up the form accordingly.<br> Take note that the lead time for orders are 5-7 days from the date of submission.</p>
+    
+    </fieldset>
+
+    <!--------------------------------------------------FORM-CONTACT STARTS HERE------------------------------------------------->
+    <fieldset class="field-form">
+    <form action="surveyresult.html" method="GET" id="survey-form" onclick="return results();">
+
+        
+        <h3>CONTACT INFORMATION</h3>
+
+        <!--NAME-->
+        <div class="form-contact">
+        <label id="name-label" for="name"> Name:
+        <br>
+            <input
+            id="name"
+            type="text"
+            placeholder="Juan Dela Cruz"
+            required>
+            </input>
+
+        </label><br><br>
+        
+        <!--EMAIL-->
+        <label id="email-label" for="email"> E-mail: </label>
+        <br>
+            <input
+            id="email"
+            type="email"
+            placeholder="juandelacruz@example.com"
+            required>
+            </input>
+
+        </label><br><br>
+
+        <!--NUMBER-->
+        <label id="number-label" for="number"> Mobile Number:
+        <br>   
+            <input
+            id="number"
+            type="number"
+            pattern="[0-9]{11}" 
+            placeholder="09XXXXXXXXX"
+            min="09000000000"
+            max="09999999999"
+            required>
+            </input>
+
+        </label><br><br><br>
+        </div>
+
+
+    <!--------------------------------------------------FORM-ORDER STARTS HERE------------------------------------------------->
+
+        <h3>ORDER DETAILS</h3>
+        <br>
+
+        <!---------------------------------------------------ORDER DATE--------------------------------------------------->
+        <label id="date-label" for="date"> Order Date:
+
+                <input
+                id="date"
+                type="date"
+                required>
+                
+        </label><br>
+        <!---------------------------------------------------MENU RADIO FILM FORMAT--------------------------------------------------->
+        <p>Film Format:</p>
+        <div class="menu-radio-format">
+            <input
+            id="35mm"
+            type="radio"
+            name="film-format"
+            value="35mm">
+            <label id="format-135" for="35mm"> 135/35mm Film </label>
+            <br>
+           
+
+            <input
+            id="120mm"
+            type="radio"
+            name="film-format"
+            value="120mm">
+            <label id="format-120" for="120mm"> 120mm Film </label>
+            <br>
+
+            <input
+            id="110mm"
+            type="radio"
+            name="film-format"
+            value="110mm">
+            <label id="format-110" for="110"> 110mm Film </label>
+            <br>
+
+            <input
+            id="aps"
+            type="radio"
+            name="film-format"
+            value="aps">
+            <label id="format-aps" for="aps"> APS Film </label>
+            <br><br>
+        </div>
+
+        <!---------------------------------------------------MENU DROPDOWN FILM STOCK--------------------------------------------------->
+        <div class="menu-drop-stock">
+        <label id="film-stock-label" for="film-stock"> Film Stock:
+        <br>
+            <select id="film-stock">
+                <option value="colorplus"name="film-stock">Kodak ColorPlus 200</option>
+                <option value="gold200" name="film-stock">Kodak Gold 200</option>
+                <option value="ultramax" name="film-stock">Kodak Ultramax</option>
+                <option value="proimage" name="film-stock">Kodak Pro Image 100</option>
+                <option value="ektar" name="film-stock">Kodak Ektar 100</option>
+                <option value="portra160" name="film-stock">Kodak Portra 160</option>
+                <option value="portra400" name="film-stock">Kodak Portra 400</option>
+                <option value="portra800" name="film-stock">Kodak Portra 800</option>
+                <option value="trix" name="film-stock">Kodak Tri-X</option>
+                <option value="tmax100" name="film-stock">Kodak TMax 100</option>
+                <option value="tmax400" name="film-stock">Kodak TMax 4100</option>
+                <option value="tmaxp3200" name="film-stock">Kodak TMax P3200</option>
+                <option value="ektacrome" name="film-stock">Kodak Ektachrome E100</option>
+            </select>
+        </label><br><br>
+        </div>
+
+        <!---------------------------------------------------MENU DROPDOWN FILM PROCESS--------------------------------------------------->
+        <div class="menu-drop-process">
+        <label id="film-process-label" for="film-process"> Film Process:
+        <br>
+            <select id="film-process">
+                <option value="cn41" name="film-process">Color Negative (C41)</option>
+                <option value="bnwneg" name="film-process">Black & White Negative</option>
+                <option value="ecn2" name="film-process">Color Motion Picture Negative (ECN2)</option>
+                <option value="e6" name="film-process">Color Reversal (E6)</option>
+                <option value="bnwrev" name="film-process">Black & White Reversal</option>
+            </select>
+        </label><br><br>
+        </div>
+
+        <!---------------------------------------------------MENU RADIO SCAN FORMAT--------------------------------------------------->
+        <p>Scan Format:</p>
+        <div class="menu-radio-scan">
+            <input
+            id="stdjpg"
+            type="radio"
+            name="scan-format"
+            value="std-jpg">
+            <label id="scan-std-jpg" for="std-jpg"> Standard JPEG </label>
+            <br>
+
+            <input
+            id="stdtiff"
+            type="radio"
+            name="scan-format"
+            value="std-tiff">
+            <label id="scan-std-tiff" for="std-tiff"> Standard TIFF </label>
+            <br>
+
+            <input
+            id="enhjpg"
+            type="radio"
+            name="scan-format"
+            value="enh-jpg">
+            <label id="scan-enh-jpg" for="enh-jpg"> Enhanced JPEG </label>
+            <br>
+
+            <input
+            id="enhtiff"
+            type="radio"
+            name="scan-format"
+            value="enh-tiff">
+            <label id="scan-enh-tiff" for="enh-tiff"> Enhanced TIFF </label>
+            <br>
+           
+        <br><br>
+        </div>
+
+        <div id="img">
+        <img src="assets/film-scan-size.jpg" width="100%">
+        </div>
+
+        <!---------------------------------------------------MENU CHECKBOX OTHERS--------------------------------------------------->
+        <div class="menu-check-others">
+        <p>Other Instructions:</p> 
+            <input
+            id="keep-neg"
+            type="checkbox"
+            name="other-instructions"
+            value="keep-neg">
+            <label id="instructions-keep" for="keep-neg"> Keep Negatives for 1 Month </label>
+            <br>
+        
+            <input
+            id="keep-digi"
+            type="checkbox"
+            name="other-instructions"
+            value="keep-digi">
+            <label id="instructions-keep" for="keep-digi"> Keep Digital Files for 1 Month </label>
+            <br>
+
+            <input
+            id="keep-can"
+            type="checkbox"
+            name="other-instructions"
+            value="keep-can">
+            <label id="instructions-keep" for="keep-can"> Keep Canisters for 1 Month </label>
+            <br><br>
+        </div>
+
+        <!---------------------------------------------------TEXTAREA ADDITIONAL INSTRUCTIONS--------------------------------------------------->
+        <label id="comments-label" for="comments"> Special Instructions:</label>
+        <br><br>
+            <textarea
+            id="comments"
+            name="comments"
+            rows="5">
+            Please put your additional comments or special instructions here.
+            </textarea>
+            
+        
+        <br><br>
+        <!---------------------------------------------------SUBMIT BUTTON--------------------------------------------------->
+        <div id="submitbutton">
+            <button
+            type="submit"
+            id="submit">
+            Submit
+            </button>
+        </div>
+
+    </form>
+    </fieldset>
+ 
+
+</body>
+</html>
