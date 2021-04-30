@@ -1,0 +1,72 @@
+@import "../variables/variables";
+
+.radio-group {
+  margin-top: $label-margin-top;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 2rem auto;
+  // border: 0.1rem solid $border-normal;
+  padding: $group-margin-left;
+  border-radius: $group-radius;
+
+  &_error {
+    // border: 0.1rem solid $border-error;
+    // box-shadow: 0 0 $shadow-error-spread $shadow-error;
+  }
+}
+
+.radio-input {
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.radio__question {
+  font-weight: 300;
+  font-size: $label-size;
+  &_focused {
+    text-shadow: 0 0 $shadow-spread $label-focus-color;
+  }
+
+  &_error {
+    color: crimson;
+    text-shadow: 0 0 $shadow-error-spread $shadow-error;
+  }
+}
+
+.radio__field {
+  outline: none;
+  border: 0px;
+  width: 100%;
+  height: 1.3em;
+  display: inline-block;
+
+  &:checked + .radio__label {
+    color: rgba(blue, 0.7);
+  }
+}
+
+.radio__label {
+  font-size: $label-size;
+  transition: color 0.1s ease-in;
+  padding-left: 0.6rem;
+}
+
+.radio__option {
+  font-size: $label-size;
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  align-items: start;
+  margin-top: 0.5rem;
+  align-items: baseline;
+}
+
+.radio__toolkit {
+  // display: none;
+  width: 100%;
+  font-size: $toolkit-size;
+
+  &_error {
+    display: block;
+    color: crimson;
+  }
+}

@@ -1,0 +1,112 @@
+#img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gainsboro; */
+    flex-direction: column;
+}
+
+#image {
+    border-style:ridge;
+    border-color: midnightblue;
+    border-width: 3px;
+    margin-top: 20px;
+    max-width: 19%;
+}
+
+#img-caption {
+    align-items: center;
+    color: midnightblue;
+    font-family:sans-serif;
+}
+
+p , h2, a {
+    margin: 5px;
+}
+
+p {
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin-inline: 50px;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+#myh3 {
+    margin-top: 5px;
+}
+
+.div-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 300px;
+    background-color:burlywood;
+}
+
+#txt-div {
+    background-color:gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 100px;
+    margin-bottom: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: gainsboro;
+}
+
+.header {
+    color:midnightblue;
+}
+
+ul {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color:burlywood;
+    position: relative;
+}
+
+#img-navi {
+    margin: 10px;
+    width: 40px;
+}
+
+#sect1 {
+    margin-top: 20px;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+ul a:hover {
+    color: white;
+  }
+
+#back-top, #more-info {
+    text-decoration: none;
+}
+
+#back-top:hover, #more-info:hover {
+    color: white;
+}

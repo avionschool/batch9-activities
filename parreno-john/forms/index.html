@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function changeScience(){
+            var status = document.getElementById("dropdown");
+            if(status.value=="natural-sciences"){
+                document.getElementById("natural-sciences").style.visibility="visible";
+                document.getElementById("engineering-and-technology").style.visibility="hidden";
+                document.getElementById("medical-and-health-sciences").style.visibility="hidden";
+                document.getElementById("agricultural-sciences").style.visibility="hidden";
+                document.getElementById("social-sciences").style.visibility="hidden";
+                document.getElementById("humanities").style.visibility="hidden";
+                document.getElementById("picture2").style.background="url('assets/chem.jpeg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
+
+        }else if(status.value=="engineering-and-technology"){
+                document.getElementById("natural-sciences").style.visibility="hidden";
+                document.getElementById("engineering-and-technology").style.visibility="visible";
+                document.getElementById("medical-and-health-sciences").style.visibility="hidden";
+                document.getElementById("agricultural-sciences").style.visibility="hidden";
+                document.getElementById("social-sciences").style.visibility="hidden";
+                document.getElementById("humanities").style.visibility="hidden";
+                document.getElementById("picture2").style.background="url('assets/comsci.jpeg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
+        }else if(status.value=="medical-and-health-sciences"){
+                document.getElementById("natural-sciences").style.visibility="hidden";
+                document.getElementById("engineering-and-technology").style.visibility="hidden";
+                document.getElementById("medical-and-health-sciences").style.visibility="visible";
+                document.getElementById("agricultural-sciences").style.visibility="hidden";
+                document.getElementById("social-sciences").style.visibility="hidden";
+                document.getElementById("humanities").style.visibility="hidden";
+                document.getElementById("picture2").style.background="url('assets/health.jpeg')  no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
+        }else if(status.value=="agricultural-sciences"){
+                document.getElementById("natural-sciences").style.visibility="hidden";
+                document.getElementById("engineering-and-technology").style.visibility="hidden";
+                document.getElementById("medical-and-health-sciences").style.visibility="hidden";
+                document.getElementById("agricultural-sciences").style.visibility="visible";
+                document.getElementById("social-sciences").style.visibility="hidden";
+                document.getElementById("humanities").style.visibility="hidden";
+                document.getElementById("picture2").style.background="url('assets/agri.jpg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
+        }else if(status.value=="social-sciences"){
+                document.getElementById("natural-sciences").style.visibility="hidden";
+                document.getElementById("engineering-and-technology").style.visibility="hidden";
+                document.getElementById("medical-and-health-sciences").style.visibility="hidden";
+                document.getElementById("agricultural-sciences").style.visibility="hidden";
+                document.getElementById("social-sciences").style.visibility="visible";
+                document.getElementById("humanities").style.visibility="hidden";
+                document.getElementById("picture2").style.background="url('assets/law.jpg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
+
+        }else if(status.value=="humanities"){
+                document.getElementById("natural-sciences").style.visibility="hidden";
+                document.getElementById("engineering-and-technology").style.visibility="hidden";
+                document.getElementById("medical-and-health-sciences").style.visibility="hidden";
+                document.getElementById("agricultural-sciences").style.visibility="hidden";
+                document.getElementById("social-sciences").style.visibility="hidden";
+                document.getElementById("humanities").style.visibility="visible";
+                document.getElementById("picture2").style.background="url('assets/philo.jpg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
+        }else if(status.value=="select"){
+                document.getElementById("natural-sciences").style.visibility="hidden";
+                document.getElementById("engineering-and-technology").style.visibility="hidden";
+                document.getElementById("medical-and-health-sciences").style.visibility="hidden";
+                document.getElementById("agricultural-sciences").style.visibility="hidden";
+                document.getElementById("social-sciences").style.visibility="hidden";
+                document.getElementById("humanities").style.visibility="hidden";
+                document.getElementById("picture2").style.background="url('assets/select.jpg') center no-repeat";
+                document.getElementById("picture2").style.backgroundSize="contain";
+                
+                
+        }
+    }
+    </script>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Survey Form</title>
+
+</head>
+<body>
+    
+
+<div class="container">
+    <div id="picture2"></div>
+    <form id="survey-form" action="results.html" method="GET">
+    <div class="user-information">
+        <div id="title"><h1>An Appreciation<br> of the Sciences</h1></div>
+        <div><label id="name-label" for="name">Name</label><input type="text" id="name" name="name" placeholder="Enter your name"></div>
+        <div><label id="email-label" for="email">Email</label><input type="email" id="email" name="email" required placeholder="Enter a valid email address"></div>
+        <div><label id="number-label" for="number">Age</label><input type="number" id="number" name="number" max="120" min="1" required placeholder="Enter your age"></div>
+        <div><label id="phonenumber-label" for="phonenumber">Phone number</label><input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required placeholder="xxxx-xxx-xxxx"></div>
+        
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            </div>
+            <div id="description"><p>What area of expertise most interests you?</p></div>
+        
+        <div ><select style="width: 250px;" name="Sciences" id="dropdown" onchange="changeScience()"></div>
+            <option value="select">Select</option>
+            <option value="natural-sciences">Natural Sciences</option>
+            <option value="engineering-and-technology">Engineering and Technology</option>
+            <option value="medical-and-health-sciences">Medical and Health Sciences</option>
+            <option value="agricultural-sciences">Agricultural Sciences</option>
+            <option value="social-sciences">Social Sciences</option>
+            <option value="humanities">Humanities</option>
+        </select>
+        <div id="box">
+       <div class="scienceslist" id="natural-sciences"style="visibility: hidden;">
+        <input type="checkbox" id="Mathematics" name="Mathematics" value="Mathematics">
+        <label for="Mathematics"> Mathematics</label><br>
+        <input type="checkbox" id="Computer-and-information-sciences" name="Computer-and-information-sciences" value="Computer-and-information-sciences">   
+        <label for="Computer-and-information-sciences"> Computer and information sciences</label><br>
+        <input type="checkbox" id="Physical" name="Physical" value="Physical">
+        <label for="Physical"> Physical sciences</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Chemical"> Chemical sciences</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Earth"> Earth and related Environmental sciences</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Biological"> Biological Science</label><br>
+        
+        </div>
+        <div class="scienceslist" id="engineering-and-technology"style="visibility: hidden;">
+        <input type="checkbox" id="civEng" name="civEng" value="civEng">
+        <label for="civEng"> Civil engineering</label><br>
+        <input type="checkbox" id="Ece" name="Ece" value="Ece">   
+        <label for="Ece"> Electrical engineering, Electronic engineering, Information engineering</label><br>
+        <input type="checkbox" id="Mechanical" name="Mechanical" value="Mechanical">
+        <label for="Mechanical"> Mechanical engineering</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Chemical"> Chemical engineering</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Materials"> Materials Engineering</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Medical"> Medical Engineering</label><br>
+        </div>
+        <div class="scienceslist" id="medical-and-health-sciences"style="visibility: hidden;">
+        <input type="checkbox" id="Basic" name="Basic" value="Basic">
+        <label for="Basic"> Basic medicine</label><br>
+        <input type="checkbox" id="Clinical" name="Clinical" value="Clinical">   
+        <label for="Clinical"> Clinical medicine</label><br>
+        <input type="checkbox" id="Health" name="Health" value="Health">
+        <label for="Health"> Health Sciences</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Biotech"> Medical biotechnology</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Forensic"> Forensic Sciences</label><br>
+        </div>
+        <div class="scienceslist" id="agricultural-sciences" style="visibility: hidden;">
+        <input type="checkbox" id="Agriculture" name="Agriculture" value="Agriculture">
+        <label for="Agriculture"> Agriculture, Forestry, and Fisheries</label><br>
+        <input type="checkbox" id="Animal" name="Animal" value="Animal">   
+        <label for="Animal"> Animal and Dairy science</label><br>
+        <input type="checkbox" id="Veterinary" name="Veterinary" value="Veterinary">
+        <label for="Veterinary"> Veterinary science</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="AgriculturalBiotech"> Agricultural and food biotechnology</label><br>
+        </div>
+        <div class="scienceslist" id="social-sciences" style="visibility: hidden;">
+        <input type="checkbox" id="Psychology" name="Psychology" value="Psychology">
+        <label for="Psychology"> Psychology</label><br>
+        <input type="checkbox" id="Economies" name="Economies" value="Economies">   
+        <label for="Economies"> Economies and Business</label><br>
+        <input type="checkbox" id="Educational" name="Educational" value="Educational">
+        <label for="Educational"> Educational sciences</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Sociology"> Sociology</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Law"> Law</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="PoliticalScience"> Political Science</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Media"> Media and communication</label><br>
+        </div>
+        <div class="scienceslist" id="humanities" style="visibility: hidden;">
+        <input type="checkbox" id="History" name="History" value="History">
+        <label for="History"> History and Archaeology</label><br>
+        <input type="checkbox" id="Languages" name="Languages" value="Languages">   
+        <label for="Languages"> Languages and Literature</label><br>
+        <input type="checkbox" id="Philosophy" name="Philosophy" value="Philosophy">
+        <label for="Philosophy"> Philosophy, Ethics and Religion</label><br>
+        <input type="checkbox" id="Chemical" name="Chemical" value="Chemical">
+        <label for="Arts"> Arts</label><br>
+        </div>
+        </div>
+
+    
+        
+
+    <textarea name="comment" rows="10" cols="30"form="survey-form" placeholder="What's the story to your choice? Enter text here.."></textarea>
+    
+    <div><input type="submit" id="submit"></div>
+</div>
+</form>
+</div>
+    
+</body>
+</html>

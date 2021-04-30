@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <div id="main-container">
+        <h1 id="title">COVID-19 Pre-vaccination Screening
+        Form</h1>
+            
+        <p id="description">The following questions will help us determine if there is
+            any reason you should not get the COVID-19 vaccine today.
+            If you answer <b>“yes”</b> to any question, it does not necessarily mean you
+            should not be vaccinated. It just means additional questions may be asked.
+            If a question is not clear, please ask your healthcare provider to explain it.
+        </p>
+
+
+        <form id="survey-form" action="form-action.html" method="get">
+            <div class="patientInformation">
+
+                <div>
+                <label for="name" id ="name-label">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Juan Cruz" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" name="number" id="number" min=18 max=65 placeholder="18 - 65 years old" required>
+                </div>
+                <br>
+
+                <div>
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="juancruz@example.com" required>
+                </div> 
+                <br>
+
+                <div>
+                <label for="dropdown">Location</label>
+                <select id="dropdown" name="location">
+                    <option value="ncr">NCR</option>
+                    <option value="car">CAR</option>
+                    <option value="region_1" selected>Region 1</option>
+                    <option value="region_2">Region 2</option>
+                    <option value="region_3">Region 3</option>
+                    <option value="region_4a">Region 4A</option>
+                    <option value="region_4b">Region 4B</option>
+                    <option value="region_5">Region 5</option>
+                    <option value="region_6">Region 6</option>
+                    <option value="region_7">Region 7</option>
+                    <option value="region_8">Region 8</option>
+                    <option value="region_9">Region 9</option>
+                    <option value="region_10">Region 10</option>
+                    <option value="region_11">Region 11</option>
+                    <option value="region_12">Region 12</option>
+                    <option value="region_13">Region 13</option>
+                    <option value="barmm">BARMM</option>
+                </select>
+                </div>
+
+
+            </div>
+
+            <ul id="questions">
+            
+                <li>
+                    <span>Have you been sick with a cough, sore throat, fever or are feeling sick in another way?</span>
+                    
+                    <div>
+                        <label for="yesQ1">Yes</label>
+                        <input type="radio" name="question1" value="yes" id="yesQ1" required>
+                    </div>
+
+                    <div>
+                        <label for="noQ1">No</label>
+                        <input type="radio" name="question1" value="no" id="noQ1" required>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <span>Have you had a COVID-19 vaccination before?</span>
+
+                    <div>
+                        <label for="yesQ2">Yes</label>
+                        <input type="radio" name="question2" value="yes" id="yesQ2" required>
+                    </div>
+
+                    <div>
+                        <label for="noQ2">No</label>
+                        <input type="radio" name="question2" value="no" id="noQ2" required>
+                    </div>
+                    
+                    
+                </li>
+                
+                <li>
+
+                    <span>Have you had COVID-19 before?</span>
+
+                    <div>
+                        <label for="yesQ3">Yes</label>
+                        <input type="radio" name="question3" value="yes" id="yesQ3" required>
+                    </div>
+
+                    <div>
+                        <label for="noQ3">No</label>
+                        <input type="radio" name="question3" value="no" id="noQ3" required>
+                    </div>
+                        
+                    
+                </li>
+
+                <li>
+
+                    <span>Do you have any serious allergies, particularly anaphylaxis, to anything?</span>
+
+                    <div>
+                        <label for="yesQ4">Yes</label>
+                        <input type="radio" name="question4" value="yes" id="yesQ4" required>
+                    </div>
+
+                    <div>
+                        <label for="noQ4">No</label>
+                        <input type="radio" name="question4" value="no" id="noQ4" required>
+                    </div>
+                    
+                    
+                </li>
+
+                <li>
+
+                    <span>Have you had an allergic reaction after being vaccinated before?</span>
+
+                    <div>
+                        <label for="yesQ5">Yes</label>
+                        <input type="radio" name="question5" value="yes" id="yesQ5" required>
+                    </div>
+
+                    <div>
+                        <label for="noQ5">No</label>
+                        <input type="radio" name="question5" value="no" id="noQ5" required>
+                    </div>
+
+                    
+                </li>
+
+                <li>
+                    <span>Have you received any other vaccination in the last 14 days?</span>
+
+                    <div>
+                        <label for="yesQ6">Yes</label>
+                        <input type="radio" name="question6" value="yes" id="yesQ6" required>
+                    </div>
+
+                    <div>
+                        <label for="noQ6">No</label>
+                        <input type="radio" name="question6" value="no" id="noQ6" required>
+                    </div>
+                    
+                </li>
+
+            </ul>
+            <br>
+
+            <div id="checkBoxes">
+                <div>
+                <input type="checkbox" name="criticalIlness" value="hypertension" id="hypertension">
+                <label for="hypertension">Hypertension</label>
+                </div>
+        
+                <div>
+                <input type="checkbox" name="criticalIllness" value="diabetis" id="diabetis">
+                <label for="diabetis">Diabetis</label>
+                </div>
+                
+                <div>
+                <input type="checkbox" name="criticalIllness" value="cancer" id="cancer">
+                <label for="cancer">Cancer</label>
+                </div>
+              
+                <div>
+                <input type="checkbox" name="criticalIllness" value="epilepsy" id="epilepsy">
+                <label for="epilepsy">Epilepsy</label>
+                </div>
+                
+                <div>
+                <input type="checkbox" name="criticalIllness" value="others" id="others">
+                <label for="others">Others: <input type="text" placeholder="Please specify" name= "criticaIllness" id="checkboxOthers" max="60"></label>
+                </div>
+            </div>
+
+            <div id="consentBox">
+                <label for="consent">Consent</label>
+                <textarea name="consent" id="consent" rows="5" cols="10">I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief and I undertake the responsibility to inform you of any changes therein, immediately.</textarea>
+            </div>
+
+            <input type="submit" id="submit" name="button" value="Submit">
+        </form>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>

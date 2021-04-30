@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Survey</title>
+    <link rel="stylesheet" href="survey-styles.css"/>
+    <link rel="icon" href="assets/musicicon.png"/>
+</head>
+<body>
+   
+    <div id="outer">
+        <h1 id="title">Answer this survey form and I'll recommend a playlist for you!</h1>
+        <p id="description">Answer all the questions honestly...<h4>Disclaimer:</h4>This survey is ONLY for a project.<br>Not all questions are based on studies, some are only based on opinions.<br>Your details will not be disclosed to anyone.<br>This is only just for Fun!<br><h3>ENJOY!</h3></p> 
+    </div>
+    
+    <!--SURVEY FORM QUESTIONS-->
+
+        <div id="survey-form">
+            
+            <form onsubmit="return results();" action="results.html" method="GET">
+                <fieldset id="fieldset">
+                    <legend id="legend"><h1>Answer Me!</h1></legend>
+                        <div id="question">
+                            <h2>YOUR DETAILS</h2>
+    <!--NAME-->
+                            <div>
+                                <label id="name-label" for="name">Nickname:</label><br>
+                                <input type="text" name ="Nickname" id ="name" required placeholder="Nickname here" size=50px;><br>
+                            </div>
+    <!--EMAIL-->        
+                            <div>
+                                <label id="email-label" for="email">Email Address:</label><br>
+                                <input type="email" name ="Email Add" id ="email" required placeholder="Email Address here" size=50px;><br>
+                            </div>
+    <!--AGE-->                    
+                            <div>
+                                <label id="number-label" for="number">Age:</label><br>
+                                <input type="number" name ="Age" id ="number" required placeholder="Real Age here (15-118)" min="15" max="118" size="50px"><br>
+                            </div>
+                        </div>
+
+    <!--DROPDOWN, choosing top 3 genre-->
+
+                        <div id="question">
+                            <h2>GENRE: RANK YOUR TOP 3</h2>
+    <!--Top 1-->                        
+                            <label id="genre-label" for="Top 1">Top 1</label>
+                            <select name ="Top 1" id ="dropdown" required>
+                                <option>Classical</option>
+                                <option>Country</option>
+                                <option>EDM</option>
+                                <option>Hip-Hop</option>
+                                <option>Indie</option>
+                                <option>Pop</option>
+                                <option>Rap</option>
+                                <option>Rock</option>
+                            </select>
+    <!--Top 2-->
+                            <label id="genre-label" for="Top 2"><br>Top 2</label>
+                            <select name ="Top 2" id ="dropdown" required>
+                                <option>Classical</option>
+                                <option>Country</option>
+                                <option>EDM</option>
+                                <option>Hip-Hop</option>
+                                <option>Indie</option>
+                                <option>Pop</option>
+                                <option>Rap</option>
+                                <option>Rock</option>
+                            </select>
+    <!--Top 3-->
+                            <label id="genre-label" for="Top 3"><br>Top 3</label>
+                            <select name ="Top 3" id ="dropdown" required>
+                                <option>Classical</option>
+                                <option>Country</option>
+                                <option>EDM</option>
+                                <option>Hip-Hop</option>
+                                <option>Indie</option>
+                                <option>Pop</option>
+                                <option>Rap</option>
+                                <option>Rock</option>
+                            </select>
+                        </div>
+
+    <!--CHECKBOX, Choose what you like-->
+
+                <div id="question">
+                    <h2>WHAT DO YOU LIKE?</h2>
+
+                    <div id="checkbox">
+                        <div>
+                            <input type="checkbox" name="songs" id="anime" value="anime">
+                            <label for="anime">Anime/Cartoon</label><br>
+                            <input type="checkbox" name="songs" id="kpop" value="kpop">
+                            <label for="kpop">K-POP</label><br>
+                            <input type="checkbox" name="songs" id="musical" value="musical">
+                            <label for="musical">Musical</label><br>
+                            <input type="checkbox" name="songs" id="opm" value="opm">
+                            <label for="opm">OPM</label><br>
+                            <input type="checkbox" name="songs" id="disney" value="disney">
+                            <label for="opm">Disney</label><br>
+                        </div>
+
+    <!--CHECKBOX, where do you like to sing-->
+    
+                        <div id="question">
+                            <h2>WHERE DO YOU LIKE TO SING?</h2>
+
+                            <div id="checkbox">
+                                <div>
+                                    <input type="checkbox" name="sing" id="shower" value="shower">
+                                    <label for="shower">In the shower</label><br>
+                                    <input type="checkbox" name="sing" id="car" value="car">
+                                    <label for="car">In the car</label><br>
+                                    <input type="checkbox" name="sing" id="any" value="any">
+                                    <label for="any">Anywhere</label><br>
+                                    <input type="checkbox" name="sing" id="crowd" value="crowd">
+                                    <label for="crowd">In a crowd</label><br>
+                                    <input type="checkbox" name="sing" id="dont" value="dont">
+                                    <label for="dont">I don't like singing</label><br>
+                                </div>   
+                            </div>
+                        </div>   
+
+    <!--RADIO BUTTON, good singer?-->
+
+                        <div id="question">
+                            <h2>ARE YOU A GOOD SINGER?</h2>
+
+                            <div id=radiobuttons>
+                                <div>
+                                    <input type="radio" name="singer" id="YES" value="YES" required>
+                                    <label for="YES">Yes</label><br>
+                                    <input type="radio" name="singer" id="NO" value="NO">
+                                    <label for="NO">No</label><br>
+                                    <input type="radio" name="singer" id="secret" value="secret">
+                                    <label for="secret">It's a secret</label><br>
+                                    <input type="radio" name="singer" id="sayso" value="sayso">
+                                    <label for="sayso">My mom says so...</label><br>
+                                </div>
+                            </div>
+                        </div>
+    <!--RADIO BUTTON, What pets-->
+
+                        <div id="question">
+                            <h2>WHAT PET/S DO YOU HAVE?</h2>
+
+                            <div id=radiobuttons>
+                                <div>
+                                    <input type="radio" name="pets" id="dog" value="dog" required>
+                                    <label for="dog">Doggos</label><br>
+                                    <input type="radio" name="pets" id="cat" value="cat">
+                                    <label for="cat">Cats</label><br>
+                                    <input type="radio" name="pets" id="both" value="both">
+                                    <label for="both">I have both, I love pets!</label><br>
+                                    <input type="radio" name="pets" id="nopet" value="nopet">
+                                    <label for="nopet">None, I don't like them</label><br>
+                                </div>
+                            </div>
+                        </div>
+
+    <!--RADIO BUTTON, Pick a color-->
+
+                        <div id="question">
+                            <h2>PICK A COLOR</h2>
+
+                            <div id="radiobuttons">
+                                <div>
+                                    <input type="radio" name="color" id="red" value="red" required>
+                                    <label for="red">Red</label><br>
+                                    <input type="radio" name="color" id="blue" value="blue">
+                                    <label for="blue">Blue</label><br>
+                                    <input type="radio" name="color" id="green" value="green">
+                                    <label for="green">Green</label><br>
+                                    <input type="radio" name="color" id="black" value="black">
+                                    <label for="black">Black</label><br>
+                                </div>
+                            </div>
+                        </div>   
+
+    <!--RADIO BUTTON, What are you feeling-->
+
+                        <div id="question">
+                            <h2>WHAT ARE YOU FEELING TODAY?</h2>
+
+                            <div id="radiobuttons">
+                                <div>
+                                    <input type="radio" name="mood" id="happy" value="happy" required>
+                                    <label for="happy">Happy</label><br>
+                                    <input type="radio" name="mood" id="chill" value="chill">
+                                    <label for="chill">Chill</label><br>
+                                    <input type="radio" name="mood" id="sad" value="sad">
+                                    <label for="sad">Sad</label><br>
+                                    <input type="radio" name="mood" id="sleepy" value="sleepy">
+                                    <label for="sleepy">Sleepy</label><br>
+                                    <input type="radio" name="mood" id="meh" value="meh">
+                                    <label for="meh">Meh</label><br>
+                                </div>
+                            </div>
+                        </div>
+
+    <!--DROPDOWN, personality-->
+
+                        <div id="question">
+                            <h2>PERSONALITY TYPE</h2>
+
+                            <div id="dropdown">
+                                <div>
+                                    <label id="personality" for="personality"></label>
+                                        <select name ="personality" id ="dropdown">
+                                            <option>Extrovert</option>
+                                            <option>Introvert</option>
+                                            <option>sensors (Realistic)</option>
+                                            <option>Intuitive</option>
+                                            <option>Thinkers</option>
+                                            <option>Feeler</option>
+                                            <option>Judger</option>
+                                            <option>Perceiver</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+
+           
+    <!--TEXTAREA, feedback-->     
+                        <div id="question">
+                            <h2>Please suggest what can be improved in the survey.</h2>
+
+                            <div id="textarea">
+                                <div>
+                                    <label for="feedback"></label>
+                                    <textarea name="feedback" id="feedback"></textarea>
+                                </div>              
+    <!--BUTTONS-->     
+                            <br>
+                            <input type="submit" id="submit" name="button" value="send">
+                            <input type="reset" id="reset" name="reset" value="reset">
+                </fieldset> 
+            </form>
+        </div>
+</body>
+</html>

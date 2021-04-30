@@ -1,0 +1,417 @@
+html  {
+    font-family: monospace!important;
+}
+
+*{
+    text-transform: uppercase!important;
+
+}
+body {
+    background-image: url("https://image.freepik.com/free-photo/background-old-black-brick-wall-wallpaper_73152-4296.jpg");
+     /*#EEE3E1*/ 
+    background-repeat: round;
+    background-size: auto;
+    position:sticky;
+    color: #555;
+}
+
+@font-face {
+    font-family: neon;
+    src: url(../NeonFuture.ttf);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    position:fixed;
+    float: right;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.nav-container a {
+    float: none;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 35px; 
+    border-radius: 4px;
+    width: 180px;
+    border: none;
+    outline: none;
+    margin-top: 200px;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+.nav-container a:hover {
+    transform: scale(1.3);
+    color: #ccc9;
+}
+
+.main-main-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.neon-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 155px;
+}
+
+.neon-text {
+    font-family: neon;
+    font-size: 60px;
+    position: fixed;
+    margin-top: 200px;
+    text-shadow: 
+    .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+    .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+    .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+    .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+    .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
+    .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+    .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+    /*box-shadow:
+    0 0 0.1vw  0.4vw #fff7f7,   
+    0 0 0.4vw  0.6vw #e97272, 
+    0 0   4vw  0.4vw #e50b0b,
+    inset 0 0 1.5vw  0.4vw #e50b0b,
+    inset 0 0 0.4vw  0.2vw #e97272,
+    inset 0 0 0.5vw  0.2vw #fff7f7;
+    border-radius: 1.5rem;*/
+    padding: 10px;
+}
+
+
+.main-main {
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+    background-color: #ecf0f3;
+    padding-top: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #444,
+                -10px -10px 10px #444;
+}
+.main {
+    margin: auto;
+   /* padding-top: 50px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    background-color: /*#B1071C*/ #ecf0f3;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    box-shadow: 13px 13px 20px #cbced1,
+               -13px -13px 20px #ffffff;
+    margin-bottom: 50px;
+}
+
+#title {
+    text-align: center;
+    font-stretch: extra-expanded;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Product Selection */
+.all-products-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid rgba(58, 34, 34, 0.445);
+    /*border: 3px solid orange;*/
+    width: 100%;
+    height: auto;
+    outline: none;
+    border: none;
+    box-shadow: 8px 8px 8px  #cbced1,
+                -8px -8px 8px #ffffff;
+    border-radius: 5px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    border: none;
+    padding: 10px;
+    box-shadow: inset 8px 8px 8px #ccc,
+                inset -8px -8px 8px #ffffff;
+    border-radius: 10px;
+    background-color: none;
+    width: 200px;
+    height: auto;
+}
+
+.product-container:hover {
+    transform: scale(1.1);
+}
+
+.product-detail {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  .content {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    text-align: left;
+  }
+
+.product-list,
+.product2-list,
+.product3-list {
+    display: flex;
+    border: none;
+    background-size:cover;
+    background-repeat: round;
+    width: auto;
+    height: 200px;
+}
+
+.product-list {
+    background-image: url("https://milkteasupplier.ph/wp-content/uploads/2020/12/Milk-Tea-Business-Trial-Package-v2.png");
+}
+
+.product2-list {
+    background-image: url("https://milkteasupplier.ph/wp-content/uploads/2020/12/Milk-Tea-Business-Package-Premium.png");
+}
+
+.product3-list {
+    background-image: url("https://ph-test-11.slatic.net/p/4b68ac490bec6f7e02aae6990940cb7a.jpg_720x720q80.jpg_.webp");
+}
+
+.cb-product1 {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+/* total */
+.franchisee-info {
+    display: flex;
+    justify-content: center;
+    margin: 55px 0;
+    padding-bottom: 20px;
+    position: relative;
+    width: inherit;
+    font-size: 20px;
+}
+#total-area {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+/* Buyer information */
+
+#buyer-information {
+    border: none;
+    outline: none;
+    box-shadow:  8px 8px 8px #cbced1,
+                 -8px -8px 8px #ffffff;
+}
+
+.secondary-div {
+    display: flex;
+    justify-content: center;
+    /*background-color: #7ED3E7;*/
+    /*border: 10px double green;*/
+    width: inherit;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: inherit;
+    /*border: 2px solid orange;*/
+}
+
+#buyer-information {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/* name form */
+.name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:inherit;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.main-arrange-name{
+    display: flex;
+    justify-content: space-around;
+}
+/*#name,
+#surname,
+#email,
+#number {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px  10px 20px 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}*/
+
+.arrange-name {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+/* email & cp number form  COMBINED*/
+
+.email-container,
+.cpnumber-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 200px;
+}
+
+
+.email-num-merger {
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid black;*/
+}
+
+/* address form */
+
+.address-container {
+    margin-top: 15px;
+}
+
+.arrange-st-ct {
+    padding: 10px;
+/*    border: 1px solid black;*/
+    width: auto;
+}
+
+.st-ct-container,
+.subd-container,
+.brgy-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.st-ct-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.subd-container,
+.brgy-container {
+    width: 315px;
+    padding-left: 15px;
+}
+
+.subd-brgy-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.country-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
+}
+
+.country-state-city {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    padding: 15px;
+    margin-left: 30px;
+}
+
+
+#radio-checkbox-div {
+    display: flex;
+    justify-content: space-around;
+}
+#radio-div,
+#checkbox-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#textArea {
+    display: block;
+    height: 30px;
+    width: 200px;
+    margin: auto;
+}
+#textArea-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.submit-div {
+    padding-top:  50px;
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow:  8px 8px 8px #cbced1,
+                 -8px -8px 8px #ffffff;
+}

@@ -1,0 +1,32 @@
+.icon-success {
+	display: none;
+	width: 1em;
+	height: 1em;
+}
+
+.icon-success path,
+.icon-success polygon,
+.icon-success rect {
+	fill: green;
+}
+
+.icon-success circle {
+	stroke: #4691f6;
+	stroke-width: 1;
+}
+
+.icon-error {
+	width: 1em;
+	height: 1em;
+}
+
+.icon-error path,
+.icon-error polygon,
+.icon-error rect {
+	fill: red;
+}
+
+.icon-error circle {
+	stroke: #4691f6;
+	stroke-width: 1;
+}

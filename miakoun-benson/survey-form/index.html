@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Be an Astronaut!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://twemoji.maxcdn.com/2/svg/1f680.svg">
+</head>
+<body>
+    <div class="layer">
+        <div>
+            <div class="motto">
+                <div id="header">
+                    <!-- <img id="pic" src="https://twemoji.maxcdn.com/2/svg/1f680.svg" alt=""> -->
+                    <h1 id="title">Astronaut Application Form</h1>
+                </div>
+                <p id="description">"Good luck!"</p>
+            </div>
+            <form id="survey-form" method="get">
+                <div class="rect">
+                    <div class="line">
+                        <label id="name-label">Name</label><br>
+                        <input id="name" type="text" placeholder="Enter your name" name="name" class="input" required>
+                    </div>
+                    <div class="line">
+                        <label id="email-label">Email</label><br>
+                        <input id="email" type="email" placeholder="Enter your email address" name="email" class="input" required>
+                    </div>
+                    <div class="line">
+                        <label id="number-label">Age<span id="optional"> (optional)</span></label><br>
+                        <input id="number" type="number" placeholder="Age" min="0" max="200" name="age" class="input">
+                    </div>
+                    <div class="line">
+                        <label>Favorite color:</label><br>
+                        <select id="dropdown" name="color" class="selection">
+                            <option id="red" class="option" value="red">Red</option>
+                            <option id="orange" class="option" value="orange">Orange</option>
+                            <option id="yellow" class="option" value="yellow">Yelllow</option>
+                            <option id="green" class="option" value="green">Green</option>
+                            <option id="blue" class="option" value="blue">Blue</option>
+                            <option id="indigo" class="option" value="indigo">Indigo</option>
+                            <option id="violet" class="option" value="violet">Violet</option>
+                        </select>
+                    </div>
+                    <div class="line">
+                        <label>Favorite car:</label><br>
+                        <input type="radio" name="car" id=tesla value="tesla">
+                        <label for="tesla">Tesla</label><br>
+                        <input type="radio" name="car" id=toyota value="toyota">
+                        <label for="toyota">Toyota</label><br>
+                        <input type="radio" name="car" id=lamborghini value="lamborghini">
+                        <label for="lamborghini">Lamborghini</label>
+                    </div>
+
+                    <div class="line">
+                        <label>Favorite planet:</label><br>
+                        <input type="radio" name="planet" id=earth value="earth">
+                        <label for="earth">Earth</label><br>
+                        <input type="radio" name="planet" id=mars value="mars">
+                        <label for="mars">Mars</label><br>
+                        <input type="radio" name="planet" id=saturn value="saturn">
+                        <label for="saturn">Saturn</label>
+                    </div>
+                    
+                    <div class="line">
+                        <label>Favorite galaxy:</label><br>
+                        <input type="checkbox" name="milky-way" id="milky-way" value="milky-way">
+                        <label for="milky-way">Milky Way</label><br>
+                        <input type="checkbox" name="andromeda" id="andromeda" value="andromeda">
+                        <label for="andromeda">Andromeda</label><br>
+                        <input type="checkbox" name="randomly-named-galaxy" id="randomly-named-galaxy" value="randomly-named-galaxy">
+                        <label for="randomly-named-galaxy">Galaxy QWERTY 101.9</label>
+                    </div>
+                    <div class="line">
+                        <label>Thoughts:</label><br>
+                        <textarea name="comment" class="comment" placeholder="Why should we choose you?"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input id="submit" type="submit" value="Send" name="button">
+                    </div>
+                </div>    
+            </form>
+        </div>
+    </div>
+</body>
+</html>

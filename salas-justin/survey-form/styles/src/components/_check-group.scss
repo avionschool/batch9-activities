@@ -1,0 +1,51 @@
+@import "../variables/variables";
+
+.check-group {
+  @extend .radio-group;
+  &_error {
+    // border: 1px solid $border-error;
+    // box-shadow: 0 0 $shadow-error-spread $shadow-error;
+  }
+}
+
+.check-input {
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.check__question {
+  @extend .radio__question;
+  &_focused {
+    text-shadow: 0 0 0.1rem $label-focus-color;
+  }
+
+  &_error {
+    color: $error-primary;
+    text-shadow: 0 0 0.1rem $shadow-error;
+  }
+}
+
+.check__field {
+  transform: scale(1.3);
+
+  &:checked + .check__label {
+    color: $option-selected;
+  }
+}
+
+.check__label {
+  @extend .radio__label;
+}
+
+.check__option {
+  @extend .radio__option;
+}
+
+.check__toolkit {
+  @extend .radio__toolkit;
+
+  &_error {
+    display: block;
+    color: $error-primary;
+  }
+}

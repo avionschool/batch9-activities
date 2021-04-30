@@ -1,0 +1,39 @@
+@use "color";
+
+html {
+  height: 100%;
+  body {
+    // background: wheat;
+    margin: 0;
+    padding: 0;
+    .chess-board {
+      height: 100%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+      tbody {
+        display: flex;
+        flex-direction: column;
+        tr {
+          width: auto;
+          td {
+            width: 1.5em;
+            height: 1.5em;
+            text-align: center;
+            font-size: 32px;
+            line-height: 0;
+          }
+        }
+        .light {
+          // background: wheat;
+          background: color.$white-box;
+        }
+        .dark {
+          // background: #660022;
+          background: color.$black-box;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../variables/variables";
+
+.drop-group {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1rem;
+  margin-top: $label-margin-top;
+  margin-left: $group-margin-left;
+}
+
+.drop-input {
+  width: 100%;
+}
+
+.drop__label {
+  font-size: $label-size;
+  font-weight: 300;
+  &_error {
+    color: $error-primary;
+    text-shadow: 0 0 0.2rem $shadow-error;
+  }
+}
+
+.drop__field {
+  appearance: none;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  appearance: none;
+  font-family: "Josefin Sans", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 0.1rem solid $border-inactive;
+  padding: 0.2rem;
+  font-size: $label-size;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+  transition: border-bottom 0.1s ease-in;
+
+  &_error {
+    border-bottom: 0.1rem solid $border-error;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:focus {
+    border-bottom: 0.1rem solid $border-black-focus;
+  }
+  &_error:focus {
+    border-bottom: 0.1rem solid $border-error-focus;
+  }
+}
+
+.drop__option {
+  font-weight: 300;
+  font-size: inherit;
+}
+
+.drop__toolkit {
+  display: none;
+  width: 100%;
+  padding-top: $toolkit-space;
+  font-size: $toolkit-size;
+
+  &_error {
+    display: block;
+    color: crimson;
+  }
+}

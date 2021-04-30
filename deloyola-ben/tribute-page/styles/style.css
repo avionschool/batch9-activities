@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+}
+
+li,
+a,
+button {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  position: fixed;
+  width: 100%;
+  background-color: #24252a;
+  z-index: 999;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #aa0f0f;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #5e1d1d;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+}
+
+button:hover {
+  background-color: #aa0f0f;
+  /* color: #000; */
+}
+
+.banner-area {
+  width: 100%;
+  height: 713px;
+  position: fixed;
+  top: 100px;
+  background-image: url(../img/cover-photo.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner-area h2 {
+  padding-top: 8%;
+  font-size: 70px;
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+}
+
+.banner-area span {
+  font-family: "RocknRoll One", sans-serif;
+  color: white;
+}
+
+.content-area {
+  width: 100%;
+  position: relative;
+  top: 450px;
+  background: #090c10;
+  min-height: auto;
+  height: 100%;
+}
+
+.content-area h2 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 4px;
+  padding: 20px;
+  background: #5e1d1d;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+
+.content-area p {
+  padding: 2%;
+  font-family: "Darker Grotesque", sans-serif;
+  line-height: 30px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+}
+
+.wrapper img {
+  width: 25%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.wrapper p {
+  height: 358px;
+  width: 80%;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: "RocknRoll One", sans-serif;
+  margin-left: 30px;
+  color: #ddd;
+}
+
+.timeline-area {
+  position: relative;
+  top: 449px;
+  background: #101010;
+  margin: 0 auto;
+  height: 100%;
+  /* max-width: 800px; */
+}
+
+.timeline-area h2 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 4px;
+  padding: 20px;
+  background: #5e1d1d;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+
+.timeline-area ul {
+  list-style: none;
+  margin: 20px;
+}
+
+.timeline-area ul li {
+  color: #fff;
+  font-family: "RocknRoll One", sans-serif;
+  padding: 20px;
+  background-color: #1e1f22;
+  margin-bottom: 20px;
+  overflow: hidden;
+  zoom: 1;
+  border-radius: 5px;
+}
+
+.timeline-area ul li:last-child {
+  margin-bottom: 10px;
+}
+
+.timeline-content h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.story-area {
+  position: relative;
+  top: 449px;
+  background: #101010;
+  margin: 0 auto;
+  height: 290vh;
+  /* max-width: 800px; */
+}
+
+.story-area h2 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 4px;
+  padding: 20px;
+  background: #5e1d1d;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+
+.story-content {
+  color: #fff;
+}
+
+.story-content h1 {
+  font-family: "RocknRoll One", sans-serif;
+  padding: 20px;
+  /* background-color: #1e1f22; */
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.story-content p {
+  padding: 50px;
+  font-size: 16px;
+  background: #1e1f22;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: "RocknRoll One", sans-serif;
+  color: #ddd;
+}
+
+footer {
+  position: relative;
+  top: 449px;
+  background: #24252a;
+  margin: 0 auto;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer span {
+  font-family: "Bebas Neue", cursive;
+  color: #ddd;
+}
+
+.gotop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #5e1d1d;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  z-index: 99;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-area ul::before {
+    content: "";
+    position: absolute;
+    height: 88%;
+    width: 2px;
+    background-color: gray;
+  }
+
+  .timeline-area ul li {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .timeline-area ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-10px);
+  }
+  .timeline-area ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(10px);
+  }
+  .clear {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper img {
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+  }
+  .wrapper p {
+    height: 505px;
+    width: 90%;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "RocknRoll One", sans-serif;
+  }
+  .timeline-area {
+    height: 119vh;
+  }
+  .story-area {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 881px) {
+  .wrapper img {
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+  }
+  .wrapper p {
+    height: 505px;
+    width: 90%;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "RocknRoll One", sans-serif;
+  }
+  .timeline-area {
+    height: 169vh;
+  }
+  .story-area {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .story-area {
+    height: 324vh;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper img {
+    width: 40%;
+    height: 50%;
+    border-radius: 10px;
+  }
+  .timeline-area {
+    height: 185vh;
+  }
+  .story-area {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-area {
+    height: 108vh;
+    width: 69vh;
+  }
+  .timeline-area {
+    width: 69vh;
+    height: 144vh;
+  }
+  .story-area {
+    width: 69vh;
+    height: 100%;
+  }
+  footer {
+    top: 449px;
+    width: 69vh;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+  .wrapper img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+  }
+
+  .wrapper p {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .content-area {
+    /* width: 132%; */
+    height: 129vh;
+  }
+  .wrapper img {
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+  }
+  .wrapper p {
+    height: 505px;
+    width: 90%;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "RocknRoll One", sans-serif;
+  }
+  .timeline-area {
+    height: 159vh;
+  }
+  .story-area {
+    height: 100%;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header class="header">
+                <h1 id="title">
+                    Survey from BEN
+                </h1>
+                <p id="description">
+                    Thank you for taking the time to fill up my survey!
+                </p>
+            </header>
+            <form action="./destination.html" id="survey-form" method="GET" autocomplete="off">
+
+                <!-- Text section -->
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" class="formControl" placeholder="John Doe">
+                </div>
+                <!-- end of text section -->
+
+                <!-- Type Email section -->
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" class="formControl" placeholder="include'@': example@sample.com" onkeydown="emailValidation()" required>
+                    <span id="text"></span>
+                </div>
+                <!-- end of Email section -->
+
+                <!-- Type Number section -->
+                <div class="form-group">
+                    <label for="number" id="number-label">Number</label>
+                    <input type="number" name="number" id="number" class="formControl" placeholder="numbers between 2 to 20 only" max="20" min="2" onkeyup="numericValidation()">
+                    <span id="numericOnly"></span>
+                </div>
+                <!-- end of Number section -->
+
+                <!-- Type Number section -->
+                <div class="form-group">
+                    <label for="address">Address <span class="optional">(optional)</span></label>
+                    <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+                </div>
+                <!--  end of number section -->
+
+                <!-- select section -->
+                <div class="form-group">
+                    <p id="quest">Which option best describe your current role</p>
+                    <select name="role" id="dropdown" class="formControl selection">
+                        <option value disabled selected >Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="job">Job</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- end of select section -->
+
+                <!-- radio button section -->
+                <div class="form-group">
+                    <p id="quest">What you spend the most of time?</p>
+                    <label for="">
+                        <input id="friends" type="radio" name="source" value="friends"
+                        class="inputRadio" onclick="javascript:checkedRadio();"
+                        checked> Friends
+                    </label>
+                    <label for="">
+                        <input id="tv-ads" type="radio" name="source" value="tv-ads"
+                        class="inputRadio" onclick="javascript:checkedRadio();"
+                        >TV Ads
+                    </label>
+                    <label for="">
+                        <input id="social-media" type="radio" name="source" value="social-media"
+                        class="inputRadio" onclick="javascript:checkedRadio();"
+                        > Social Media
+                    </label>
+                    <label for="">
+                        <input id="studies" type="radio" name="source" value="studies"
+                        class="inputRadio" onclick="javascript:checkedRadio();"
+                        > Studies
+                    </label>
+                    <label for="">
+                        <input id="others" type="radio" name="source" value=""
+                        class="inputRadio" onclick="javascript:checkedRadio();"
+                        >Others
+                    </label>
+                    <input type="text" id="unchecked" class="formControl others" name="other" placeholder="Others" data-require-pair="#others"/>
+                </div>
+                <!-- end of radio button -->
+
+                <!-- Checkbox section -->
+                <div class="form-group">
+                    <p id="quest">What would you like to improved ? </p>
+                    <label for="">
+                        <input id="front" type="checkbox" name="prefer" class="checkbox" value="front-end-dev" onclick="javascript:checkedBox();"> Front-end Developer
+                    </label>
+                    <label for="">
+                        <input id="back" type="checkbox" name="prefer" class="checkbox" value="back-end-dev" onclick="javascript:checkedBox();"> Back-end Developer
+                    </label>
+                    <label for="">
+                        <input id="app" type="checkbox" name="prefer" class="checkbox" value="app-dev" onclick="javascript:checkedBox();">  Android App Developer
+                    </label>
+                    <label for="">
+                        <input id="soft" type="checkbox" name="prefer" class="checkbox" value="soft-engineering" onclick="javascript:checkedBox();"> Software Engineering
+                    </label>
+                    <label for="">
+                        <input id="checkboxOthers" type="checkbox" name="prefer" class="checkbox" value="other" onclick="javascript:checkedBox();"> Other
+                    </label>
+                    <input type="text" id="uncheckedOthers" class="formControl others" name="prefer" placeholder="Others" data-require-pair="#checkboxOthers"/>
+                </div>
+                <!-- End of checkbox section -->
+
+                <!-- Textarea section -->
+                <div class="form-group">
+                    <p id="quest">Give us your feedback</p>
+                    <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="./js/form.js"></script>
+</body>
+</html>
