@@ -13,13 +13,15 @@ body .chess-board {
 html .chess-board .light,
 body .chess-board .light {
   font-size: 50px;
-  background: #e2628d;
+  place-self: center;
+  background: wheat;
   width: 100%;
   height: 100%;
 }
 html .chess-board .dark,
 body .chess-board .dark {
   font-size: 50px;
+  place-self: center;
   background: #660022;
   width: 100%;
   height: 100%;
