@@ -174,8 +174,8 @@ body {
   background-size: contain;
   width: 80vmin;
   height: 80vmin;
-  -webkit-animation: spin 25s linear infinite;
-          animation: spin 25s linear infinite;
+  -webkit-animation: spin 30s linear infinite;
+          animation: spin 30s linear infinite;
 }
 
 @-webkit-keyframes spin {
