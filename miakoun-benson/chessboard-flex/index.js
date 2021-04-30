@@ -111,3 +111,40 @@ if(boxes) {
         item.addEventListener('mouseout', hideMoves)
     });
 }
+
+const dropdown = document.querySelector('.dropdown');
+
+if(dropdown) {
+    dropdown.addEventListener('mouseover', showButton);
+    dropdown.addEventListener('mouseout', hideButton);
+}
+
+function showButton(event) {
+    const index = event.target.id;
+
+    switch(index) {
+        case "grid":
+            document.querySelector('#grid').innerHTML = 'Flexbox';
+            document.querySelector('#grid').classList.add('flex');
+            break;
+        case 'flex':
+            document.querySelector('#flex').innerHTML = 'Grid';
+            document.querySelector('#flex').classList.add('grid');
+            break;
+    }
+}
+
+function hideButton(event) {
+    const index = event.target.id;
+
+    switch(index) {
+        case "grid":
+            document.querySelector('#grid').innerHTML = 'Grid';
+            document.querySelector('#grid').classList.remove('flex');
+            break;
+        case 'flex':
+            document.querySelector('#flex').innerHTML = 'Flexbox';
+            document.querySelector('#flex').classList.remove('grid');
+            break;
+    }
+}
