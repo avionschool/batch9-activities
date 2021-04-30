@@ -1,0 +1,30 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+html .chess-board,
+body .chess-board {
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px;
+  place-content: center;
+}
+html .chess-board .light,
+body .chess-board .light {
+  font-size: 50px;
+  place-self: center;
+  background: wheat;
+  width: 100%;
+  height: 100%;
+}
+html .chess-board .dark,
+body .chess-board .dark {
+  font-size: 50px;
+  place-self: center;
+  background: #660022;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

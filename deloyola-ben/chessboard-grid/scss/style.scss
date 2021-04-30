@@ -1,0 +1,27 @@
+@use 'color';
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  .chess-board {
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px;
+    place-content: center;
+    .light {
+      font-size: 50px;
+      place-self: center;
+      background: color.$white-box;
+      width: 100%;
+      height: 100%;
+    }
+    .dark {
+      font-size: 50px;
+      place-self: center;
+      background: color.$black-box;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
