@@ -13,7 +13,7 @@ body {
   color: #FFF;
   background-color: #c5d7d9;
   background-image: url("https://images5.alphacoders.com/112/1125315.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
