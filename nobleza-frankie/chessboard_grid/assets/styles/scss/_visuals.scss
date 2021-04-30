@@ -1,0 +1,225 @@
+body{
+    background-image:   linear-gradient($opacity,$opacity),
+                        url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+.wait {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    animation: fade 6s forwards;
+    z-index: 1000;
+}
+
+// @keyframes fade {
+//     0% {visibility: visible;
+//         opacity: 1;}
+//     95% {visibility: visible;
+//         opacity: 1;}
+//     99% {visibility: visible;
+//         opacity: .8;}
+//     100% {visibility: hidden;
+//         opacity: 0;}
+// }
+
+.wait::before {
+    content: "loading";
+    position: absolute;
+    font-family: 'Tengwar';
+    font-size: 8vmin;
+    color: $gold;
+    animation: fonts 6s forwards;
+}
+
+@keyframes fonts {
+    0% {font-family: 'Tengwar';}
+    20% {font-family: 'Eldamar';}
+    40% {font-family: 'Tengwar';}
+    60% {font-family: 'Eldamar';}
+    80% {font-family: 'Tengwar';}
+    90% {font-family: 'Hobbiton';}
+    100% {font-family: 'Hobbiton';}
+}
+
+.load {
+    background-image: url("../images/loading.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: contain;
+    width: 50vmin;
+    height: 50vmin;
+    animation: spin 2s linear infinite;
+    margin-right: 100vmin;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(180deg);}
+  100% { transform: rotateZ(0deg); }
+}
+
+
+#base {
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family:'Hobbiton';
+    font-size: 8vmin;
+    margin: -2vmin;
+    margin-bottom: 1vmin;
+    font-weight: 300;
+}
+
+#info-box {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:$opacity ;
+    z-index: 800;
+    display: none;
+}
+
+#infobox:checked ~ #info-box,
+#infobox:hover ~ #info-box {
+    display: block;
+}
+
+
+#icon-info {
+    position: relative;
+    cursor: pointer;
+    z-index: 850;
+}
+
+.info-icon {
+    position: relative;
+    left:35vmin;
+    width: 3vmin;
+    height: 3vmin;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20vmin auto;
+    width: 100vmin;
+    height: auto;
+    padding: 4vmin 0;
+    background-color: $dark;
+    border-radius: 1vmin;
+}
+
+fieldset {
+    margin: 0 2.5vmin;
+    background-color: $dark;
+}
+
+legend {
+    font-family: 'Hobbiton';
+    font-weight: 100;
+    font-size: 4.5vmin;
+    background-color: $dark ;
+    color: $grey;
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Aniron';
+    font-size: 2vmin;
+    font-weight: 100;
+    color: $duskblue;
+}
+
+.board {
+    position: relative;
+    width: 75vh;
+    height: 75h;
+    border: 0.5vmin solid $grey;
+    display: grid;
+    grid-template-columns: repeat(8, 7vh);
+    grid-template-rows: repeat(8, 7vh);
+    justify-content: center;
+    align-content: center;
+}
+
+.board > * {
+    height: 100%;
+    border: solid $dark 0.5vh;
+}
+
+.square {
+    border: 0.1vh solid $dark;
+    width: 9.375vmin;
+    height: 9.375vmin;
+}
+
+.pieces {
+    position: relative;
+    width: 7.5vmin;
+    height: 7.5vmin;
+    margin-top: 1vmin;
+    margin-left: 1vmin;
+    transition: 1s;
+}
+
+.pieces:hover {
+    transform:scale(1.2)
+}
+
+#ccl,
+#ckl {
+    position: relative;
+    transition: 1.5s;
+    width: 9.3vmin;
+    height: 9.3vmin;
+    z-index:500;
+}
+
+#ccl {
+    bottom:0;
+}
+
+#ckl {
+    transition:1s;
+    right:0;
+    top:0;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+#checkCastle:checked ~ #ccl {
+    bottom: 64.75vmin;
+}
+
+#checkKnight:checked ~ #ckl {
+    right: 18.75vmin;
+    top: 9.375vmin;
+}

@@ -1,0 +1,369 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@font-face {
+  font-family: "Aniron";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Aniron"), url("../fonts/anirb___.woff") format("woff");
+}
+@font-face {
+  font-family: "Tengwar";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tengwar"), url("../fonts/Greifswalder-Tengwar.woff") format("woff");
+}
+@font-face {
+  font-family: "Hobbiton";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hobbiton"), url("../fonts/HobbitonBrushhandhobbitonBrush-WygA.woff") format("woff");
+}
+@font-face {
+  font-family: "Eldamar";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Eldamar"), url("../fonts/TengwarEldamar-51r8.woff") format("woff");
+}
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url("../images/bg.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.wait {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+  -webkit-animation: fade 6s forwards;
+          animation: fade 6s forwards;
+  z-index: 1000;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  95% {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0.8;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  95% {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0.8;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wait::before {
+  content: "loading";
+  position: absolute;
+  font-family: "Tengwar";
+  font-size: 8vmin;
+  color: #ab884b;
+  -webkit-animation: fonts 6s forwards;
+          animation: fonts 6s forwards;
+}
+
+@-webkit-keyframes fonts {
+  0% {
+    font-family: "Tengwar";
+  }
+  20% {
+    font-family: "Eldamar";
+  }
+  40% {
+    font-family: "Tengwar";
+  }
+  60% {
+    font-family: "Eldamar";
+  }
+  80% {
+    font-family: "Tengwar";
+  }
+  90% {
+    font-family: "Hobbiton";
+  }
+  100% {
+    font-family: "Hobbiton";
+  }
+}
+
+@keyframes fonts {
+  0% {
+    font-family: "Tengwar";
+  }
+  20% {
+    font-family: "Eldamar";
+  }
+  40% {
+    font-family: "Tengwar";
+  }
+  60% {
+    font-family: "Eldamar";
+  }
+  80% {
+    font-family: "Tengwar";
+  }
+  90% {
+    font-family: "Hobbiton";
+  }
+  100% {
+    font-family: "Hobbiton";
+  }
+}
+.load {
+  background-image: url("../images/loading.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: contain;
+  width: 100vmin;
+  height: 100vmin;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  margin-left: 27vmin;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+#base {
+  height: 100vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-family: "Hobbiton";
+  font-size: 8vmin;
+  margin: -2vmin;
+  margin-bottom: 1vmin;
+  font-weight: 300;
+}
+
+#info-box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 800;
+  display: none;
+}
+
+#infobox:checked ~ #info-box,
+#infobox:hover ~ #info-box {
+  display: block;
+}
+
+#icon-info {
+  position: relative;
+  cursor: pointer;
+  z-index: 850;
+}
+
+.info-icon {
+  position: relative;
+  left: 35vmin;
+  width: 3vmin;
+  height: 3vmin;
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 20vmin auto;
+  width: 100vmin;
+  height: auto;
+  padding: 4vmin 0;
+  background-color: #393834;
+  border-radius: 1vmin;
+}
+
+fieldset {
+  margin: 0 2.5vmin;
+  background-color: #393834;
+}
+
+legend {
+  font-family: "Hobbiton";
+  font-weight: 100;
+  font-size: 4.5vmin;
+  background-color: #393834;
+  color: #e2dfd8;
+  font-weight: 200;
+}
+
+p {
+  font-family: "Aniron";
+  font-size: 2vmin;
+  font-weight: 100;
+  color: #728da0;
+}
+
+.board {
+  width: 75vmin;
+  height: 75vmin;
+  border: 0.5vmin solid #e2dfd8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.square {
+  border: 0.1vh solid #393834;
+}
+
+.pieces {
+  width: 7.5vmin;
+  height: 7.5vmin;
+  margin-top: 1vmin;
+  margin-left: 1vmin;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.pieces:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#ccl,
+#ckl {
+  position: relative;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  width: 9.3vmin;
+  height: 9.3vmin;
+  z-index: 500;
+}
+
+#ccl {
+  bottom: 0;
+}
+
+#ckl {
+  -webkit-transition: 1s;
+  transition: 1s;
+  right: 0;
+  top: 0;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+#checkCastle:checked ~ #ccl {
+  bottom: 64.75vmin;
+}
+
+#checkKnight:checked ~ #ckl {
+  right: 18.75vmin;
+  top: 9.375vmin;
+}/*# sourceMappingURL=styles.css.map */
