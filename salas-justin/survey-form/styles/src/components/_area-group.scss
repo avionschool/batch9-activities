@@ -1,0 +1,83 @@
+@import "../variables/variables";
+
+.area-group {
+  margin-top: $label-margin-top;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1rem auto;
+}
+
+.area-input {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+}
+
+.area__label {
+  font-size: $label-size;
+  position: absolute;
+  top: $group-margin-left;
+  left: $group-margin-left;
+  transition: all 0.1s ease-in;
+
+  &_error {
+    color: crimson;
+    text-shadow: 0 0 $shadow-error-spread $shadow-error;
+  }
+}
+
+.area__field {
+  appearance: none;
+  outline: none;
+  border: none;
+  border: 0.1rem solid $border-normal;
+  display: block;
+  font-family: "Josefin Sans", serif;
+  font-weight: 300;
+  padding: $group-margin-left;
+  text-align: left;
+  font-size: $label-size;
+  resize: none;
+  width: 100%;
+  // border-radius: $group-radius;
+  border-top-left-radius: 0;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:focus {
+    box-shadow: 0 0 $shadow-spread $shadow-normal;
+  }
+
+  &_error {
+    border: 0.1rem solid $border-error;
+    box-shadow: 0 0 $shadow-error-spread $shadow-error;
+  }
+
+  &_error:focus {
+    border: 0.1rem solid $border-error-focus;
+  }
+
+  &:not(:placeholder-shown) + .area__label,
+  &:focus + .area__label {
+    top: $label-shoot;
+    font-size: $label-shoot-size;
+    transform: translateY(0);
+    font-weight: 300;
+  }
+}
+
+.area__toolkit {
+  display: none;
+  width: 100%;
+  font-size: $toolkit-size;
+  padding-left: $field-indent;
+  padding-top: $toolkit-space;
+
+  &_error {
+    display: block;
+    color: $error-primary;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../variables/variables";
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding-top: 5rem;
+
+  & > #description {
+    font-weight: 300;
+    font-size: 2.1rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+#title {
+  color: white;
+  text-align: center;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-shadow: 0 0 1rem white;
+  margin-bottom: 1rem;
+}
