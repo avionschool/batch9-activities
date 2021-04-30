@@ -3,17 +3,14 @@
     text-align: center;
 }
 .chessboard{
-    display:flex;
-    flex-wrap: wrap;
-    width: 50vw;
-    height: 50vw;
-    margin:auto;
+    display: grid;
+    grid-template: repeat(8, 1fr) /repeat(8,1fr);
+  width: 50vw;
+  height: 50vw;
+  margin:auto;
 }
 .tile{
-    width: 12.5%;
-	height: 12.5%;
-    background-color: chocolate;
-
+    background-color:chocolate;
 }
 
 div:nth-child(-2n+8), 
@@ -50,7 +47,7 @@ div:nth-child(56) ~ div:nth-child(-2n+63) {
         transform:translateX(0);
     }
     100%{
-        transform:translateY(-210%);
+        transform:translateY(-200%);
     }
     
 }
@@ -96,6 +93,6 @@ div:nth-child(56) ~ div:nth-child(-2n+63) {
         transform:translateX(0);
     }
     100%{
-        transform: translateY(-440%) translateX(-400%);
+        transform: translateY(-420%) translateX(-400%);
     }
 }
