@@ -1,0 +1,64 @@
+body {
+    background-image: url(assets/bg2.jpg);
+    background-color: greenyellow;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.chessboard {
+    height: 24vw;
+    width: 24vw;
+    display: grid;
+    border: 5px solid black;
+    grid-template-columns: repeat(8, 3vw);
+    grid-template-rows: repeat(8, 3vw);
+    grid-auto-flow: row;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.white-box {
+    display: grid;
+    flex-direction: row;
+    background-color: white;
+    font-size: 2vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.black-box {
+    display: grid;
+    flex-direction: row;
+    background-color: burlywood;
+    font-size: 2vw;
+    justify-content: center;
+    align-content: center;
+}
+
+#pawns1 {
+    transition: 1.5s;
+}
+
+#pawns1:hover {
+    transform: translate(0, 6vh);
+}
+
+#pawns2 {
+    transition: 1.5s;
+}
+
+#pawns2:hover {
+    transform: translate(0, -6vh);
+}
+
+#pawns1 {
+    font-size: 2vw;
+}
+
+#horse1 {
+    transition: 1.5s;
+}
+
+#horse1:hover {
+    transform: translate(6vh, 12vh);
+}
