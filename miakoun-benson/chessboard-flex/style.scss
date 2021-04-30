@@ -1,0 +1,86 @@
+@use 'color';
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/bg2.jpg);
+    background-size: cover;
+    backdrop-filter: blur(30px);
+}
+
+.board, #header{
+    margin-right: 40vw;
+    transition: 1000ms;
+}
+
+.blur {
+    backdrop-filter: blur(0px);
+    transition: 1000ms;
+}
+
+#header {
+    padding-bottom: 3vh;
+    font-family: 'Quando', serif;
+    color: color.$black;
+    font-size: 2.2vw;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    width: 4vw;
+    height: 4vw;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+    cursor:default;
+}
+
+.black {
+    background-color: color.$black;
+    border: 0.01vw solid color.$black;
+
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size: 100%;
+}
+
+.white {
+    background-color: color.$white;
+    border: 0.01vw solid color.$white;
+}
+
+.king {
+    background-color: color.$red;
+    border: 0.01vw solid color.$red;
+}
+
+.moves {
+    background-color: color.$blue;
+    border: 0.01vw solid color.$dark-blue;
+}
+
+.origin {
+    background-color: color.$dark-blue;
+    border: 0.01vw solid color.$dark-blue;
+}
+
+.float {
+    font-size: 4vw;
+    cursor: grab;
+}
