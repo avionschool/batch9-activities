@@ -1,12 +1,16 @@
 *{
-    font-size: 5vw;
+    font-size: 8vmin;
     text-align: center;
+}
+body{
+
+    background-color: black;    
 }
 .chessboard{
     display:flex;
     flex-wrap: wrap;
-    width: 50vw;
-    height: 50vw;
+    width: 80vmin;
+    height: 80vmin;
     margin:auto;
 }
 .tile{
