@@ -1,0 +1,43 @@
+
+
+body {
+    height: 90vh;    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+
+.chessboard{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(8, auto);
+    width: 65vh;
+    height: 65vh;
+    position: relative;
+    
+}
+ 
+
+ .odd {
+     background-color: grey;
+     font-size: 5vh;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     height: auto;
+     width: auto;
+ 
+ }
+
+ .even {
+     background-color: aqua;
+     font-size: 5vh;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     height: auto;
+     width: auto;
+ }
