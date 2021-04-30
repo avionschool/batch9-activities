@@ -6,7 +6,6 @@ body{
     background-attachment: inherit;
     background-size: cover;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 
@@ -22,7 +21,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: cover;
-    animation: fade 6s forwards;
+    animation: fade 5s forwards;
     z-index: 1000;
 }
 
@@ -43,15 +42,15 @@ body{
     font-family: 'Tengwar';
     font-size: 8vmin;
     color: $gold;
-    animation: fonts 6s forwards;
+    animation: fonts 5s forwards;
 }
 
 @keyframes fonts {
     0% {font-family: 'Tengwar';}
-    20% {font-family: 'Eldamar';}
-    40% {font-family: 'Tengwar';}
-    60% {font-family: 'Eldamar';}
-    80% {font-family: 'Tengwar';}
+    20% {font-family: 'Tengwar';}
+    40% {font-family: 'Eldamar';}
+    60% {font-family: 'Tengwar';}
+    80% {font-family: 'Eldamar';}
     90% {font-family: 'Hobbiton';}
     100% {font-family: 'Hobbiton';}
 }
@@ -62,10 +61,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: contain;
-    width: 50vmin;
-    height: 50vmin;
+    width: 80vmin;
+    height: 80vmin;
     animation: spin 2s linear infinite;
-    margin-right: 100vmin;
   
 }
 
@@ -77,7 +75,7 @@ body{
 
 
 #base {
-    height: 100vmin;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,47 +155,43 @@ p {
 }
 
 .board {
-    position: relative;
     width: 75vh;
-    height: 75h;
+    height: 75vh;
     border: 0.5vmin solid $grey;
     display: grid;
-    grid-template-columns: repeat(8, 7vh);
-    grid-template-rows: repeat(8, 7vh);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     justify-content: center;
     align-content: center;
 }
 
-.board > * {
-    height: 100%;
-    border: solid $dark 0.5vh;
-}
-
 .square {
     border: 0.1vh solid $dark;
-    width: 9.375vmin;
-    height: 9.375vmin;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
 .pieces {
     position: relative;
-    width: 7.5vmin;
-    height: 7.5vmin;
-    margin-top: 1vmin;
-    margin-left: 1vmin;
+    width: 8vmin;
+    height: 8vmin;
+    cursor: pointer;
     transition: 1s;
 }
 
 .pieces:hover {
-    transform:scale(1.2)
+    transform:scale(1.35);
 }
 
 #ccl,
 #ckl {
     position: relative;
     transition: 1.5s;
-    width: 9.3vmin;
-    height: 9.3vmin;
+    width: 8vmin;
+    height: 8vmin;
     z-index:500;
 }
 

@@ -66,8 +66,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: cover;
-  -webkit-animation: fade 6s forwards;
-          animation: fade 6s forwards;
+  -webkit-animation: fade 5s forwards;
+          animation: fade 5s forwards;
   z-index: 1000;
 }
 
@@ -114,8 +114,8 @@ body {
   font-family: "Tengwar";
   font-size: 8vmin;
   color: #ab884b;
-  -webkit-animation: fonts 6s forwards;
-          animation: fonts 6s forwards;
+  -webkit-animation: fonts 5s forwards;
+          animation: fonts 5s forwards;
 }
 
 @-webkit-keyframes fonts {
@@ -123,16 +123,16 @@ body {
     font-family: "Tengwar";
   }
   20% {
-    font-family: "Eldamar";
+    font-family: "Tengwar";
   }
   40% {
-    font-family: "Tengwar";
-  }
-  60% {
     font-family: "Eldamar";
   }
-  80% {
+  60% {
     font-family: "Tengwar";
+  }
+  80% {
+    font-family: "Eldamar";
   }
   90% {
     font-family: "Hobbiton";
@@ -147,16 +147,16 @@ body {
     font-family: "Tengwar";
   }
   20% {
-    font-family: "Eldamar";
+    font-family: "Tengwar";
   }
   40% {
-    font-family: "Tengwar";
-  }
-  60% {
     font-family: "Eldamar";
   }
-  80% {
+  60% {
     font-family: "Tengwar";
+  }
+  80% {
+    font-family: "Eldamar";
   }
   90% {
     font-family: "Hobbiton";
@@ -171,11 +171,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: contain;
-  width: 100vmin;
-  height: 100vmin;
+  width: 80vmin;
+  height: 80vmin;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
-  margin-left: 27vmin;
 }
 
 @-webkit-keyframes spin {
@@ -208,7 +207,7 @@ body {
   }
 }
 #base {
-  height: 100vmin;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,30 +307,47 @@ p {
 }
 
 .board {
-  width: 75vmin;
-  height: 75vmin;
+  width: 75vh;
+  height: 75vh;
   border: 0.5vmin solid #e2dfd8;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .square {
   border: 0.1vh solid #393834;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pieces {
-  width: 7.5vmin;
-  height: 7.5vmin;
-  margin-top: 1vmin;
-  margin-left: 1vmin;
+  position: relative;
+  width: 8vmin;
+  height: 8vmin;
+  cursor: pointer;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .pieces:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
 }
 
 #ccl,
@@ -339,8 +355,8 @@ p {
   position: relative;
   -webkit-transition: 1.5s;
   transition: 1.5s;
-  width: 9.3vmin;
-  height: 9.3vmin;
+  width: 8vmin;
+  height: 8vmin;
   z-index: 500;
 }
 
