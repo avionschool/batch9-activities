@@ -101,7 +101,7 @@ button:hover {
   top: 450px;
   background: #090c10;
   min-height: auto;
-  height: 90vh;
+  height: 100%;
 }
 
 .content-area h2 {
@@ -148,7 +148,7 @@ button:hover {
   top: 449px;
   background: #101010;
   margin: 0 auto;
-  height: auto;
+  height: 100%;
   /* max-width: 800px; */
 }
 
@@ -199,7 +199,7 @@ button:hover {
   top: 449px;
   background: #101010;
   margin: 0 auto;
-  height: 280vh;
+  height: 290vh;
   /* max-width: 800px; */
 }
 
@@ -342,26 +342,11 @@ footer span {
   }
 }
 
-/* @media only screen and (max-width: 775px) {
-  .wrapper img {
-    width: 30%;
-    height: 50%;
-    border-radius: 10px;
-  }
-  .wrapper p {
-    height: 505px;
-    width: 90%;
-    line-height: 30px;
-    font-size: 15px;
-    font-family: "RocknRoll One", sans-serif;
-  }
-  .timeline-area {
-    height: 129vh;
-  }
+@media only screen and (max-width: 999px) {
   .story-area {
-    height: 366vh;
+    height: 324vh;
   }
-} */
+}
 
 @media only screen and (max-width: 700px) {
   .wrapper img {
