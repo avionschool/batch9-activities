@@ -29,7 +29,7 @@ for(i = 1; i < 9; i++){
         newDiv1.style.height = "68.75px";*/
     }
     if(i % 2 == 0){
-        newDiv1.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        newDiv1.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     } else{
         newDiv1.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
     }
@@ -42,7 +42,7 @@ for(i = 1; i < 9; i++){
     if(i % 2 == 0){
         newDiv2.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
     } else{
-        newDiv2.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        newDiv2.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     }
     newDiv2.innerHTML = "♟︎";
     newDiv2.setAttribute("class", "box");
@@ -58,7 +58,7 @@ for(i = 1; i < 9; i++){
 for(i = 1; i < 9; i++){
     let newDiv3 = document.createElement("div");
     if(i % 2 == 0){
-        newDiv3.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        newDiv3.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     } else{
         newDiv3.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
     }
@@ -71,7 +71,7 @@ for(i = 1; i < 9; i++){
     if(i % 2 == 0){
         newDiv4.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
     } else{
-        newDiv4.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        newDiv4.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     }
     newDiv4.setAttribute("class", "box");
     container.appendChild(newDiv4);
@@ -80,7 +80,7 @@ for(i = 1; i < 9; i++){
 for(i = 1; i < 9; i++){
     let newDiv5 = document.createElement("div");
     if(i % 2 == 0){
-        newDiv5.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        newDiv5.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     } else{
         newDiv5.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
     }
@@ -93,7 +93,7 @@ for(i = 1; i < 9; i++){
     if(i % 2 == 0){
         newDiv6.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
     } else{
-        newDiv6.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        newDiv6.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     }
     newDiv6.setAttribute("class", "box");
     newDiv6.setAttribute("id", "row-6");
@@ -105,7 +105,7 @@ for(i = 1; i < 9; i++){
 for(i = 1; i < 9; i++){
     let newDiv7 = document.createElement("div");
     if(i % 2 == 0){
-        newDiv7.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+        newDiv7.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
     } else{
         newDiv7.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
     }
@@ -136,7 +136,7 @@ for(i = 1; i < 9; i++){
         newDiv8.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
 
     } else{
-        newDiv8.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        newDiv8.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     }
     newDiv8.setAttribute("class", "box");
     newDiv8.setAttribute("id", "row-8");
