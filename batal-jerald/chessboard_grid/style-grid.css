@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  background-image:url(./images/wp2418790-king-and-queen-wallpapers.png) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 100px;
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(8, 12.5%);
+  font-size: 45px;
+  max-width:580px;
+  height: 580px;
+  margin: 60px auto;
+  border-style: groove;
+  border-color: #DEB887;
+}
+
+.odd {
+  position: relative;
+  background:#DEB887;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.even {
+  position: relative;
+  background:#CD853F;
+  cursor: pointer;
+}
+
+.chessboard > div:nth-child(n+33):nth-child(-n+64){
+	color: #222;
+}
+
+
+.chessboard > div:nth-child(n+49):nth-child(-n+64):hover{
+  background-color: greenyellow;
+  transform: translateY(-10px);
+}
+
+.chessboard > div:nth-child(n+1):nth-child(-n+16):hover {
+  transform: translateY(10px);
+  background-color: greenyellow;
+}
