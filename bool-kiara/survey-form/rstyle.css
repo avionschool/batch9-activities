@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#main {
+    transition: 0.8s;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color: #070606;
+    background-image: url("images/c1\ bg.png");
+    transition: 0.8s;
+}
+   
+h2 {
+    margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#title {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    background: white;
+    position: fixed;
+    width: 100%;
+}
+
+#description {
+    margin: 10px;
+    padding: 5px;
+    line-height: 1.9em;
+    text-align: center;
+}
+
+#description2 {
+    line-height: 1.9em;
+    text-align: center;
+}
+
+#description2 a {
+    text-decoration: none;
+}
+
+#description2 a:hover {
+    color: #f42c49;
+}
+
+.btn-box {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.btn-box button {
+    width: 200px;
+    height: 35px;
+    margin: 0 10px;
+    background: #070606;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+}
+
+.container {
+    background: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    background: transparent;
+    width: 1150px;
+    height: 100vh;
+}
+
+#content-1 {
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    width: 750px;
+    height: 480px;
+    left: 50%;
+    margin-left: -375px;
+    top: 50%;
+    margin-top: -240px;
+    transition: 0.8s;
+    box-shadow: 1px 1px 8px 5px #888888;
+}
+
+#content-1 li {
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+}
+
+#content-1 a {
+    text-decoration: none;
+}
+
+#content-1 a:hover {
+    color: #f42c49;
+}
+
+#content-2 {
+    margin: 10px;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 1130px;
+    top: 1500px;
+    left: auto;
+    transition: 0.8s;
+}
+
+#c21 {
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+    width: 565px;
+    box-shadow: 1px 1px 8px 2px #888888;
+}
+
+#results {
+    margin: 10px;
+    padding: 5px;
+    line-height: 1.1em;
+    text-align: justify;
+}

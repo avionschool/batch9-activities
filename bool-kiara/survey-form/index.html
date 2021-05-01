@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VACCINE SIDE EFFECTS: Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:400" rel="stylesheet">
+</head>
+<body id="main">
+    <header>
+        <h1 id="title">VACCINE SIDE EFFECTS SURVEY FORM</h1> <!-- us #1 -->
+    </header>
+    <div class="container">
+        <div class="content">
+            <div id="content-1">
+                <h2>Data Privacy Agreement</h2>
+                <hr>
+                <p id="description">We are conducting a survey to help us better understand the certain side effects people experience after administering a COVID-19 vaccine to them. We would like to ask you questions about the possible effects and symptoms you have experienced in the first 3 days after getting your shot, whether it be the first or second dose. This is also to help people how to address those symptoms and keep them informed in all the relevant information in getting the COVID-19 vaccine to achieve herd immunity. Rest assured all data that will be gathered during this survey will be kept confidential. <br><br> By clicking "I Agree", you hereby acknowledge that you have read and understood the information above and you freely give your consent to participate in this survey.</p> <!-- us #2 -->
+                <div class="btn-box">
+                <button type="button" id="next">I Agree</button>
+                </div>
+            </div>
+
+            <div id="content-2">
+                <div id="c21">
+                    <h2>Personal Information</h2>
+                    <hr>
+                    <form id="survey-form" action="results.html" method="GET"> <!-- us #3 -->
+                        <label id="name-label" for="name">Name (optional): </label><!-- us #10 -->
+                        <input type="text" id="name" name="Name" placeholder="Enter name here"><br> <!-- us # 4 & 11 -->
+                        <label id="email-label" for="email">Email: </label><!-- us #10 -->
+                        <input type="email" required id="email" name="Email" placeholder="Enter a valid email address"><br> <!-- us # 5,6,11 -->
+                        <label id="number-label" for="number">Age: </label> <!-- us #10 -->
+                        <input type="number" required id="number" name="Age" min="18" max="100" placeholder="Enter age here"><br><br> <!-- us # 7,8,9,11 -->
+                        <!-- us #13 -->
+                        Gender:<br>
+                        <input type="radio" name="Gender" required id="female" value="Female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" name="Gender" required id="male" value="Male">
+                        <label for="male">Male</label><br><br>
+                        <!-- us #14 -->
+                        Comorbidities (pre-existing conditions):<br>
+                        <input type="checkbox" name="Comorbidities" id="c1" value="Cancer">
+                        <label for="c1">Cancer</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c2" value="Chronic kidney disease">
+                        <label for="c2">Chronic kidney disease</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c3" value="Chronic lung disease">
+                        <label for="c3">Chronic lung disease</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c4" value="Dementia or other neurological condition">
+                        <label for="c4">Dementia or other neurological condition</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c5" value="Diabetes type 1 or type 2">
+                        <label for="c5">Diabetes type 1 or type 2</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c6" value="Down Syndrome">
+                        <label for="c6">Down Syndrome</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c7" value="Heart conditions">
+                        <label for="c7">Heart conditions</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c8" value="HIV">
+                        <label for="c8">HIV</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c9" value="Liver disease">
+                        <label for="c9">Liver disease</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c10" value="Obesity">
+                        <label for="c10">Obesity</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c11" value="Pregnancy">
+                        <label for="c11">Pregnancy</label><br>
+                        <input type="checkbox" name="Comorbidities" id="c12" value="Stroke">
+                        <label for="c12">Stroke</label><br>
+                        <input type="checkbox" name="Comorbidities" id="nc" value="No Comorbidities">
+                        <label for="nc">No Comorbidities</label><br><br>
+                        <small>Adults of any age with the following conditions can be more likely to to get severely ill from COVID-19. For more information, <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html" target="_blank">click here</a>.</small><br>
+                </div>
+                <div id="c22">
+                    <h2>Vaccine Information</h2>
+                    <hr>
+                    <div id="c221">
+                    Vaccine Received:
+                    <select required id="dropdown" name="Vaccine Received"> 
+                        <option value="Pfizer - BioNtech">Pfizer</option>
+                        <option value="Moderna">Moderna</option>
+                        <option value="AstraZeneca">AstraZeneca</option>
+                        <option value="Sinovac">Sinovac</option>
+                        <option value="Sinopharm">Sinopharm</option>
+                        <option value="Sputnik">Sputnik</option>
+                        <option value="Janssen">Janssen</option>
+                        <option value="Covax">Covax</option>
+                        <option value="Others">Others</option>
+                    </select><br>
+                    <label id="date-label" for="date">Date Administered: </label>
+                    <input type="date" required id="date" name="Date Administered">
+                    <br>
+                    <input type="radio" name="Dose" required id="fd" value="First Dose">
+                    <label for="fd">First Dose</label>
+                    <input type="radio" name="Dose" required id="sd" value="Second Dose">
+                    <label for="sd">Second Dose</label><br><br>
+                    <small>It's not safe to use different kinds of vaccine brands for the two dose administration. For more information, <a href="https://www.clinicaltrialsarena.com/analysis/covid-19-vaccine-mixing-the-good-the-bad-and-the-uncertain/" target="_blank">click here</a>.</small><br>
+                    <br>
+                    Symptoms experienced in the first 3 days of getting the vaccine:<br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s1" value="Headache">
+                    <label for="s1">Headache</label><br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s2" value="Fever">
+                    <label for="s2">Fever</label><br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s3" value="Muscle pain">
+                    <label for="s3">Muscle pain</label><br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s4" value="Tiredness">
+                    <label for="s4">Tiredness</label><br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s5" value="Nausea">
+                    <label for="s5">Nausea</label><br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s6" value="Chills">
+                    <label for="s6">Chills</label><br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s7" value="Pain on the injection side">
+                    <label for="s7">Pain on the injection side</label><br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s8" value="Swelling on the injection side">
+                    <label for="s8">Swelling on the injection side</label><br>
+                    <input type="checkbox" name="Symptoms Experienced" id="s9" value="No Symptoms">
+                    <label for="s9">No Symptoms</label><br><br>
+                    <!-- us #15 -->
+                    For any comments or questions regarding the COVID-19 vaccine, feel free to type it below.<br>
+                    <textarea id="comments" name="Comments/Questions" rows="3" placeholder="Will I get a microchip on my skin after getting the vaccine?"></textarea>
+                    <!-- us #16 -->
+                    <div class="btn-box">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                    </div>
+                </div>                
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var c1 = document.getElementById("content-1");
+        var c2 = document.getElementById("content-2");
+        var bd = document.getElementById("main");
+        var n = document.getElementById("next");
+        n.onclick = function() {
+            c1.style.top = "-1500px";
+            c2.style.top = "80px";
+            bd.style.backgroundImage = "url('images/c2\ bg.png')";
+        }
+    </script>
+</body>
+</html>
